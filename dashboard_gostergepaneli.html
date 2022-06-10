@@ -453,19 +453,33 @@
                         <div class="col-lg-8 leftContentCol">
                             <div class="OrderContent">
                                 <div class="orderWays">
-                                    <a href="#">Yeni Sipariş</a>
-                                    <a href="#" class="active">Toplu Sipariş</a>
-                                    <a href="#">Otomatik Sipariş</a>
-                                    <a href="#">Favorilerim</a>
+                                    <button class="tabBtn">Yeni Sipariş</button>
+                                    <button class="tabBtn active" data-way="bulkOrder">Toplu Sipariş</button>
+                                    <button class="tabBtn">Otomatik Sipariş</button>
+                                    <button class="tabBtn">Favorilerim</button>
                                 </div>
-                                <div class="orderInfo">
-                                    <div class="item">
-                                        <h4>Formatta satır başına bir sipariş*</h4>
-                                        <textarea cols="30" rows="10" placeholder="servis ID | link | miktar"></textarea>
+                                <div class="tabContent active" data-kind="bulkOrder">
+                                    <div class="orderInfo">
+                                        <div class="item">
+                                            <h4>Formatta satır başına bir sipariş*</h4>
+                                            <textarea cols="30" rows="10" placeholder="servis ID | link | miktar"></textarea>
+                                        </div>
+                                        <div class="submit">
+                                            <button class="Btn Btn-bg-blue Btn-white Btn-bordered">Sipariş oluştur</button>
+                                            <button class="Btn Btn-bg-green Btn-white Btn-bordered">Sipariş oluştur</button>
+                                        </div>
                                     </div>
-                                    <div class="submit">
-                                        <button class="Btn Btn-bg-blue Btn-white Btn-bordered">Sipariş oluştur</button>
-                                        <button class="Btn Btn-bg-green Btn-white Btn-bordered">Sipariş oluştur</button>
+                                </div>
+                                <div class="tabContent" data-kind="bulkOrdee">
+                                    <div class="orderInfo">
+                                        <div class="item">
+                                            <h4>Formatta satır başına bir sipariş*</h4>
+                                            <textarea cols="30" rows="10" placeholder="servis ID | link | miktar"></textarea>
+                                        </div>
+                                        <div class="submit">
+                                            <button class="Btn Btn-bg-blue Btn-white Btn-bordered">Sipariş oluştur</button>
+                                            <button class="Btn Btn-bg-green Btn-white Btn-bordered">Sipariş oluştur</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -487,5 +501,6 @@
     <script src="assets/js/dashboard/sidebar.js"></script>
     <script src="assets/js/dashboard/balance.js"></script>
     <script src="assets/js/dashboard/dashboardHeader.js"></script>
+    <script src="assets/js/dashboard/orderTab.js"></script>
 </body>
 </html>

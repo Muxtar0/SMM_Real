@@ -678,19 +678,25 @@ a {
     border-radius: 5px;
     border: 1px solid #E6ECFF;
 }
-
+.dashboardContent .doubleContents .leftContentCol .OrderContent .tabContent{
+    display: none;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .tabContent.active{
+    display: block;
+}
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
 }
-.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays a{
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 25%;
     height: 40px;
+    background: transparent;
     border-right: 1px solid #E6ECFF;
     border-bottom: 1px solid #E6ECFF;
     font-size: 12px;
@@ -698,13 +704,13 @@ a {
     color: #292C36;
     transition: all 300ms;
 }
-.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays a:hover{
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button:hover{
     background: #f4f7ff;
 }
-.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays a:last-child{
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button:last-child{
     border-right: none;
 }
-.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays a.active{
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button.active{
     background: #E6ECFF;
 }
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item{
