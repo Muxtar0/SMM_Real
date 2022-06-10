@@ -95,6 +95,7 @@ a {
     background: white;
     padding: 42px;
     position: relative;
+    transition: all 300ms;
 }
 .sidebar.smallSidebar{
     width: 90px;
@@ -281,6 +282,7 @@ a {
   Dashboard Content 
 */
 .dashboardContent {
+    transition: all 300ms;
     width: calc(100% - 300px);
 }
 .dashboardContent.bigDashboard{
@@ -332,13 +334,13 @@ a {
     width: 290px;
     border: 1px solid #E6ECFF;
     border-radius: 10px;
-    z-index: 100;
     transition: all 300ms;
 }
 .dashboardContent header .profile .dropdownProfile.hidden{
     visibility: 0;
     opacity: 0;
     top: 180%;
+    display: none;
 }
 .dashboardContent header .profile .dropdownProfile::before{
     content: " ";
@@ -413,7 +415,215 @@ a {
 
 
 
+.dashboardContent header .bars .dropdownBars{
+    position: absolute;
+    right:0%;
+    top: 190%;
+    background: white;
+    width: 290px;
+    border: 1px solid #E6ECFF;
+    border-radius: 10px;
+    transition: all 300ms;
 
+}
+.dashboardContent header .bars .dropdownBars.hidden{
+    visibility: 0;
+    opacity: 0;
+    top: 180%;
+    display: none;
+
+}
+.dashboardContent header .bars .dropdownBars::before{
+    content: " ";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 45px;
+    top: -5px;
+    transform: rotate(45deg);
+    background: white;
+    border-top: 1px solid #E6ECFF;
+    border-left: 1px solid #E6ECFF;
+}
+.dashboardContent header .bars .dropdownBars .dropdownList{
+    padding-top: 10px;
+}
+
+.dashboardContent header .bars .dropdownBars .dropdownList li{
+    width: 100%;
+    border-bottom: 1px solid #E6ECFF;
+    padding: 20px 30px;
+}
+.dashboardContent header .bars .dropdownBars .dropdownList li:last-child{
+    border:none;
+}
+.dashboardContent header .bars .dropdownBars .dropdownList li h5{
+    font-size: 14px;
+    font-family: MB;
+    color: #23252E;
+    margin-bottom: 8px;
+}
+.dashboardContent header .bars .dropdownBars .dropdownList li p{
+    font-size: 14px;
+    font-family: MM;
+    color: #99A1B1;
+}
+.dashboardContent header .bars .dropdownBars .dropdownList li a{
+    color: #2F5AFF;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboardContent header .notifications .dropdownNotifications{
+    position: absolute;
+    right:0%;
+    top: 190%;
+    background: white;
+    width: 290px;
+    border: 1px solid #E6ECFF;
+    border-radius: 10px;
+    transition: all 300ms;
+
+}
+.dashboardContent header .notifications .dropdownNotifications.hidden{
+    visibility: 0;
+    opacity: 0;
+    top: 180%;
+    display: none;
+
+}
+.dashboardContent header .notifications .dropdownNotifications::before{
+    content: " ";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 45px;
+    top: -5px;
+    transform: rotate(45deg);
+    background: white;
+    border-top: 1px solid #E6ECFF;
+    border-left: 1px solid #E6ECFF;
+}
+.dashboardContent header .notifications .dropdownNotifications .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 11px;
+    border-bottom: 1px solid #E6ECFF;
+}
+.dashboardContent header .notifications .dropdownNotifications .top > div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboardContent header .notifications .dropdownNotifications .top .logo{
+    margin-right: 10px;
+}
+.dashboardContent header .notifications .dropdownNotifications .top .info h3{
+    color: #23252E;
+    font-size: 14px;
+    font-family: MB;
+}
+.dashboardContent header .notifications .dropdownNotifications .top .info p{
+    color: #23252E;
+    font-size: 12px;
+    font-family: MR;
+}
+.dashboardContent header .notifications .dropdownNotifications .top button{
+    border: none;
+    outline: none;
+    background: #F3F6FD;
+    border-radius: 3px;
+    color: #99A1B1;
+    font-size: 12px;
+    font-family: MB;
+    width: 98px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dashboardContent header .notifications .dropdownNotifications .dropdownList li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 13px;
+    border-bottom: 1px solid #E6ECFF;
+}
+.dashboardContent header .notifications .dropdownNotifications .dropdownList li:last-child{
+    border: none;
+}
+.dashboardContent header .notifications .dropdownNotifications .dropdownList li .icon{
+    padding-right: 17px;
+}
+.dashboardContent header .notifications .dropdownNotifications .dropdownList li .icon .iconWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #F3F6FD;
+    position: relative;
+}
+.dashboardContent header .notifications .dropdownNotifications .dropdownList li .icon .iconWrapper::before{
+    content: " ";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2F5AFF;
+}
+.dashboardContent header .notifications .dropdownNotifications .dropdownList li .icon .iconWrapper i{
+    color: #2F5AFF;
+    font-size: 16px;
+}
+.dashboardContent header .notifications .dropdownNotifications .dropdownList li .content span{
+    font-size: 12px;
+    font-weight: MB;
+    color: #99A1B1;
+}
+.dashboardContent header .notifications .dropdownNotifications .dropdownList li .content p{
+    font-size: 12px;
+    font-weight: MB;
+    color: #23252E;
+    margin: 17px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* dashboard main */
 
 .dashboardContent main{
     padding: 30px;
