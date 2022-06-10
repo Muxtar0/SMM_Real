@@ -1,0 +1,543 @@
+/* 
+Fonts
+*/
+@font-face {
+    font-family: ML;
+    src: url(../fonts/Montserrat/Montserrat-Light.otf)
+}
+
+@font-face {
+    font-family: MB;
+    src: url(../fonts/Montserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: MR;
+    src: url(../fonts/Montserrat/Montserrat-Regular.otf);
+}
+
+@font-face {
+    font-family: MM;
+    src: url(../fonts/Montserrat/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: Socialize;
+    src: url(../fonts/Socialize/Socialize.ttf);
+}
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+body,html {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background: #F5F6F7;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* 
+    Global Css
+*/
+.Btn{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-family: MB;
+}
+.Btn.Btn-bg-blue{
+    background: #2F5AFF;
+}
+.Btn.Btn-bg-green{
+    background: #4EBE86;
+}
+.Btn.Btn-white{
+    color: white;
+}
+.Btn.Btn-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Btn.Btn-bordered{
+    border-radius: 5px;
+}
+/* 
+    Sidebar
+*/
+.sidebar{
+    width: 300px;
+    background: white;
+    padding: 42px;
+    position: relative;
+}
+.sidebar.smallSidebar{
+    width: 90px;
+    padding: 47px 18px;
+}
+.sidebar .notShowing{
+    display: none !important;
+}
+
+.sidebar .logo img{
+    object-fit: contain;
+}
+.sidebar .logo .closeOpenSidebarDiv{
+    position: absolute;
+    top: 32px;
+    right: -20px;
+
+}
+.sidebar.smallSidebar .closeOpenSidebarDiv{
+    transform: rotate(180deg);
+    right: -50px;
+}
+.sidebar .closeOpenSidebarDiv button{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background-image: url(../img/Path\ 2934.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70px;
+    width:70px;
+}
+.sidebar .logo .closeOpenSidebarDiv button i{
+    transform: rotate(180deg);
+}
+
+.sidebar .balanceMainDiv{
+    height: 59px;
+    width: 100%;
+    border-radius: 10px;
+    background: #2F5AFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding: 9px 24px;
+    margin-top: 75px;
+}
+.sidebar .balanceMainDiv .icon{
+    position: absolute;
+    left: 24px;
+    top: -60%;
+    border: 2px solid white;
+    background: #2F5AFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+.sidebar .balanceMainDiv .balanceDiv h5{
+    font-size: 16px;
+    font-family: MB;
+    color: #E6ECFF;
+}
+.sidebar .balanceMainDiv .balanceDiv .balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar .balanceMainDiv .balanceDiv .balance .balanceText{
+    font-size: 16px;
+    font-family: MB;
+    color: #E6ECFF;
+}
+.sidebar .balanceMainDiv .balanceDiv .balance button{
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.sidebar .sidebarList{
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+.sidebar .sidebarList ul li a{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 19px;
+    transition: all 300ms;
+    border-radius: 5px;
+}
+.sidebar.smallSidebar .sidebarList ul li a{
+    justify-content: center;
+}
+.sidebar .sidebarList ul li a:hover{
+    background: #E7E7E8;
+}
+.sidebar .sidebarList ul li a .icon{
+    margin-right: 12px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.sidebar.smallSidebar .sidebarList ul li a .icon{
+    margin: 0 !important;
+}
+.sidebar .sidebarList ul li a .text p{
+    font-size: 12px;
+    font-family: MB;
+    color: #01133D;
+}
+.sidebar .sidebarList ul li a .text{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .sidebarList ul li a .text span{
+    font-size:12px;
+    font-family: MM;
+    color: #52535D;
+}
+
+
+.sidebar .showMore .showMoreBTN i{
+    transition: all 300ms;
+}
+.sidebar .showMore .showMoreBTN.active i{
+    transform: rotate(180deg);
+}
+.sidebar .showMore .showMoreContent{
+    transition: all 300ms;
+}
+.sidebar .showMore .showMoreContent.hidden{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+.sidebar .showMore .showMoreContent{
+    transform: translateY(0px);
+
+}
+.sidebar .showMore .showMoreContent ul{
+    margin-top: 26px;
+    background: #E7E7E8;
+    border-radius: 5px;
+    padding: 14px 19px;
+}
+.sidebar .showMore .showMoreContent ul li a{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sidebar.smallSidebar .showMore .showMoreContent ul li a{
+    justify-content: center;
+}
+.sidebar .showMore .showMoreContent ul li a .icon{
+    margin-right: 12px;
+}
+.sidebar.smallSidebar .showMore .showMoreContent ul li a .icon{
+    margin: 0 !important;
+}
+.sidebar .showMore .showMoreContent ul li a .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .showMore .showMoreContent ul li a .text p{
+    color: #0F1419;
+    font-size: 12px;
+    font-family: MB;
+}
+
+
+/*
+  Dashboard Content 
+*/
+.dashboardContent {
+    width: calc(100% - 300px);
+}
+.dashboardContent.bigDashboard{
+    width: calc(100% - 90px);
+}
+
+.dashboardContent header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    height: 60px;
+}
+.dashboardContent header  > div{
+    margin: 0 7.5px;
+    position: relative;
+}
+.dashboardContent header .balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2F5AFF;
+    border-radius: 3px;
+    width: 94px;
+    height: 29px;
+    padding: 7px 10px;
+}
+.dashboardContent header .balance p{
+    color: white;
+    font-size: 14px;
+    font-weight: MB;
+}
+.dashboardContent header  button{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.dashboardContent header .balance button{
+    color: white;
+    font-size: 14px;
+}
+.dashboardContent header .profile .dropdownProfile{
+    position: absolute;
+    right:0%;
+    top: 190%;
+    background: white;
+    width: 290px;
+    border: 1px solid #E6ECFF;
+    border-radius: 10px;
+    z-index: 100;
+    transition: all 300ms;
+}
+.dashboardContent header .profile .dropdownProfile.hidden{
+    visibility: 0;
+    opacity: 0;
+    top: 180%;
+}
+.dashboardContent header .profile .dropdownProfile::before{
+    content: " ";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 45px;
+    top: -5px;
+    transform: rotate(45deg);
+    background: white;
+    border-top: 1px solid #E6ECFF;
+    border-left: 1px solid #E6ECFF;
+}
+.dashboardContent header .profile .dropdownProfile .top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 23px 11px;
+    border-bottom: 1px solid #E6ECFF;
+}
+.dashboardContent header .profile .dropdownProfile .top .logo{
+    margin-right: 10px;
+}
+.dashboardContent header .profile .dropdownProfile .top .info h3{
+    color: #23252E;
+    font-size: 14px;
+    font-family: MB;
+}
+.dashboardContent header .profile .dropdownProfile .top .info p{
+    color: #23252E;
+    font-size: 12px;
+    font-family: MR;
+}
+.dashboardContent header .profile .dropdownProfile .dropdownList li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 25px;
+    border-bottom: 1px solid #E6ECFF;
+    transition: all 300ms;
+}
+.dashboardContent header .profile .dropdownProfile .dropdownList li a:hover{
+    background:#E6ECFF ;
+}
+.dashboardContent header .profile .dropdownProfile .dropdownList li a .icon{
+    margin-right: 21px;
+}
+.dashboardContent header .profile .dropdownProfile .dropdownList li a .icon i{
+    font-size: 20px;
+    color: #23252E;
+}
+.dashboardContent header .profile .dropdownProfile .dropdownList li a .text p{
+    font-size: 14px;
+    font-family: MB;
+    color: #23252E;
+}
+.dashboardContent header .profile .dropdownProfile .dropdownList li a .text span{
+    font-size: 12px;
+    font-family: MR;
+    color: #23252E;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboardContent main{
+    padding: 30px;
+}
+
+.dashboardContent .dashboardTop{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #2F5AFF;
+    border-radius: 5px;
+    padding: 18px 45px;
+    margin-bottom: 30px;
+}
+.dashboardContent .dashboardTop .content{
+    margin-left: 48px;
+}
+.dashboardContent .dashboardTop .content h5{
+    font-size: 14px;
+    font-weight: MB;
+    color: white;
+}
+.dashboardContent .dashboardTop .content p{
+    color: white;
+    font-size: 12px;
+    font-family: MM;
+    margin: 13px 0;
+}
+.dashboardContent .dashboardTop .content button{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-family: MB;
+}
+.dashboardContent .dashboardTop .content button i{
+    margin-left: 10px;
+    transition: all 300ms;
+}
+.dashboardContent .dashboardTop .content button:hover i{
+    margin-left: 20px;
+}
+
+
+
+
+
+/* Orders Page */
+.dashboardContent .doubleContents .leftContentCol .OrderContent{
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+}
+
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 40px;
+    border-right: 1px solid #E6ECFF;
+    border-bottom: 1px solid #E6ECFF;
+    font-size: 12px;
+    font-family: MB;
+    color: #292C36;
+    transition: all 300ms;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays a:hover{
+    background: #f4f7ff;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays a:last-child{
+    border-right: none;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays a.active{
+    background: #E6ECFF;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item{
+    padding: 19px;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item h4{
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item textarea,
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item input{
+    background: transparent;
+    outline: none;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    margin-top: 9px;
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+    width: 100%;
+    padding: 15px 19px;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item textarea::placeholder,
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item input::placeholder{
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item textarea{
+    height: 226px;
+    min-height: 226px;
+    max-height: 226px;
+}
+
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .submit{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 19px;
+    padding-top: 0;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .submit button{
+    width: 40%;
+    margin-right: 24px;
+}
