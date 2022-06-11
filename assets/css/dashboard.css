@@ -58,9 +58,43 @@ a {
     text-decoration: none;
 }
 
+
+
+/* rightContentCol , leftContentCol */
+
+.rightContentCol > div:not(:first-child),
+.leftContentCol > div:not(:first-child){
+    margin-top: 30px;
+}
+.rightContentCol{
+    padding-left: 0;
+}
+
+
+/* oneContents */
+.oneContents > div:not(:first-child){
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
 /* 
     Global Css
 */
+.content-bordered{
+    border: 1px solid #E6ECFF;
+}
+.content-border-radius{
+    border-radius: 5px;
+}
+.content-bg-white{
+    background: white;
+}
 .Btn{
     border: none;
     outline: none;
@@ -73,11 +107,17 @@ a {
 .Btn.Btn-bg-blue{
     background: #2F5AFF;
 }
+.Btn.Btn-bg-white{
+    background: #FFFFFF;
+}
 .Btn.Btn-bg-green{
     background: #4EBE86;
 }
 .Btn.Btn-white{
     color: white;
+}
+.Btn.Btn-blue{
+    color: #2F5AFF;
 }
 .Btn.Btn-icon{
     display: flex;
@@ -86,6 +126,190 @@ a {
 }
 .Btn.Btn-bordered{
     border-radius: 5px;
+}
+
+.submit{
+    margin-top: 25px;
+}
+
+.headerTextNoOutPadding{
+    padding: 15px;
+    border-bottom: 1px solid #E6ECFF;
+}
+.headerTextNoOutPadding h3{
+    font-size: 18px;
+    font-weight: MB;
+    color: #23252E;
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+    padding: 15px 19px;
+}
+.select{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+    padding: 15px 13px;
+}
+.input.forCopy{
+    background: #E6ECFF;
+}
+.item-input-group{
+    margin-top: 15px;
+}
+.item-input-group h4{
+    font-size: 14px;
+    color: #23252E;
+    font-family: MM;
+    margin-bottom: 9px;
+}
+
+
+.info-ul{
+    padding: 10px 28px;
+}
+.info-ul .topText h3{
+    font-size: 14px;
+    font-family: MB;
+    color: #292C36;
+}
+.info-ul ul li{
+    font-size: 14px;
+    font-family: MM;
+    color: #292C36;
+    margin: 10px 0;
+}
+
+
+
+
+
+/* filterDiv */
+.filterDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.filterDiv > .filterItem{
+    margin-left: 11px;
+    position: relative;
+}
+.filterDiv > .filterItem .filterDropDownDiv{
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background: white;
+    border: 1px solid #E6ECFF;
+    border-radius: 10px;
+    width: 288px;
+    z-index: 100;
+}
+.filterDiv > .filterItem .filterDropDownDiv.hidden{
+    display: none;
+}
+.filterDiv > .filterItem .filterDropDownDiv::before{
+    content: " ";
+    position: absolute;
+    right: 40px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-top: 1px solid #E6ECFF;
+    border-left: 1px solid #E6ECFF;
+    background: white;
+}
+.filterDiv > .filterItem .filterDropDownDiv ul li button{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 34px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-family: MR;
+    color: #23252E;
+    transition: all 300ms;
+}
+.filterDiv > .filterItem .filterDropDownDiv ul li button:hover{
+    background: #F2F5FB;
+}
+.filterDiv > .filterItem .filterDropDownDiv ul li button i{
+    margin-right: 10px;
+    color: #2F5AFF;
+}
+/* searchMainDiv */
+
+.searchMainDiv{
+    width: 100%;
+    background: white;
+    height: 80px;
+    margin: 30px 0;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchMainDiv .searchDiv{
+    width: 100%;
+    height: 100%;
+    background: #F9FAFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 24px;
+    padding-right: 10px;
+}
+.searchMainDiv .searchDiv i{
+    color: #52667B;
+
+}
+.searchMainDiv .searchDiv input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 17px;
+    font-size: 14px;
+    font-family: MB;
+    color: #52667B;
+}
+.searchMainDiv .searchDiv input::placeholder{
+    font-size: 14px;
+    font-family: MB;
+    color: #52667B;
+}
+.searchMainDiv .searchDiv button{
+    border: none;
+    outline: none;
+    background: #2F5AFF;
+    color: white;
+    width: 103px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: MB;
+    transition: all 300ms;
+    transform: translateX(0);
+}
+.searchMainDiv .searchDiv button:hover{
+    transform: translateX(15px);
 }
 /* 
     Sidebar
@@ -112,6 +336,7 @@ a {
     position: absolute;
     top: 32px;
     right: -20px;
+    transition: all 300ms;
 
 }
 .sidebar.smallSidebar .closeOpenSidebarDiv{
@@ -756,4 +981,293 @@ a {
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .submit button{
     width: 40%;
     margin-right: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Most Asking Questions Page */
+
+.mostAskingQuestions .item .topTexts{
+padding: 8px 0;
+border-bottom: 1px solid #E6ECFF;
+margin: 16px 0;
+}
+.mostAskingQuestions .item .topTexts h4{
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+}
+.mostAskingQuestions .item .topTexts p{
+    font-size: 12px;
+    font-family: MR;
+    color: #23252E;
+    margin-top: 9px;
+}
+
+
+
+
+
+
+
+/* User Agreement */
+
+.userAgreement .tabWays{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.userAgreement .tabWays button{
+    outline: none;
+    width: 260px;
+    height: 64px;
+    background: white;
+    color: #52667B;
+    font-size: 16px;
+    font-family: MB;
+}
+.userAgreement .tabWays button.active{
+    background: #E6ECFF;
+}
+
+.userAgreement .tabContent{
+    background: white;
+    margin-top: 29px;
+    border-radius: 5px;
+    padding: 24px 26px;
+    display: none;
+}
+.userAgreement .tabContent.active{
+    display: block;
+}
+.userAgreement .tabContent .headerText{
+    border-bottom: 1px solid #707070;
+    padding: 17px 0;
+}
+
+.userAgreement .tabContent .headerText h3{
+    font-size: 16px;
+    font-family: MB;
+    color: #52667B;
+}
+.userAgreement .tabContent .agreementContent .texts .text h4{
+    font-size: 18px;
+    font-family: MB;
+    color: #52667B;
+    margin-top: 20px;
+}
+.userAgreement .tabContent .agreementContent .texts .text p,
+.userAgreement .tabContent .agreementContent .texts .text a {
+    font-size: 14px;
+    font-family: MR;
+    color: #52667B;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PartnerShip Content */
+.partnerShipContent{
+    background: white;
+    border-radius: 5px;
+}
+
+.partnerShipContent .related{
+    padding: 15px;
+}
+.partnerShipContent .related .hosting .topText h3{
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+}
+.partnerShipContent .related .hosting{
+    border-bottom: 1px solid #E6ECFF;
+    padding-bottom: 15px;
+}
+.partnerShipContent .related .submit{
+    margin-top: 15px;
+}
+.partnerShipContent .related .submit button{
+    width: 140px;
+}
+
+
+
+
+
+
+
+
+
+/* orderManagementContent */
+
+.orderManagementContent{
+    background: white;
+}
+.orderManagementContent .orderManagement{
+    padding: 10px 28px;
+}
+.orderManagementContent .orderManagement ul li{
+    font-size: 14px;
+    font-family: MM;
+    color: #292C36;
+    margin: 10px;
+}
+
+
+
+
+
+/* inviteAttendesContent */
+
+.inviteAttendesContent{
+    padding: 10px 15px;
+}
+
+.inviteAttendesContent .inviteAttendesInfo{
+    font-size: 14px;
+    font-family: MR;
+    color: #292C36;
+    margin-top: 9px;
+}
+
+
+
+/* refeacneSystemInfos */
+.refeacneSystemInfos{
+    padding: 15px;
+}
+.refeacneSystemInfos > div:nth-child(2){
+    margin-top: 30px;
+}
+
+.refeacneSystemInfos .submit{
+    margin-top: 23px;
+}
+.refeacneSystemInfos .submit button{
+    width: 192px;
+}
+.refeacneSystemInfos .referanceItem{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 19px;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    margin: 3px 0;
+}
+
+.refeacneSystemInfos .referanceItem p{
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+}
+
+
+
+
+
+
+
+
+
+
+/* passwordRightContent */
+.passwordRightContent .content{
+    padding: 15px;
+}
+/* languageRightContent */
+.languageRightContent .content{
+    padding: 15px;
+}
+
+
+
+
+
+
+/* profileContent */
+.profileContent .content{
+    padding: 15px;
+}
+
+
+
+
+
+/* servicesContent */
+.servicesContent .content{
+    background: white;
+}
+.servicesContent .content .topText{
+    padding: 17px 9px;
+    border-bottom: 1px solid #E6ECFF;
+}
+.servicesContent .content .topText h2{
+    font-size: 14px;
+    font-family: MB;
+    color: #23252E;
+}
+.servicesContent .content .topText h2 i{
+    margin-right: 8px;
+}
+
+
+
+.servicesContent .content table{
+    width: 100%;
+}
+.servicesContent .content table tr{
+    padding: 9px;
+    border-bottom: 1px solid #E6ECFF;
+}
+.servicesContent .content table tr:last-child{
+    border: none;
+}
+.servicesContent .content table th{
+    font-size: 14px;
+    font-family: MB;
+    color: #23252E;
+    padding: 9px;
+}
+.servicesContent .content table td{
+    padding: 9px;
+
+}
+.servicesContent .content table td,
+.servicesContent .content table td p{
+    color: #23252E;
+    font-size: 14px;
+    font-family: MM;
+}
+.servicesContent .content table td span{
+    color: #FE5252;
+}
+.servicesContent .content table th,
+.servicesContent .content table td{
+    border-right: 1px solid #E6ECFF;
+}
+.servicesContent .content table tr td:last-child{
+    border-right: 0;
 }

@@ -25,15 +25,3 @@ notificationsBTN.addEventListener("click",(e) => {
     dropdownBars.classList.add('hidden')
     dropdownNotifications.classList.toggle('hidden')
 })
-
-// window.addEventListener('click' , (e) => {
-//     e.preventDefault();
-//     if(e.target in dashboardHeader){
-
-//     }
-//     else{
-//         dropdownProfile.classList.add('hidden')
-//         dropdownBars.classList.add('hidden')
-//         dropdownNotifications.classList.add('hidden')
-//     }
-// })
