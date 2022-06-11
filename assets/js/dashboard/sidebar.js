@@ -28,3 +28,40 @@ closeOpenSidebarButton.addEventListener('click' , (e) => {
         showMoreContentTexts[i].classList.toggle('notShowing')
     }
 })
+
+
+window.addEventListener("resize" , (e) => {
+      if(window.outerWidth <= 768){
+        dashboardContent.classList.toggle('bigDashboard')
+        sidebar.classList.toggle('smallSidebar')
+        bigLogo.classList.toggle('notShowing')
+        smallLogo.classList.toggle('notShowing')
+        balanceMainDiv.classList.toggle('notShowing')
+        for(let i= 0 ; i < sidebarListTexts.length;i++){
+            sidebarListTexts[i].classList.toggle('notShowing')
+        }
+        showMoreBTN.classList.toggle('notShowing')
+        showMoreContent.classList.remove('hidden')
+        for(let i= 0 ; i < showMoreContentTexts.length;i++){
+            showMoreContentTexts[i].classList.toggle('notShowing')
+        }
+      }
+})
+window.addEventListener("load" , (e) => {
+    console.log(window.outerWidth)
+    if(window.outerWidth <= 768){
+        dashboardContent.classList.toggle('bigDashboard')
+        sidebar.classList.toggle('smallSidebar')
+        bigLogo.classList.toggle('notShowing')
+        smallLogo.classList.toggle('notShowing')
+        balanceMainDiv.classList.toggle('notShowing')
+        for(let i= 0 ; i < sidebarListTexts.length;i++){
+            sidebarListTexts[i].classList.toggle('notShowing')
+        }
+        showMoreBTN.classList.toggle('notShowing')
+        showMoreContent.classList.remove('hidden')
+        for(let i= 0 ; i < showMoreContentTexts.length;i++){
+            showMoreContentTexts[i].classList.toggle('notShowing')
+        }
+      }
+})

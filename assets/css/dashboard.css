@@ -2585,3 +2585,110 @@ margin: 16px 0;
     color: #2F5AFF;
     background: rgba(47, 90, 255, 0.1);
 }
+
+
+
+
+@media (max-width:768px){
+    .sidebar{
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+    }
+    .sidebar.smallSidebar{
+        left: -90px;
+
+    }
+    .sidebar{
+        left: 0;
+    }
+    .dashboardContent{
+        width: 100% !important;
+    }
+    .rightContentCol{
+        margin-top: 40px;
+        padding-left: calc(1.5rem * .5);
+    }
+    .supportRequestContents .supportRequestTabContent .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .supportRequestContents .supportRequestTabContent .content .tabWays{
+        width: 100%;
+    }
+    .supportRequestContents .supportRequestTabContent .content .tabs{
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .orderListContents .orderListTabs .tabWay{
+        flex-wrap: wrap;
+    }
+    .orderListContents .orderListTabs .tabWay button{
+        width: 30% !important;
+    }
+}
+
+@media (max-width:425px){
+    .dashboardContent main{
+        padding: 20px 5px;
+    }
+    .dashboardContent .dashboardTop{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 20px;
+    }
+    .dashboardContent .dashboardTop .content{
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN a{
+        height: auto;
+    }
+    .orderListContents .orderListTabs .tabWay button{
+        width: 50% !important;
+    }
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+        height: 30px;
+        width: 30px;
+    }
+    .orderListTabs .swiper .swiper-button-next{
+        height: 30px;
+        width: 60px;
+    }
+    .orderListTabs .swiper .swiper-button-prev{
+        height: 30px;
+        width: 60px;
+        right: auto;
+        left: 0;
+    }
+    .payMethods{
+        padding: 10px 12px;
+    }
+    .payMethods label .mainContent .text h5{
+        font-size: 12px;
+    }
+    .payMethods label .mainContent .text p{
+        font-size: 11px;
+    }
+    .uploadMoneyBTNs{
+        flex-wrap: wrap;
+    }
+    .uploadMoneyBTNs button{
+        width: 45%;
+        margin: 10px 0;
+    }
+    .uploadMoneyBTNs button .icon{
+        transform: translate(-55%,-50%);
+    }
+    .tableDivForpastPayments{
+        overflow-x: auto;
+    }
+    .createSupportRequestContent .content img{
+        width: 90%;
+        height: auto;
+    }
+}
