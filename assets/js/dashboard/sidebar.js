@@ -47,8 +47,7 @@ window.addEventListener("resize" , (e) => {
         }
       }
 })
-window.addEventListener("load" , (e) => {
-    console.log(window.outerWidth)
+window.addEventListener("DOMContentLoaded" , (e) => {
     if(window.outerWidth <= 768){
         dashboardContent.classList.toggle('bigDashboard')
         sidebar.classList.toggle('smallSidebar')

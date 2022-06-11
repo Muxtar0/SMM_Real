@@ -118,6 +118,9 @@ a {
 .Btn.Btn-blue{
     color: #2F5AFF;
 }
+.Btn.Btn-black{
+    color: #0F1419;
+}
 .Btn.Btn-icon{
     display: flex;
     align-items: center;
@@ -659,6 +662,7 @@ a {
     border: 1px solid #E6ECFF;
     border-radius: 10px;
     transition: all 300ms;
+    z-index: 100;
 }
 .dashboardContent header .profile .dropdownProfile.hidden{
     visibility: 0;
@@ -748,6 +752,8 @@ a {
     border: 1px solid #E6ECFF;
     border-radius: 10px;
     transition: all 300ms;
+    z-index: 100;
+
 
 }
 .dashboardContent header .bars .dropdownBars.hidden{
@@ -823,6 +829,8 @@ a {
     border: 1px solid #E6ECFF;
     border-radius: 10px;
     transition: all 300ms;
+    z-index: 100;
+
 
 }
 .dashboardContent header .notifications .dropdownNotifications.hidden{
@@ -1436,10 +1444,19 @@ margin: 16px 0;
     color: #23252E;
     margin-top: 9px;
 }
+.mostAskingQuestions .item .accordion-button{
+    background: white;
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+}
 
 
-
-
+.mostAskingQuestions .item  .accordion-body{
+    font-size: 12px;
+    font-family: MM;
+    color: #292C36;
+}
 
 
 
@@ -2594,14 +2611,24 @@ margin: 16px 0;
         position: absolute;
         top: 0;
         z-index: 1000;
-    }
-    .sidebar.smallSidebar{
-        left: -90px;
-
+        height: 100%;
     }
     .sidebar{
         left: 0;
     }
+    .sidebar.smallSidebar{
+        left: -90px;
+        animation: sidebar 250ms ease-in-out;
+    }
+    @keyframes sidebar {
+        0%{
+            left: -400px;
+        }
+        100%{
+            left: -90px;
+        }
+    }
+    
     .dashboardContent{
         width: 100% !important;
     }
