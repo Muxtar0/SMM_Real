@@ -40,7 +40,6 @@ body,html {
     overflow-x: hidden;
     background: #F5F6F7;
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
 }
 h1,
@@ -152,6 +151,15 @@ a {
     color: #23252E;
     padding: 15px 19px;
 }
+.textarea{
+    width: 100%;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+    padding: 15px 19px;
+}
 .select{
     width: 100%;
     height: 50px;
@@ -201,6 +209,7 @@ a {
     align-items: center;
     justify-content: flex-end;
 }
+
 .filterDiv > .filterItem{
     margin-left: 11px;
     position: relative;
@@ -215,6 +224,7 @@ a {
     width: 288px;
     z-index: 100;
 }
+
 .filterDiv > .filterItem .filterDropDownDiv.hidden{
     display: none;
 }
@@ -229,6 +239,20 @@ a {
     border-top: 1px solid #E6ECFF;
     border-left: 1px solid #E6ECFF;
     background: white;
+}
+.filterDropDownDiv .searchFilter{
+    padding: 11px;
+    width: 100%;
+    font-size: 12px;
+    font-family: MR;
+    color: #23252E;
+    border-bottom: 1px solid #E6ECFF;
+}
+.filterDropDownDiv .searchFilter input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
 }
 .filterDiv > .filterItem .filterDropDownDiv ul li button{
     background: transparent;
@@ -311,6 +335,80 @@ a {
 .searchMainDiv .searchDiv button:hover{
     transform: translateX(15px);
 }
+/* Swiper */
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
     Sidebar
 */
@@ -521,6 +619,7 @@ a {
     justify-content: flex-end;
     background: white;
     height: 60px;
+    padding: 0 30px;
 }
 .dashboardContent header  > div{
     margin: 0 7.5px;
@@ -553,7 +652,7 @@ a {
 }
 .dashboardContent header .profile .dropdownProfile{
     position: absolute;
-    right:0%;
+    right:-160%;
     top: 190%;
     background: white;
     width: 290px;
@@ -572,7 +671,7 @@ a {
     height: 10px;
     width: 10px;
     position: absolute;
-    right: 45px;
+    right: 25px;
     top: -5px;
     transform: rotate(45deg);
     background: white;
@@ -642,7 +741,7 @@ a {
 
 .dashboardContent header .bars .dropdownBars{
     position: absolute;
-    right:0%;
+    right:-200%;
     top: 190%;
     background: white;
     width: 290px;
@@ -663,7 +762,7 @@ a {
     height: 10px;
     width: 10px;
     position: absolute;
-    right: 45px;
+    right: 35px;
     top: -5px;
     transform: rotate(45deg);
     background: white;
@@ -717,7 +816,7 @@ a {
 
 .dashboardContent header .notifications .dropdownNotifications{
     position: absolute;
-    right:0%;
+    right:-200%;
     top: 190%;
     background: white;
     width: 290px;
@@ -738,7 +837,7 @@ a {
     height: 10px;
     width: 10px;
     position: absolute;
-    right: 45px;
+    right: 35px;
     top: -5px;
     transform: rotate(45deg);
     background: white;
@@ -939,12 +1038,18 @@ a {
     background: #E6ECFF;
 }
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item{
-    padding: 19px;
+    padding: 11px 21px;
 }
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item h4{
     font-size: 14px;
     font-family: MM;
     color: #23252E;
+    margin-bottom: 9px;
+}
+.dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item p.minMaxQuantity{
+    color: #2F5AFF;
+    font-size: 14px;
+    font-family: MM;
 }
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item textarea,
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item input{
@@ -952,7 +1057,6 @@ a {
     outline: none;
     border: 1px solid #E6ECFF;
     border-radius: 5px;
-    margin-top: 9px;
     font-size: 14px;
     font-family: MM;
     color: #23252E;
@@ -982,6 +1086,328 @@ a {
     width: 40%;
     margin-right: 24px;
 }
+
+
+.OrderContent .orderInfo .item  .select{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.OrderContent .orderInfo .item  .select .selectedContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.OrderContent .orderInfo .item  .selectedContent .text{
+    width: 100%;
+
+}
+.OrderContent .orderInfo .item  .select .selectedText{
+    color: #23252E;
+    font-size: 14px;
+    font-family: MM;
+}
+.OrderContent .orderInfo .item  .select .selectedText i{
+    margin-right: 10px;
+}
+.OrderContent .orderInfo .item  .select .selections{
+    position: absolute;
+    top: 102%;
+    left: 0;
+    background: white;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 100;
+
+}
+.OrderContent .orderInfo .item  .select .selections.hidden{
+    display: none;
+}
+.OrderContent .orderInfo .item  .select .selections  li{
+    cursor: pointer;
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+.OrderContent .orderInfo .item  .select .selections  li i{
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.OrderContent .orderInfo .item  .select.selectForService{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.OrderContent .orderInfo .item  .select.selectForService .selectedContentService{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService{
+    position: absolute;
+    top: 102%;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 100;
+
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService.hidden{
+    display: none;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li{
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #E6ECFF;
+    padding: 14px;
+    background: white;
+    transition: all 300ms;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li:hover{
+    background: #E6ECFF;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .mainValueText{
+    color: #292C36;
+    font-size: 14px;
+    font-family: MB;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .pieceDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .pieceDiv p{
+    font-size: 12px;
+    color: #292C36;
+    font-family: MR;
+    margin-right: 10px;
+    
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .pieceDiv p span{
+    font-size: bold;
+    font-family: MB;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .minAndmax{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .minAndmax p{
+    font-size: 12px;
+    color: #292C36;
+    font-family: MR;
+    margin-right: 10px;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .minAndmax p span{
+    font-size: bold;
+    font-family: MB;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .minAndmax p.clockText{
+    color: #2F5AFF;
+    font-family: MR;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .minAndmax p.clockText span{
+    font-family: MR;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceKind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 108px;
+
+}
+
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceKind p{
+    color: white;
+    font-size: 12px;
+    font-family: MM;
+}
+
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceKind.guarrantedKind{
+    background: #4EBE86;
+}
+
+
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceKind.canBeCanceledKind{
+    background: #2F5AFF;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceKind.suggestedKind{
+    background: #4F46E5;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceKind.timeOrderKind{
+    background: #E7405C;
+}
+
+
+
+
+
+
+
+
+.OrderContentRight .top{
+    width: 100%;
+    display: flex;
+    padding: 10px 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+.OrderContentRight .top h4{
+    font-size: 16px;
+    color: #292C36;
+    font-weight: bold;
+    font-family: MB;
+}
+.OrderContentRight .top .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #E6ECFF ;
+    max-width: 200px;
+    min-width: 150px;
+    border-radius: 10px;
+}
+.OrderContentRight .top .search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #292C36;
+    font-family: MM;
+}
+.OrderContentRight .top .search input::placeholder{
+    font-size: 12px;
+    color: #292C36;
+    font-family: MM;
+}
+.OrderContentRight .top .search i{
+    width: 10%;
+    padding: 10px;
+
+}
+.OrderContentRight .mainText{
+    background: #E6ECFF;
+    padding: 16px 15px;
+}
+.OrderContentRight .mainText p{
+    font-size: 12px;
+    color: #23252E;
+    font-weight: bold;
+    font-family: MM;
+}
+.OrderContentRight .infos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 29px 12px;
+}
+.OrderContentRight .infos .infoDiv {
+    width: 49%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+
+.OrderContentRight .infos .infoDiv .infoIcon i{
+    margin-right: 10px;
+    color: #B8BFCD;
+    font-size: 17px;
+}
+.OrderContentRight .infos .infoDiv .infoText h4{
+    color: #292C36;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: MB;
+}
+.OrderContentRight .infos .infoDiv .infoText p{
+    color: #292C36;
+    font-size: 14px;
+    font-family: MM;
+}
+.OrderContentRight .mainInfoText{
+    padding: 18px 12px;
+    border-top: 1px solid  #E6ECFF;
+}
+.OrderContentRight .mainInfoText h3{
+    font-size: 14px;
+    color: #292C36;
+    font-weight: bold;
+    font-family: MB;
+    margin-bottom: 10px;
+}
+.OrderContentRight .mainInfoText ul{
+    margin: 0;
+}
+.OrderContentRight .mainInfoText ul li{
+    font-size: 14px;
+    font-family: MM;
+    color: #292C36;
+}
+.OrderContentRight .topText{
+    border-bottom: 1px solid #E6ECFF;
+}
+.OrderContentRight .topText h3{
+    font-size: 18px;
+    font-family: MB;
+}
+.OrderContentRight.textsContent .textContent,
+.OrderContentRight .topText    {
+    padding: 15px;
+}
+.OrderContentRight.textsContent:not(:first-child){
+    margin-top: 20px;
+}
+.OrderContentRight.textsContent .texts  ul li{
+    font-size: 14px;
+    font-family: MM;
+    margin: 10px 0;
+} 
+
+
+
+
+
+
+
+
 
 
 
@@ -1270,4 +1696,648 @@ margin: 16px 0;
 }
 .servicesContent .content table tr td:last-child{
     border-right: 0;
+}
+
+
+
+
+
+
+
+
+
+/* payMethods */
+.payMethods{
+    padding: 32px 35px;
+}
+.payMethods label{
+    width: 100%;
+    margin: 7.5px 0;
+    cursor: pointer;
+}
+.payMethods label.selected{
+    background: #E6ECFF;
+    border-radius: 5px;
+}
+.payMethods label .mainContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    padding: 17px 24px;
+}
+.payMethods label .mainContent input{
+    margin-right: 16px;
+    width: 16px;
+    height: 16px;
+}
+.payMethods label .mainContent .text h5{
+    font-size: 14px;
+    font-family: MB;
+    color: #292C36;
+}
+.payMethods label .mainContent .text p{
+    font-size: 12px;
+    font-family: MM;
+    color: #292C36;
+}
+.payMethods label.widthExplanation .mainContent{
+    border-radius: 5px 5px 0 0;
+}
+
+.payMethods label .explanation{
+    border: 1px solid #E6ECFF;
+    border-radius: 0px 0 5px 5px;
+    padding: 17px 24px;
+}
+.payMethods label .explanation p{
+    font-size: 12px;
+    font-family: MR;
+    color: #292C36;
+    margin: 2px 0;
+}
+.payMethods label .explanation p span{
+    font-family: MB;
+}
+
+
+
+.payQuantity{
+    padding: 32px 35px;
+}
+.uploadMoneyBTNs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.uploadMoneyBTNs button{
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100px;
+    border: 1px solid #E6ECFF;
+    border-radius: 10px;
+}
+.uploadMoneyBTNs button .icon{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-80%,-50%);
+    width: 43px;
+    height: 42px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uploadMoneyBTNs button .icon.bg-blue-pay{
+    background: #198AFF;
+}
+.uploadMoneyBTNs button .icon.bg-green-pay{
+    background: #1FCD5C;
+}
+ .uploadMoneyBTNs button .icon.bg-red-pay{
+    background: #FD4056;
+}
+ .uploadMoneyBTNs button .icon.bg-purple-pay{
+    background: #431EC8;
+}
+ .uploadMoneyBTNs button .text h4{
+    font-size: 25px;
+    font-family: MB;
+    color: #292F34;
+}
+ .uploadMoneyBTNs button .text p{
+    font-size: 12px;
+    font-family: MM;
+    color: #858585;
+}
+
+.payQuantity .submit button{
+    width: 192px;
+}
+
+
+/* pastPayments */
+.pastPayments .content{
+     padding: 20px 28px;
+}
+.pastPayments .topText h4{
+    font-size: 14px;
+    font-family: MR;
+    color: #52667B;
+    margin-bottom: 20px;
+}
+.pastPayments  .content table{
+    width: 100%;
+}
+.pastPayments  .content table tr.headerTR{
+    background: #E6ECFF;
+}
+.pastPayments  .content table tr th,
+.pastPayments  .content table tr td{
+    padding: 13px 19px;
+
+}
+.pastPayments  .content table tr th{
+    font-size: 14px;
+    font-weight: MB;
+    color: #52667B;
+}
+.pastPayments  .content table tr td{
+    font-size: 14px;
+    font-weight: MB;
+    color: #52667B;
+}
+.pastPayments  .content table tr:not(:first-child){
+    border-bottom: 1px solid #E6ECFF;
+}
+
+
+
+
+
+
+
+
+
+/* balanceLoadingAndProblemsContentRight */
+.balanceLoadingAndProblemsContentRight .content{
+    padding: 24px 28px;
+}
+.balanceLoadingAndProblemsContentRight .topText{
+    margin-bottom: 20px;
+}
+.balanceLoadingAndProblemsContentRight .topText h5{
+    font-size: 14px;
+    font-family: MR;
+    color: #52667B;
+}
+.balanceLoadingAndProblemsContentRight .accordion .accordion-item{
+    margin-bottom: 13px;
+    border: none;
+    background: #E6ECFF !important;
+}
+.balanceLoadingAndProblemsContentRight .accordion .accordion-item .accordion-button{
+    background: #E6ECFF;
+    color: #52667B;
+    font-size: 14px;
+    font-family: MB;
+}
+.balanceLoadingAndProblemsContentRight .accordion .accordion-item .accordion-button::after{
+    display: none !important;
+}
+.balanceLoadingAndProblemsContentRight .accordion .accordion-body{
+    font-size: 14px;
+    font-family: MR;
+    color: #52667B;
+}
+
+
+
+
+
+
+
+
+
+/* payQuantityRight */
+.payQuantityRight{
+    padding: 0;
+}
+.payQuantityRight .uploadMoneyBTNs{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.payQuantityRight .uploadMoneyBTNs button{
+    width: 231px;
+    background: #2F5AFF;
+    margin-bottom: 26px;
+    margin-left: 33px;
+}
+.payQuantityRight .uploadMoneyBTNs button .text h4,
+.payQuantityRight .uploadMoneyBTNs button .text p    {
+    color: white;
+}
+.payQuantityRight .uploadMoneyBTNs button .icon{
+    width: 66px;
+    height: 66px;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+/* orderListContents */
+
+.orderListContents .orderListTabs .tabWay{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.orderListContents .orderListTabs .tabWay button{
+    width: 140px;
+    height: 40px;
+    background: white;
+    color: #0F1419;
+    font-size: 14px;
+    font-family: MM;
+    border: 1px solid #E6ECFF;
+}
+.orderListContents .orderListTabs .tabWay button:nth-child(5){
+    width: 200px;
+}
+.orderListContents .orderListTabs .tabWay button i{
+    margin-right: 5px;
+}
+.orderListContents .orderListTabs .tabWay button.active{
+    background: #2F5AFF;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* orderListTabs */
+.orderListTabs .swiper{
+    padding-bottom: 75px;
+}
+.orderListTabs .swiper .swiper-pagination{
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 265px;
+    right: 92px;
+    left: auto;
+}
+.orderListTabs .swiper .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    height: 45px;
+    width: 45px;
+    background: #FFFFFF;
+    opacity: 1;
+    border: 1px solid #E6ECFF ;
+    border-radius: 10px;
+    color: #99A1B1;
+    font-size: 14px;
+    font-family: MB;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.orderListTabs .swiper .swiper-pagination-bullet-active{
+     background: #2F5AFF;
+     color: white;
+}
+
+.orderListTabs .swiper .swiper-button-next::after,
+.orderListTabs .swiper .swiper-button-prev::after{
+    display: none;
+}
+.orderListTabs .swiper .swiper-button-next{
+    top: auto;
+    bottom: 10px;
+    right: 0;
+    width: 82px;
+    height: 45px;
+    background: white;
+    color: #99A1B1;
+    font-size: 14px;
+    font-family: MB;
+    border-radius: 10px;
+}
+.orderListTabs .swiper .swiper-button-prev{
+    top: auto;
+    bottom: 10px;
+    right: 367px;
+    left: auto;
+    width: 82px;
+    height: 45px;
+    background: white;
+    color: #99A1B1;
+    font-size: 14px;
+    font-family: MB;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.orderListTabs .OrdersList{
+    border: 1px solid #DEE3EC;
+    border-bottom: none;
+}
+.orderListTabs .OrdersList,
+.orderListTabs .OrdersList table{
+    width: 100%;
+}
+.orderListTabs .OrdersList table tr{
+    border-bottom: 1px solid #DEE3EC;
+}
+.orderListTabs .OrdersList table th{
+    font-size: 14px;
+    font-family: MB;
+    color: #23252E;
+}
+.orderListTabs .OrdersList table th,
+.orderListTabs .OrdersList table td{
+    padding: 16px 10px;
+}
+.orderListTabs .OrdersList table tr td:nth-child(1){
+    color: #52667B;
+    font-size: 14px;
+    font-family: MB;
+}
+.orderListTabs .OrdersList table tr td:nth-child(1) i{
+    margin-right: 10px;
+    color: #2F5AFF;
+}
+.orderListTabs .OrdersList table tr td:nth-child(2){
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.orderListTabs .OrdersList table tr td:nth-child(2) p{
+    font-size: 14px;
+    font-family: MM;
+    color: #52667B;
+    text-align: start;
+}
+.orderListTabs .OrdersList table tr td:nth-child(2) span{
+    font-size: 14px;
+    font-family: MM;
+    color: #B8BFCD;
+    text-align: start;
+}
+.orderListTabs .OrdersList table tr td:nth-child(3){
+    font-size: 14px;
+    font-family: MR;
+    color: #D3D3D3;
+}
+.orderListTabs .OrdersList table tr td .situation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #4EBE86;
+    color: #4EBE86;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: MM;
+}
+
+.orderListTabs .OrdersList table tr td .sayProblem{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    background: #2F5AFF;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    font-family: MM;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+/* sayProblemDivContent */
+.sayProblemDivContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.sayProblemDivContent .headerTextNoOutPadding{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.sayProblemDivContent .headerTextNoOutPadding button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.sayProblemDivContent .content{
+    width: 500px;
+}
+.sayProblemDivContent .mainContent{
+    padding: 10px 15px;
+}
+
+
+
+
+
+
+/* supportRequestContents */
+.supportRequestContents .supportRequestTabContent .content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px 13px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabWays{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+}
+.supportRequestContents .supportRequestTabContent .content .tabWays button{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background: #E6ECFF;
+    font-size: 14px;
+    color: #52667B;
+    font-family: MB;
+    margin: 4.5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 10px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabWays button.active{
+    color: white;
+    background: #2F5AFF;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs{
+    width: 80%;
+    padding-left: 40px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent{
+    background: #F9FAFB;
+    border-radius: 10px;
+    padding: 24px 14px;
+    display: none;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent.active{
+    display: block;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN h4{
+    font-size: 14px;
+    font-family: MB;
+    color: #52667B;
+    padding-left: 40px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN p{
+    font-size: 14px;
+    font-family: MR;
+    padding-left: 20px;
+    color: #52667B;
+    margin: 12px 0;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN ul{
+    padding-left: 20px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN ul li{
+    font-size: 14px;
+    font-family: MR;
+    color: #52667B;
+    margin: 10px 0;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 45px;
+    background: #E6ECFF;
+    font-size: 14px;
+    font-family: MB;
+    color: #52667B;
+    padding: 14px 35px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN a:not(:last-child){
+    margin-bottom: 9px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .ceateRequestDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 14px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .ceateRequestDiv p{
+    font-size: 14px;
+    font-family: MR;
+    color: #52667B;
+    margin-right: 18px;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .ceateRequestDiv  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 199px;
+    height: 47px;
+    background: #2F5AFF;
+    color: white;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* createSupportRequestContent */
+
+.createSupportRequestContent .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.createSupportRequestContent .content img{
+    width: 445px;
+    height: 362px;
+    object-fit: cover;
+}
+.createSupportRequestContent .content p{
+    font-size: 18px;
+    font-family: MM;
+    color: #52667B;
+    margin: 32px 0 40px 0;
+    text-align: center;
+}
+.createSupportRequestContent .content button{
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* createSupportRequestContentRight */
+
+.createSupportRequestContentRight .mainContent{
+    padding: 10px 15px;
+}
+.createSupportRequestContentRight .headerTextNoOutPadding{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.createSupportRequestContentRight .headerTextNoOutPadding button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.createSupportRequestContentRight textarea{
+     height: 202px;
+     min-height: 202px;
+     max-height: 202px;
 }

@@ -438,12 +438,12 @@
         <main>
             <div class="dashboardTop">
                 <div class="image">
-                    <img src="assets/img/1.png" alt="">
+                    <img src="assets/img/multiverse-4976000-4149678.png" alt="">
                 </div>
                 <div class="content">
-                    <h5>Sipariş Oluştur</h5>
-                    <p>2000 TL ve üzeri ödemelerde otomatik olarak %3 bonus verilmektedir.😃</p>
-                    <button>Bakiye ekle <i class="fa-solid fa-arrow-right-long"></i></button>
+                    <h5>Hesabım</h5>
+                    <p>Sana destek verebilmek için buradayız! Bu sayfa üzerinden bizlere soru ve sorunların için yazabilirsin.</p>
+                    <button>Talep oluştur <i class="fa-solid fa-arrow-right-long"></i></button>
                 </div>
             </div>
 
@@ -451,261 +451,239 @@
                 <div class="container-fluid p-0">
                     <div class="row">
                         <div class="col-lg-8 leftContentCol">
-                            <div class="OrderContent">
-                                <div class="orderWays">
-                                    <button class="tabBtn active" data-way="newOrder">Yeni Sipariş</button>
-                                    <button class="tabBtn " data-way="bulkOrder">Toplu Sipariş</button>
-                                    <button class="tabBtn">Otomatik Sipariş</button>
-                                    <button class="tabBtn">Favorilerim</button>
+                            <div class="payContent content-bg-white content-bordered content-border-radius">
+                                <div class="payMethods">
+                                    <label for="payWidthCreditCard">
+                                        <div class="mainContent">
+                                            <input id="payWidthCreditCard" type="radio" name="pay_method" value="payWidthCreditCard">
+                                            <div class="text">
+                                                <h5>KREDİ KARTI İLE ÖDEME YAP</h5>
+                                                <p>Kredi kartı & Banka kartı ile yapılan ödemeler anlık olarak bakiyenize tanımlanmaktadır.</p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label for="payByReferalEft">
+                                        <div class="mainContent">
+                                            <input id="payByReferalEft" type="radio" name="pay_method" value="payByReferalEft">
+                                            <div class="text">
+                                                <h5>HAVALE EFT İLE ÖDEME YAP</h5>
+                                                <p>Havale ile yapılan ödemeler anlık olarak bakiyenize tanımlanmaktadır.</p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label for="payWidthBitcoin">
+                                        <div class="mainContent">
+                                            <input id="payWidthBitcoin" type="radio" name="pay_method" value="payWidthBitcoin">
+                                            <div class="text">
+                                                <h5>BİTCOİN İLE ÖDEME YAP</h5>
+                                                <p>Coinbase ile yapılan ödemeler anlık olarak bakiyenize tanımlanmaktadır.</p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label for="payWidthPerfectMoneyUsd" class="widthExplanation">
+                                        <div class="mainContent">
+                                            <input id="payWidthPerfectMoneyUsd" type="radio" name="pay_method" value="payWidthPerfectMoneyUsd">
+                                            <div class="text">
+                                                <h5>PERFECT MONEY İLE ÖDEME YAP USD</h5>
+                                                <p>Perfectmoney ile yapılan ödemeler anlık olarak bakiyenize tanımlanmaktadır.</p>
+                                            </div>
+                                        </div>
+                                        <div class="explanation">
+                                            <p><span>Payoneer </span>hesabınızda oturum açın.</p>
+                                            <p>Ödeme altındaki açılır menüden <span>Ödeme Yap</span>'ı seçin.</p>
+                                            <p>Bir alıcının Payoneer bakiyesine ödeme yapmayı seçin.</p>
+                                            <p>Bu e-posta adresini doldurun: <span>payooner@gmail.com</span> alıcı ayrıntılarına girin.</p>
+                                            <p>Formu ilgili ayrıntılarla doldurun ve <span>Öde</span>'ye tıklayın.</p>
+                                            <p>Ödeme Tamamlanır tamamlanmaz bir İşlem Kimliği, ödediğiniz bir <span>Tutar</span> girin ve <span>Ödeme</span> düğmesini gönderin.</p>
+                                            <p>Bir ödeme otomatik olarak kontrol edilecek ve <span>para hesap bakiyenize</span> yatırılacaktır.</p>
+                                        </div>
+                                    </label>
+                                    <label for="payWidthMobile">
+                                        <div class="mainContent">
+                                            <input id="payWidthMobile" type="radio" name="pay_method" value="payWidthMobile">
+                                            <div class="text">
+                                                <h5>MOBİL ÖDEME İLE ÖDEME YAP</h5>
+                                                <p>Mobil ödeme ile yapılan ödemeler anlık olarak bakiyenize tanımlanmaktadır.</p>
+                                            </div>
+                                        </div>
+                                    </label>
                                 </div>
-                                <div class="tabContent " data-kind="bulkOrder">
-                                    <div class="orderInfo">
-                                        <div class="item">
-                                            <h4>Formatta satır başına bir sipariş*</h4>
-                                            <textarea cols="30" rows="10" placeholder="servis ID | link | miktar"></textarea>
-                                        </div>
-                                        <div class="submit">
-                                            <button class="Btn Btn-bg-blue Btn-white Btn-bordered">Sipariş oluştur</button>
-                                            <button class="Btn Btn-bg-green Btn-white Btn-bordered">Sipariş oluştur</button>
-                                        </div>
+                                <div class="payQuantity">
+                                    <div class="uploadMoneyBTNs">
+                                        <button class="uploadMoneyBTN">
+                                            <div class="icon bg-blue-pay">
+                                                <h2>₺</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h4>100.0</h4>
+                                                <p>Yükleme yap</p>
+                                            </div>
+                                        </button>
+                                        <button class="uploadMoneyBTN">
+                                            <div class="icon bg-green-pay">
+                                                <h2>₺</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h4>250.0</h4>
+                                                <p>Yükleme yap</p>
+                                            </div>
+                                        </button>
+                                        <button class="uploadMoneyBTN">
+                                            <div class="icon bg-red-pay">
+                                                <h2>₺</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h4>500.0</h4>
+                                                <p>Yükleme yap</p>
+                                            </div>
+                                        </button>
+                                        <button class="uploadMoneyBTN">
+                                            <div class="icon bg-purple-pay">
+                                                <h2>₺</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h4>1000.0</h4>
+                                                <p>Yükleme yap</p>
+                                            </div>
+                                        </button>
                                     </div>
+                                    <div class="item-input-group">
+                                       <h4>Miktar</h4>
+                                       <input type="text" class="input quantityInput">
+                                    </div>
+                                    <div class="item-input-group">
+                                        <h4>Telefon</h4>
+                                        <input type="text" class="input">
+                                     </div>
+                                     <div class="submit">
+                                        <button class="Btn Btn-bg-blue Btn-white Btn-bordered">Güvenli Ödeme yap</button>
+                                     </div>
                                 </div>
-                                <div class="tabContent active" data-kind="newOrder">
-                                    <div class="orderInfo">
-                                        <div class="item">
-                                            <h4>Kategorimiz</h4>
-                                            <div class="select selectForCategory ">
-                                                <div class="selectedContent">
-                                                  <div class="text">
-                                                    <p class="selectedText" data-selectedValue="Bir Kategori Seçin">Bir Kategori Seçin</p>
-                                                  </div>
-                                                  <div class="icon">
-                                                    <i class="fa-solid fa-chevron-down"></i>
-            
-                                                  </div>
-                                                </div>
-                                                <ul class="selections hidden">
-                                                    <li data-value='<i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme'>
-                                                        <i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme
-                                                    </li>
-                                                    <li data-value='<i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1' >
-                                                        <i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1
-                                                    </li>
-                                                    <li data-value='<i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1' >
-                                                        <i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1
-                                                    </li>
-                                                    <li data-value='<i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1' >
-                                                        <i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1
-                                                    </li>
-                                                    <li data-value='<i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1' >
-                                                        <i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1
-                                                    </li>
-                                                    <li data-value='<i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1' >
-                                                        <i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1
-                                                    </li>
-                                                    <li data-value='<i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1' >
-                                                        <i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1
-                                                    </li>
-                                                    <li data-value='<i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1' >
-                                                        <i class="fa-brands fa-tiktok"></i> TikTok | Ülke Bazlı Görüntüleme 1
-                                                    </li>
-                                                    
-                                                    
-                                                </ul>
-                                              </div>
-                                        </div>
-                                        <div class="item">
-                                            <h4>Servis</h4>
-                                            <div class="select selectForService  ">
-                                                <div class="selectedContent">
-                                                  <div class="text">
-                                                    <p class="selectedText" data-selectedValue="Bir Servis Seçin">Bir Servis Seçin</p>
-                                                  </div>
-                                                  <div class="icon">
-                                                    <i class="fa-solid fa-chevron-down"></i>
-            
-                                                  </div>
-                                                </div>
-                                                <ul class="selectionsForService hidden">
-                                                    <li data-value="1625 - [Gerçek] Instagram 30 Gün Garantili Yabancı Takipçi - 7,00 TL">
-                                                      <div class="serviceSelectionContent">
-                                                        <h4 class="mainValueText">1625 - [Gerçek] Instagram 30 Gün Garantili Yabancı Takipçi - 7,00 TL</h4>
-                                                        <div class="pieceDiv">
-                                                          <p>Adet: <span class="onePiece">0,0006</span>₺ </p>
-                                                          <p>1000 Adet: <span class="thousandPiece">0,551 </span>₺ </p>
-                                                        </div>
-                                                        <div class="minAndmax">
-                                                          <p class="minCountText">Min:  <span class="minCount">100</span></p>
-                                                          <p class="maxCountText">Min:  <span class="maxCount">100,000</span></p>
-                                                          <p class="clockText">Ort: <span>3 saat ve 56 dakika</span></p>
-                                                        </div>
-                                                        <div class="serviceKind guarrantedKind">
-                                                          <p>Garantili</p>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                    <li data-value="1625 - [Gerçek] Instagram 30 Gün Garantili Yabancı Takipçi - 2,00 TL">
-                                                      <div class="serviceSelectionContent">
-                                                        <h4 class="mainValueText">1625 - [Gerçek] Instagram 30 Gün Garantili Yabancı Takipçi - 2,00 TL</h4>
-                                                        <div class="pieceDiv">
-                                                          <p>Adet: <span class="onePiece">0,0006</span>₺ </p>
-                                                          <p>1000 Adet: <span class="thousandPiece">0,551 </span>₺ </p>
-                                                        </div>
-                                                        <div class="minAndmax">
-                                                          <p class="minCountText">Min:  <span class="minCount">100</span></p>
-                                                          <p class="maxCountText">Min:  <span class="maxCount">100,000</span></p>
-                                                          <p class="clockText">Ort: <span>3 saat ve 56 dakika</span></p>
-                                                        </div>
-                                                        <div class="serviceKind canBeCanceledKind">
-                                                          <p>İptal edilebilir</p>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                    <li data-value="1625 - [Gerçek] Instagram 30 Gün Garantili Yabancı Takipçi - 2905,00 TL">
-                                                      <div class="serviceSelectionContent">
-                                                        <h4 class="mainValueText">1625 - [Gerçek] Instagram 30 Gün Garantili Yabancı Takipçi - 2905,00 TL</h4>
-                                                        <div class="pieceDiv">
-                                                          <p>Adet: <span class="onePiece">0,0006</span>₺ </p>
-                                                          <p>1000 Adet: <span class="thousandPiece">0,551 </span>₺ </p>
-                                                        </div>
-                                                        <div class="minAndmax">
-                                                          <p class="minCountText">Min:  <span class="minCount">100</span></p>
-                                                          <p class="maxCountText">Min:  <span class="maxCount">100,000</span></p>
-                                                          <p class="clockText">Ort: <span>3 saat ve 56 dakika</span></p>
-                                                        </div>
-                                                        <div class="serviceKind suggestedKind">
-                                                          <p>Önerilen</p>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                    <li data-value="1625 - [Gerçek] Instagram 30 Gün Garantili Yabancı Takipçi - 54,00 TL">
-                                                      <div class="serviceSelectionContent">
-                                                        <h4 class="mainValueText">1625 - [Gerçek] Instagram 30 Gün Garantili Yabancı Takipçi - 54,00 TL</h4>
-                                                        <div class="pieceDiv">
-                                                          <p>Adet: <span class="onePiece">0,0006</span>₺ </p>
-                                                          <p>1000 Adet: <span class="thousandPiece">0,551 </span>₺ </p>
-                                                        </div>
-                                                        <div class="minAndmax">
-                                                          <p class="minCountText">Min:  <span class="minCount">100</span></p>
-                                                          <p class="maxCountText">Min:  <span class="maxCount">100,000</span></p>
-                                                          <p class="clockText">Ort: <span>3 saat ve 56 dakika</span></p>
-                                                        </div>
-                                                        <div class="serviceKind timeOrderKind">
-                                                          <p>Süreli Sipariş</p>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                    
-                                                    
-                                                </ul>
-                                              </div>
-                                        </div>
-                                        <div class="item">
-                                            <h4>Link</h4>
-                                            <input type="text" value="https://www.instagram.com/p/CG7RBVIgpgH/">
-                                        </div>
-                                        <div class="item">
-                                            <h4>Miktar</h4>
-                                            <input type="text" value="5.000">
-                                            <p class="minMaxQuantity">Min: 100 - maksimum: 50000000</p>
-                                        </div>
-                                        <div class="item">
-                                            <h4>Fiyat</h4>
-                                            <input type="text" value="17.65 ₺">
-                                        </div>
-                                        <div class="submit">
-                                            <button class="Btn Btn-bg-blue Btn-white Btn-bordered">Sipariş oluştur</button>
-                                            <button class="Btn Btn-bg-green Btn-white Btn-bordered">Sipariş oluştur</button>
-                                        </div>
+                            </div>
+                            <div class="pastPayments content-bg-white content-bordered content-border-radius">
+                                <div class="headerTextNoOutPadding">
+                                    <h3>Geçmiş Ödemelerim</h3>
+                                </div>
+                                <div class="content">
+                                    <div class="topText">
+                                        <h4>Bu bölümde geçmiş ödemeleri ve bakiye sorunlarını ele alırız.</h4>
                                     </div>
+                                    <table>
+                                        <tr class="headerTR">
+                                            <th>ID</th>
+                                            <th>Date</th>
+                                            <th>Parametre</th>
+                                            <th>Tutar</th>
+                                            <th>Fatura</th>
+                                        </tr>
+                                        <tr>
+                                            <td>78977</td>
+                                            <td>2022-04-09 01:45:04</td>
+                                            <td></td>
+                                            <td>10.00₺</td>
+                                            <td><a href="#">Detay</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>78977</td>
+                                            <td>2022-04-09 01:45:04</td>
+                                            <td></td>
+                                            <td>10.00₺</td>
+                                            <td><a href="#">Detay</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>78977</td>
+                                            <td>2022-04-09 01:45:04</td>
+                                            <td></td>
+                                            <td>10.00₺</td>
+                                            <td><a href="#">Detay</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>78977</td>
+                                            <td>2022-04-09 01:45:04</td>
+                                            <td></td>
+                                            <td>10.00₺</td>
+                                            <td><a href="#">Detay</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>78977</td>
+                                            <td>2022-04-09 01:45:04</td>
+                                            <td></td>
+                                            <td>10.00₺</td>
+                                            <td><a href="#">Detay</a></td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 rightContentCol">
-                            <div class="OrderContentRight content-bg-white content-bordered content-border-radius">
-                                <div class="top">
-                                    <h4>
-                                        Yeni Sipariş
-                                    </h4>
-                                    <div class="search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                        <input type="text" placeholder="Siparişlerinizi arayın">
-                                    </div>
+                            <div class="balanceLoadingAndProblemsContentRight content-bg-white content-bordered content-border-radius">
+                                <div class="headerTextNoOutPadding">
+                                    <h3>Bakiye Yükleme Ve Sorunlar</h3>
                                 </div>
-                                <div class="mainText">
-                                    <p>5611 - Tiktok Türkiye Video Görüntüleme Maksimum 50M | - 0.098 TL</p>
+                                
+                                <div class="content">
+                                    <div class="topText">
+                                      <h5>Bu bölümde bakiye ekleme ve bakiye sorunlarını ele alırız.</h5>
+                                    </div>
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Nasıl Bakiye Yüklerim?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                PayTR – Kredi Kartı / Banka Kartı
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                PayTR – Havale/EFT/Atm
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                Eğer, “PayTR – Havale/EFT/Atm” ödeme yöntemini seçerseniz hemen alt tarafda bulunan “Yüklemek İstediğiniz Turar” kısmını doldurun. Telefon numaranızı 05XX XXX XX XX formatında yazdıktan sonra, “3D Secure İle Ödeme Yap” butonuna tıklayın.Yönlendirildiğiniz sayfada havale yapacağınız bankayı seçtikten sonra “Ödemeniz Gereken Tutar” bölümünde yazan miktarı hemen aşağı tarafta belirtilen hesap numarasına eksiksiz bir şekilde gönderin. Hesap bilgilerini doğru yazdığınızdan ve gönderen hesabın size ait olduğundan mutlaka emin olun. Aksi taktirde ödemeniz onaylanmayacaktır. Bu işlemi gerçekleştirdikten sonra sağ tarafta bulunan “Ödemeyi Gönderen Ad, Soyad” kısmını , “T.C Kimlik (Son 5 hane) kısmını, “Cep Telefonu Numaranız” kısmını ve “Ödeme Tarihini Seçin” kısmını eksiksiz bir şekilde doldurun. Doldurduktan sonra “Ödemeyi bildir” butonuna tıklayın. Eğer havaleniz/eft’niz PayTR hesaplarına ulaştıysa, ödemeniz 10 dakika içerisinde onaylanacaktır.
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
-                                <div class="infos">
-                                    <div class="infoDiv">
-                                        <div class="infoIcon">
-                                          <i class="fa-solid fa-clock"></i>
-  
-  
+                            </div>
+                            <div class="payQuantity payQuantityRight">
+                                <div class="uploadMoneyBTNs">
+                                    <button class="uploadMoneyBTN">
+                                        <div class="icon bg-green-pay">
+                                            <h2>₺</h2>
                                         </div>
-                                        <div class="infoText">
-                                            <h4>Başlangıç Saati</h4>
-                                            <p>#7</p>
+                                        <div class="text">
+                                            <h4>250.0</h4>
+                                            <p>Yükleme yap</p>
                                         </div>
-                                    </div>
-                                    <div class="infoDiv">
-                                        <div class="infoIcon">
-                                            <i class="fa-solid fa-handshake-angle"></i>
+                                    </button>
+                                    <button class="uploadMoneyBTN">
+                                        <div class="icon bg-blue-pay">
+                                            <h2>₺</h2>
                                         </div>
-                                        <div class="infoText">
-                                            <h4>Garantili</h4>
-                                            <p>Sipariş</p>
+                                        <div class="text">
+                                            <h4>100.0</h4>
+                                            <p>Yükleme yap</p>
                                         </div>
-                                    </div>
+                                    </button>
                                     
-                                  <div class="infoDiv">
-                                    <div class="infoIcon">
-                                        <i class="fa-solid fa-square-rss"></i>
-                                    </div>
-                                    <div class="infoText">
-                                        <h4>Ortalama Süre</h4>
-                                        <p>Sipariş</p>
-                                    </div>
                                 </div>
-                                <div class="infoDiv">
-                                  <div class="infoIcon">
-                                    <i class="fa-solid fa-file-code"></i>
-
-                                  </div>
-                                  <div class="infoText">
-                                      <h4>Hız</h4>
-                                      <p>Acil</p>
-                                  </div>
-                              </div>
-                                </div>
-                                <div class="mainInfoText">
-                                  <h3>TANIM</h3>
-                                    <ul>
-                                        <li>
-                                            ~ Hizmet toplam 200K gönderim yapar
-                                        </li>
-                                        <li>
-                                          ~ Link: Kullanıcı adını girmeniz yeterlidir.
-                                        </li>
-                                        <li>
-                                          ~ Memnun kaldığınızda sipariş girebilirsiniz.
-                                        </li>
-                                        <li>
-                                          ~ Takipçi kasma sitelerine giriş yapan hesaplardır.
-                                        </li>
-                                        <li>
-                                            ~ Servisten az şekilde gönderim yapıp, deneyebilirsiniz.
-                                        </li>
-                                        <li>
-                                            ~ Dünya Geneli ~ Bot Resimli Resimsiz Karışık
-                                            Hesaplardan Oluşmaktadır.
-                                         
-                                        </li>
-                                        <li>
-                                            ~ İşlem bitmeden yeni bir işlem başlatmayınız böyle bir
-                                            durumda iade edilememektedir.
-                                        </li>
-                                    </ul>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -719,9 +697,9 @@
 
     <script src="assets/js/dashboard/sidebar.js"></script>
     <script src="assets/js/dashboard/balance.js"></script>
+    <script src="assets/js/dashboard/payRadio.js"></script>
+    <script src="assets/js/dashboard/quantity.js"></script>
     <script src="assets/js/dashboard/dashboardHeader.js"></script>
-    <script src="assets/js/dashboard/categorySelect.js"></script>
-    <script src="assets/js/dashboard/serviceSelect.js"></script>
-    <script src="assets/js/dashboard/orderTab.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
