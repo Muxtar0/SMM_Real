@@ -175,7 +175,13 @@ a {
     font-family: MM;
     color: #23252E;
     padding: 15px 13px;
+    
 }
+/* select{
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 5px;
+} */
 .input.forCopy{
     background: #E6ECFF;
 }
@@ -2409,6 +2415,8 @@ margin: 16px 0;
     background: transparent;
     border: none;
     outline: none;
+    font-size: 18px;
+    color: #B8BFCD;
 }
 .createSupportRequestContentRight textarea{
      height: 202px;
