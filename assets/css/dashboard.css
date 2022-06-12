@@ -157,6 +157,9 @@ a {
     color: #23252E;
     padding: 15px 19px;
 }
+.disable-input-bg-transparent{
+    background: transparent;
+}
 .textarea{
     width: 100%;
     border: 1px solid #E6ECFF;
