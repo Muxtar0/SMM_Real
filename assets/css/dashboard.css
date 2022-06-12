@@ -1590,6 +1590,33 @@ margin: 16px 0;
 
 
 
+/* HostingRightContent  */
+.HostingRightContent  .info-ul{
+    padding: 10px 16px;
+}
+
+/* SeoRightContent  */
+.SeoRightContent  .info-ul{
+    padding: 10px 16px;
+}
+
+/* UserManagementRightContent  */
+.UserManagementRightContent  .info-ul{
+    padding: 10px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* orderManagementContent */
 
@@ -1597,7 +1624,7 @@ margin: 16px 0;
     background: white;
 }
 .orderManagementContent .orderManagement{
-    padding: 10px 28px;
+    padding: 10px 8px;
 }
 .orderManagementContent .orderManagement ul li{
     font-size: 14px;
