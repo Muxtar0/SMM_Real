@@ -2606,6 +2606,153 @@ margin: 16px 0;
 
 
 
+
+
+
+
+
+
+
+
+
+/* dashboardMainContent */
+.dashboardMainContent .infoCol{
+    margin-bottom: 20px;
+}
+.dashboardMainContent .infoCol .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 29px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+}
+
+.dashboardMainContent .infoCol .content i{
+    font-size: 32px;
+}
+
+.dashboardMainContent .infoCol .content .infoTexts p{
+    font-size: 16px;
+    font-family: MB;
+    color: #23252E;
+    text-align: end;
+}
+.dashboardMainContent .infoCol .content .infoTexts span{
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
+    text-align: end;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* serviceCardsContent */
+
+.serviceCardsContent .topTexts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 28px 18px;
+}
+.serviceCardsContent .topTexts .textDiv{
+    margin: 10px;
+}
+.serviceCardsContent .topTexts h4{
+    font-size: 16px;
+    font-family: MB;
+    color: #292C36  ;
+}
+.serviceCardsContent .topTexts p{
+    font-size: 14px;
+    font-family: MR;
+    color: #CCD0D8  ;
+    text-align: end;
+}
+
+.serviceCardsContent .cardsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0px 8px 28px 8px;
+}
+.serviceCardsContent .cardsDiv .Card{
+    background: #F2F5FB;
+    border-radius: 10px;
+    max-width: 370px;
+    min-width: 200px;
+    margin: 10px;
+
+}
+.serviceCardsContent .cardsDiv .Card .topText{
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    padding: 24px 23px 13px 23px;
+}
+.serviceCardsContent .cardsDiv .Card .topText h3{
+    font-size: 14px;
+    font-family: MB;
+    color: #52667B;
+}
+
+.serviceCardsContent .cardsDiv .Card .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+}
+.serviceCardsContent .cardsDiv .Card .content p{
+    font-size: 12px;
+    font-family: MB;
+    color: #52667B;
+    text-align: center;
+}
+.serviceCardsContent .cardsDiv .Card .content img{
+    margin: 21px 0 16px 0;
+}
+.serviceCardsContent .cardsDiv .Card .content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    font-family: MB;
+
+}
+.serviceCardsContent .cardsDiv .Card .content a.green{
+    color: #4EBE86;
+    background: rgba(78, 190, 34, 0.1);
+    margin-bottom: 10px;
+}
+.serviceCardsContent .cardsDiv .Card .content a.blue{
+    color: #2F5AFF;
+    background: rgba(47, 90, 255, 0.1);
+    margin-bottom: 10px;
+
+}
+.serviceCardsContent .cardsDiv .Card .content a.red{
+    color: #E7405C;
+    background: rgba(231, 64, 92, 0.1);
+}
+
+
+
+
 @media (max-width:768px){
     .sidebar{
         position: absolute;
@@ -2654,6 +2801,9 @@ margin: 16px 0;
     }
     .orderListContents .orderListTabs .tabWay button{
         width: 30% !important;
+    }
+    .serviceCardsContent .topTexts p{
+        text-align: start;
     }
 }
 
