@@ -223,6 +223,23 @@ a {
 
 
 
+
+
+
+
+/* dashboarTopProfile */
+.dashboarTopProfile h5{
+    font-size: 14px; font-family:MB;
+}
+
+
+
+
+
+
+
+
+
 /* filterDiv */
 .filterDiv{
     display: flex;
