@@ -2918,6 +2918,9 @@ margin: 16px 0;
     .serviceCardsContent .cardsDiv .Card{
        width: 45%;
     }
+    .uploadMoneyBTNsRight{
+        display: none;
+    }
 }
 
 @media (max-width:425px){
