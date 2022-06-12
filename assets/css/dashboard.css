@@ -10,7 +10,10 @@ Fonts
     font-family: MB;
     src: url(../fonts/Montserrat/Montserrat-Bold.otf);
 }
-
+@font-face {
+    font-family: MSB;
+    src: url(../fonts/Montserrat/Montserrat-Bold.otf);
+}
 @font-face {
     font-family: MR;
     src: url(../fonts/Montserrat/Montserrat-Regular.otf);
