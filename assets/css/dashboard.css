@@ -88,6 +88,17 @@ a {
 /* 
     Global Css
 */
+
+.modalBgButton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .5;
+    z-index: 10;
+}
 .content-bordered{
     border: 1px solid #E6ECFF;
 }
@@ -2257,8 +2268,13 @@ margin: 16px 0;
 .sayProblemDivContent{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 30px;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
 }
 .sayProblemDivContent.hidden{
     display: none;
@@ -2275,6 +2291,7 @@ margin: 16px 0;
 }
 .sayProblemDivContent .content{
     width: 500px;
+    z-index: 1000;
 }
 .sayProblemDivContent .mainContent{
     padding: 10px 15px;
