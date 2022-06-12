@@ -2260,6 +2260,9 @@ margin: 16px 0;
     justify-content: flex-end;
     margin-top: 30px;
 }
+.sayProblemDivContent.hidden{
+    display: none;
+}
 .sayProblemDivContent .headerTextNoOutPadding{
     display: flex;
     align-content: center;
