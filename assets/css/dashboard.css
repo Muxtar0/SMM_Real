@@ -1275,7 +1275,7 @@ a {
     justify-content: center;
     padding: 5px;
     border-radius: 5px;
-    max-width: 108px;
+    max-width: 120px;
 
 }
 
@@ -1283,8 +1283,13 @@ a {
     color: white;
     font-size: 12px;
     font-family: MM;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceKind p i{
+    margin-right: 5px;
+}
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceKind.guarrantedKind{
     background: #4EBE86;
 }
