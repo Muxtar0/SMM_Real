@@ -1671,7 +1671,7 @@ margin: 16px 0;
 /* inviteAttendesContent */
 
 .inviteAttendesContent{
-    padding: 10px 15px;
+    padding: 10px 14px;
 }
 
 .inviteAttendesContent .inviteAttendesInfo{
@@ -1679,6 +1679,13 @@ margin: 16px 0;
     font-family: MR;
     color: #292C36;
     margin-top: 9px;
+}
+
+
+
+/* TermsOfuseContent  */
+.TermsOfuseContent  .info-ul{
+    padding: 10px 17px;
 }
 
 
@@ -1708,7 +1715,9 @@ margin: 16px 0;
     border-radius: 5px;
     margin: 3px 0;
 }
-
+.refeacneSystemInfos .referanceItem.referanceItemDisable{
+    background: #E6ECFF;
+}
 .refeacneSystemInfos .referanceItem p{
     font-size: 14px;
     font-family: MM;
