@@ -2632,7 +2632,12 @@ margin: 16px 0;
 .dashboardMainContent .infoCol .content i{
     font-size: 32px;
 }
-
+.dashboardMainContent .infoCol .content .infoTexts {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
 .dashboardMainContent .infoCol .content .infoTexts p{
     font-size: 16px;
     font-family: MB;
@@ -2642,7 +2647,7 @@ margin: 16px 0;
 .dashboardMainContent .infoCol .content .infoTexts span{
     font-size: 14px;
     font-family: MM;
-    color: #23252E;
+    color: #52535D;
     text-align: end;
 
 }
