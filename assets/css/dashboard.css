@@ -2598,6 +2598,9 @@ margin: 16px 0;
     margin: 6px 0;
     transition: all 300ms;
 }
+.supportDemondsContentRight .mainContent ul li.active{
+    background: #2F5AFF;
+}
 .supportDemondsContentRight .mainContent ul li:hover{
     background: #2F5AFF;
 }
@@ -2617,6 +2620,9 @@ margin: 16px 0;
       color: #4EBE86;
 }
 .supportDemondsContentRight .mainContent ul li:hover .demondInfo > p{
+    color: white;
+}
+.supportDemondsContentRight .mainContent ul li.active .demondInfo > p{
     color: white;
 }
 .supportDemondsContentRight .mainContent ul li .demondInfo .info{
@@ -2641,6 +2647,10 @@ margin: 16px 0;
 .supportDemondsContentRight .mainContent ul li:hover .demondInfo .info span{
     color: white;
 }
+.supportDemondsContentRight .mainContent ul li.active .demondInfo .info p,
+.supportDemondsContentRight .mainContent ul li.active .demondInfo .info span{
+    color: white;
+}
 .supportDemondsContentRight .mainContent ul li .demondKind{
     font-size: 12px;
     font-family: MM;
@@ -2653,7 +2663,10 @@ margin: 16px 0;
     background: rgba(255, 255, 255, 0.2) !important;
     color: white !important;
 }
-
+.supportDemondsContentRight .mainContent ul li.active .demondKind{
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
 
 .supportDemondsContentRight .mainContent ul li.finished .demondKind{
     background: rgba(70, 190, 34, 0.1);
