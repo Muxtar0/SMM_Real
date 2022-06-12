@@ -564,6 +564,50 @@ a {
     padding: 16px 19px;
     transition: all 300ms;
     border-radius: 5px;
+    position: relative;
+}
+.sidebar .sidebarList ul li a:hover .explanation{
+    right: -120px;
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar .sidebarList ul li a .explanation{
+    position: absolute;
+    top: 50%;
+    right: -80px;
+    transform: translateY(-50%);
+    background: white;
+    width: 115px;
+    height: 42px;
+    border: 1px solid #E7E7E8;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+.sidebar.smallSidebar .sidebarList ul li a .explanation{
+    display: flex;
+
+}
+.sidebar .sidebarList ul li a .explanation::before{
+    content: " ";
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-left: 1px solid #E7E7E8;
+    border-bottom: 1px solid #E7E7E8;
+}
+.sidebar .sidebarList ul li a .explanation p{
+    font-size: 12px;
+    font-family: MSB;
+    color: #0F1419;
+    text-align: center;
 }
 .sidebar.smallSidebar .sidebarList ul li a{
     justify-content: center;
@@ -627,6 +671,50 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+}
+.sidebar .showMore .showMoreContent ul li a:hover .explanation{
+    right: -140px;
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar .showMore .showMoreContent ul li a .explanation{
+    position: absolute;
+    top: 50%;
+    right: -80px;
+    transform: translateY(-50%);
+    background: white;
+    width: 115px;
+    height: 42px;
+    border: 1px solid #E7E7E8;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+.sidebar .showMore .showMoreContent ul li a .explanation::before{
+    content: " ";
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-left: 1px solid #E7E7E8;
+    border-bottom: 1px solid #E7E7E8;
+}
+.sidebar.smallSidebar .showMore ul li a .explanation p{
+    font-size: 12px;
+    font-family: MSB;
+    color: #0F1419;
+    text-align: center;
+}
+.sidebar.smallSidebar .showMore .showMoreContent ul li a .explanation{
+    display: flex;
+
 }
 .sidebar.smallSidebar .showMore .showMoreContent ul li a{
     justify-content: center;
