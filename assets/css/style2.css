@@ -734,11 +734,33 @@ a {
     justify-content: center;
     height: 100%;
 }
+#socialMediaServices .infoListContent .icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #socialMediaServices .infoListContentFirst .icon{
     margin-left: 10px;
+
 }
 #socialMediaServices .infoListContentSecond .icon{
     margin-right: 10px;
+}
+#socialMediaServices .infoListContent .icon svg{
+    z-index: 100;
+}
+
+#socialMediaServices .infoListContent .icon::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FF0045;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    z-index: 1;
 }
 #socialMediaServices .infoListContent ul li{
     display: flex;
@@ -986,9 +1008,136 @@ a {
 }
 
 
+/* footer */
+footer{
+    background: #FF0045;
+    position: relative;
+    margin-top: 280px;
+    padding-top: 180px;
+}
+footer .footer-top{
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 270px;
+    background: #F2F5FB;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #9d9d9d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px;
+}
+footer .footer-top .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer-top .right h4{
+    font-size: 24px;
+    font-family: MSB;
+    color: #FF0045;
+}
+footer .footer-top .right h6{
+    font-size: 12px;
+    font-family: MSB;
+    color: #6B7280;
+    margin-top: 13px;
+}
+footer .footer-top .right .inputArea {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 21px;
+    margin-bottom: 15px;
+}
+footer .footer-top .right .inputArea input{
+    width: 301px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #C4CCDD;
+    padding: 10px;
+}
+footer .footer-top .right .inputArea button{
+    width: 155px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid #FF0045;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: MSB;
+    color: #FF0045;
+    margin-left: 15px;
+}
+footer .footer-top .right .inputArea button i{
+    margin-left: 8px;
+}
+footer .footer-top .right p{
+    font-size: 12px;
+    font-family: MM;
+    color: #919EBE;
+}
+footer .footer-top .right p a{
+    font-family: MSB;
+    text-decoration: underline !important;
+    color: #919EBE;
+
+}
 
 
 
+footer .footer-main-container img{
+    margin-bottom: 50px;
+}
+
+
+footer .footer-main-container h4{
+    font-size: 16px;
+    font-family: MB;
+    color: #000000;
+    margin-bottom: 29px;
+}
+footer .footer-main-container p,
+footer .footer-main-container ul li a{
+    font-size: 14px;
+    font-family: MM;
+    color: #FFFFFF;
+}
+footer .footer-main-container .contact{
+    margin-top: 50px;
+}
+
+
+footer .footer-main-container .content .item{
+    margin-bottom: 29px;
+}
+
+footer .footer-main-container ul li{
+    margin: 5px 0;
+}
+
+
+
+footer .copyrightContainer{
+    background: black;
+}
+footer .copyrightContainer .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+footer .copyrightContainer .col-12 p{
+    color: white;
+    font-size: 12px;
+    font-family: MM;
+}
 
 
 /* Medias */
@@ -1050,6 +1199,14 @@ a {
             align-items: center;
             justify-content: center;
         }
+        footer .footer-top{
+            width: 90%;
+            top: -10%;
+        }
+        footer .footer-top .left img{
+            width: 100px;
+            margin-right: 10px;
+        }
 }
 @media (max-width:425px){
     #banner .rightContent img{
@@ -1084,5 +1241,24 @@ a {
     #ProfessionallyExperienced .mainContent .texts .socialMedia{
         width: 100%;
         transform: translate(-15% , 70%);
+    }
+    footer{
+        padding-top: 275px;
+    }
+    footer .footer-main-container .logoCol img{
+        width: 100%;
+    }
+    
+    footer .footer-top{
+        height: auto;
+        flex-direction: column;
+    }
+    footer .footer-top .right .inputArea{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .footer-top .right .inputArea button{
+        margin: 0;
+        margin-top: 15px;
     }
 }
