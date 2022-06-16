@@ -218,6 +218,159 @@ a {
 }
 
 
+/* mobileHeader */
+.mobileHeader{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+.mobileHeader button{
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* mobileOpenMenu */
+
+.mobileOpenMenu{
+    background: #22133A;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 300ms;
+}
+.mobileOpenMenu.active{
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.mobileOpenMenu .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mobileOpenMenu .content .closeButton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.mobileOpenMenu .content .closeButton button{
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.mobileOpenMenu .content .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:10px;
+    left: 15px;
+    height: 50px;
+    width: 150px;
+}
+.mobileOpenMenu .content .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.mobileOpenMenu .content .navList ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mobileOpenMenu .content .navList ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0px;
+}
+.mobileOpenMenu .content .navList ul li a{
+    color: white;
+    font-size: 16px;
+    font-family: MSB;
+    transition: all 300ms;
+}
+.mobileOpenMenu .content .navList ul li a span{
+    transition: all 300ms;
+    position: relative;
+    padding-bottom: 5px;
+}
+.mobileOpenMenu .content .navList ul li a span::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background: white;
+    transition: all 300ms;
+}
+.mobileOpenMenu .content .navList ul li a:hover span::before{
+    width: 100%;
+}
+.mobileOpenMenu .content .navList ul li a i{
+    margin-right: 10px;
+}
+.mobileOpenMenu .content .loginandRegisterWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.mobileOpenMenu .content .loginandRegisterWrapper button{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 43px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.mobileOpenMenu .content .loginandRegisterWrapper button i{
+    margin-right: 14px;
+}
+.mobileOpenMenu .content .loginandRegisterWrapper button.loginBTN{
+    margin-right: 15px;
+}
+.mobileOpenMenu .content .loginandRegisterWrapper button.loginBTN{
+    background: #FF0045;
+    box-shadow: -1px 0px 20px #EB4A63;
+}
+.mobileOpenMenu .content .loginandRegisterWrapper button.registerBTN{
+    background: #4F46E5;
+    box-shadow: -1px 0px 20px #4F46E5;
+}
+
+
+
+
+
+
+
+
 /* banner */
 #banner{
     padding-top: 87px;
@@ -280,6 +433,9 @@ a {
 #banner .rightContent{
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #banner .rightContent img{
     z-index: 100;
@@ -318,8 +474,8 @@ a {
         opacity: 1;
     }
     100%{
-        width: 100%;
-        height: 100%;
+        width: 130%;
+        height: 140%;
         border-width: 1px;
         opacity: 0;
 
@@ -334,8 +490,8 @@ a {
 
     }
     100%{
-        width: 100%;
-        height: 100%;
+        width: 130%;
+        height: 140%;
         border-width: 1px;
         opacity: 0;
 
@@ -350,8 +506,8 @@ a {
 
     }
     100%{
-        width: 100%;
-        height: 100%;
+        width: 130%;
+        height: 140%;
         border-width: 1px;
         opacity: 0;
 
@@ -366,8 +522,8 @@ a {
 
     }
     100%{
-        width: 100%;
-        height: 100%;
+        width: 130%;
+        height: 140%;
         border-width: 1px;
         opacity: 0;
     }
@@ -827,4 +983,106 @@ a {
     color: #6B7280;
     font-size: 14px;
     font-family: MM;
+}
+
+
+
+
+
+
+
+/* Medias */
+@media (min-width:992px){
+    .mobileHeader{
+        display: none;
+    }
+}
+@media (max-width:992px){
+    header .dekstopHeader{
+        display: none;
+    } 
+}
+@media (max-width:768px){
+
+        #banner .rightContent{
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #shortInfos .content{
+            flex-wrap: wrap;
+            height: auto;
+        }
+        #shortInfos .content .infoItem{
+            width: 48%;
+            justify-content: flex-start;
+            margin: 10px 0;
+        }
+        #shortInfos .content .infoItem:nth-child(2)::before{
+            display: none;
+        }
+        #shortInfos .content .infoItem::before{
+            right: 0;
+        }
+        #howUse{
+            padding-top: 50px;
+        }
+        #howUse .rightContent{
+            margin-top: 40px;
+        }
+        #socialMediaServices{
+            margin-top: 80px;
+        }
+        #socialMediaServices .imageContent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #comments .commentsContent{
+            margin-top: 40px;
+        }
+        #ProfessionallyExperienced .imgContent img{
+            display: none;
+        }
+        #MostAskingQuestions .imgContent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+}
+@media (max-width:425px){
+    #banner .rightContent img{
+        width: 100%;
+    }
+    #shortInfos .content .infoItem{
+        width: 100%;
+    }
+    #shortInfos .content .infoItem::before{
+        display: none;
+    }
+    #shortInfos .content{
+        padding: 25px;
+    }
+    #howUse .rightContent .cardItem{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #howUse .rightContent .cardItem:last-child{
+        margin-top: 30px;
+    }
+    #ProfessionallyExperienced .container{
+        padding: 20px;
+        height: auto;
+    }
+    #ProfessionallyExperienced .mainContent .texts{
+        width: 100%;
+    }
+    #ProfessionallyExperienced .mainContent .texts p{
+        width: 86%;
+    }
+    #ProfessionallyExperienced .mainContent .texts .socialMedia{
+        width: 100%;
+        transform: translate(-15% , 70%);
+    }
 }
