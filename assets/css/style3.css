@@ -263,7 +263,75 @@ header .DekstopHeader .content .navList ul li a i{
 
 
 
+header .mobileNavCol{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header .mobileNav img{
+    width: 200px;
+    height: auto;
+}
+header .mobileNav button{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
 
+/* mobileOpenMenu */
+.mobileOpenMenu{
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    transition: all 600ms;
+    width: 0%;
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mobileOpenMenu.active{
+    width: 100%;
+}
+.mobileOpenMenu  .closeMobileNavBtn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+.mobileOpenMenu .content .navList{
+    margin-bottom: 20px;
+}
+.mobileOpenMenu .content .navList ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mobileOpenMenu .content .navList ul li{
+    margin: 8px 0px;
+}
+.mobileOpenMenu .content .navList ul li a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    transition: all 300ms;
+}
+.mobileOpenMenu .content .navList ul li a:hover{
+    color: #F15C05;
+}
+.mobileOpenMenu .content .navList ul li a i{
+    margin-right: 5px;
+}
 /* banner */
 #banner{
     padding: 50px 0;
@@ -504,7 +572,7 @@ color: #666666;
 /* ourDifference */
 #ourDifference{
     background: #F15C05;
-    padding: 76px;
+    padding: 76px 10px;
     background-image: url(../img/Group\ 1907.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -671,6 +739,7 @@ color: #FFFFFF;
 #services .bottomCol p a{
     text-decoration: underline !important;
     color: white;
+    margin-left: 5px;
 }
 
 
@@ -864,4 +933,130 @@ margin: 0 20px ;
     object-fit: contain;
     width: auto;
     height: auto;
+}
+
+
+@media (min-width:992px){
+    header .mobileNav{
+        display: none;
+    }
+}
+
+@media (max-width:992px){
+    header {
+        height: 100px;
+    }
+    header .DekstopHeader{
+        display: none;
+    }
+    #banner .loginCol .content{
+        padding: 25px;
+        flex-wrap: wrap;
+    }
+    #banner .loginCol .content .item{
+        width: 48%;
+    }
+    #banner .loginCol .content .buttons{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #shortInfos .infosContent{
+        flex-wrap: wrap;
+    }
+    #shortInfos .infosContent .item{
+        width: 48%;
+    }
+    #ourDifference .infoCol .content .infoCard{
+        width: 45%;
+        margin: 10px;
+    }
+    .sectionTitle.customWidth1 h3{
+        width: 98%;
+        font-size: 40px;
+    }
+    #services .cardsContainer{
+        height: auto;
+        margin-top: 30px;
+
+    }
+    #services .cardsColMain{
+        
+    position: relative;
+    top: 0;
+    left: 0;
+
+    }
+    #services .cardsContent{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #services .cardsContent .serviceCard{
+        width: 30%;
+        margin: 10px;
+    }
+    #services .cardsContainer{
+        background: transparent;
+    }
+    #services .bottomCol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #services .bottomCol p{
+        color: #F15C05;
+    }
+    #services .bottomCol p a{
+        color: #F15C05;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 5px;
+    }
+    #mostAksingQuestions .questionContent .item{
+        width: 100%;
+    }
+    #payWay .payWayContent{
+        flex-wrap: wrap;
+    }
+    #payWay .payWayContent .item{
+        margin: 10px;
+    }
+}
+
+@media (max-width:425px){
+    #banner .textsContent h2{
+        font-size: 40px;
+    }
+    #banner .loginCol .content .item{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .sectionTitle h3{
+        width: 100%;
+    }
+    .sectionTitle p{
+        width: 100%;
+    }
+    #shortInfos .infosContent{
+        width: 90%;
+        padding: 25px;
+    }
+
+    #shortInfos .infosContent .item{
+        width: 100%;
+        margin: 10px 0;
+    }
+    #ourDifference .infoCol .content .infoCard{
+        width: 100%;
+        margin: 10px 0;
+    }
+    #services .cardsContent .serviceCard{
+        width: 100%;
+    }
+    #services .bottomCol p{
+        font-size: 17px;
+    }
 }
