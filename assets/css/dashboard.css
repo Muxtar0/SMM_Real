@@ -1268,7 +1268,7 @@ a {
     z-index: 100;
 
 }
-.OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
+/* .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
     width: 10px;
     margin: 2px;
 }
@@ -1280,7 +1280,7 @@ a {
     background: #6B7280;
     padding: 2px;
     border-radius: 10px;
-  }
+  } */
 .OrderContent .orderInfo .item  .select .selections.hidden{
     display: none;
 }

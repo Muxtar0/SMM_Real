@@ -22,9 +22,19 @@ selectService.addEventListener('click',(e) => {
 for(let i = 0 ; i < selectionsLi.length;i++){
     selectionsLi[i].addEventListener("click",(e) => {
         e.preventDefault();
-        const data = selectionsLi[i].getAttribute('data-value');
-        selectedTextService.textContent=data;
+        let data = selectionsLi[i].getAttribute('data-value');
+        console.log(data)
+        if(data.length > 50){
+            data =  data.substring(0,50) + "..."
+            selectedTextService.textContent=data;
+
+        }
+        else{
+            
+            selectedTextService.textContent=data;
+        }
         selectedTextService.setAttribute('data-selectedValue',data)
+        
 
     })
 }
