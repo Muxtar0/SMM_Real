@@ -668,9 +668,26 @@ color: #858585;
     padding: 29px;
     margin: 0 10px;
     width: 19%;
+    transform: scale(1);
+    transition: all 300ms;
+}
+#services .cardsContent .serviceCard:hover{
+    transform: scale(1.1);
 }
 #services .cardsContent .serviceCard.facebook{
     background: #0075DF;
+}
+#services .cardsContent .serviceCard.instagram{
+    background: linear-gradient(243.08deg, #FDC26A 7.21%, #ED83C9 76.81%), #B20090;
+}
+#services .cardsContent .serviceCard.twitter{
+    background: #489BE9;
+}
+#services .cardsContent .serviceCard.youtube{
+    background: #E20C0C;
+}
+#services .cardsContent .serviceCard.tiktok{
+    background: #262626;
 }
 #services .cardsContent .serviceCard .icon{
     margin-bottom: 5px;
@@ -740,6 +757,7 @@ color: #FFFFFF;
     text-decoration: underline !important;
     color: white;
     margin-left: 5px;
+    font-weight: bold;
 }
 
 
@@ -936,6 +954,179 @@ margin: 0 20px ;
 }
 
 
+
+
+/* footer */
+
+footer{
+    background: #F15C05;
+    position: relative;
+    padding: 110px 0;
+}
+footer .firstImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer .secondImage{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+footer .socialMediaButtons{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .socialMediaButtons a{
+    color: white;
+    margin: 0 15px;
+    font-size: 35px;
+}
+
+footer .logoContent .logo{
+    padding-bottom: 36px;
+    position: relative;
+}
+footer .logoContent .logo::before{
+    content:  " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 1px;
+    background: white;
+}
+footer .logoContent p{
+    font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+/* or 22px */
+
+
+color: #FFFFFF;
+margin-top: 40px;
+}
+footer .logoContent p span{
+    font-weight: bold;
+}
+
+
+footer .footerWayContent h4{
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 152.19%;
+/* identical to box height, or 37px */
+
+display: flex;
+align-items: center;
+
+/* Home1/6 */
+
+color: #FFFFFF;
+}
+footer .footerWayContent ul{
+    margin-top: 12px;
+
+}
+footer .footerWayContent ul li{
+    margin: 10px 0;
+}
+footer .footerWayContent ul li  a{
+    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Home1/6 */
+
+color: #FFFFFF;
+}
+
+footer .otherButtonsContent ul li{
+    margin: 15px 0;
+}
+footer .otherButtonsContent ul li:nth-child(1){
+    margin-top: 0;
+}
+footer .otherButtonsContent ul li a{
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 152.19%;
+/* identical to box height, or 37px */
+
+display: flex;
+align-items: center;
+
+/* Home1/6 */
+
+color: #FFFFFF;
+}
+
+
+footer .contactCol .contactItem h5{
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Home1/6 */
+
+color: #FFFFFF;
+margin-bottom: 5px;
+}
+footer .contactCol .contactItem p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152.19%;
+    /* identical to box height, or 37px */
+    
+    display: flex;
+    align-items: center;
+    
+    /* Home1/6 */
+    
+    color: #FFFFFF;
+}
+
+footer .contactCol .contactItem:nth-child(2){
+    margin-top: 20px;
+}
+
+/* copyrightContent */
+.copyrightContent{
+    background: #000000;
+    padding: 27px 0;
+}
+.copyrightContent p{
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+/* Home1/6 */
+
+color: #FFFFFF;
+text-align: start;
+}
 @media (min-width:992px){
     header .mobileNav{
         display: none;
@@ -1024,6 +1215,12 @@ margin: 0 20px ;
     #payWay .payWayContent .item{
         margin: 10px;
     }
+    footer .otherButtonsContent{
+        margin-top: 20px;
+    }
+    footer .socialMediaButtons{
+        right: 15%;
+    }
 }
 
 @media (max-width:425px){
@@ -1058,5 +1255,17 @@ margin: 0 20px ;
     }
     #services .bottomCol p{
         font-size: 17px;
+    }
+    footer .footerWayContent{
+        margin-top: 20px;
+    }
+    footer .otherButtonsContent{
+        margin-top: 20px;
+    }
+    footer .contactCol .contactItem{
+        margin-top: 20px;
+    }
+    footer .socialMediaButtons{
+        right: 26%;
     }
 }
