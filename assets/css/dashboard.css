@@ -2096,6 +2096,9 @@ margin: 16px 0;
 .pastPayments  .content table{
     width: 100%;
 }
+.pastPayments  .content table a{
+    cursor: pointer;
+}
 .pastPayments  .content table tr.headerTR{
     background: #E6ECFF;
 }
