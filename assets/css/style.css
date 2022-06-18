@@ -1150,7 +1150,7 @@ a {
     0%{
         width: 0;
         height: 0;
-        border-width: 4px;
+        border-width: 8px;
         opacity: 1;
     }
     100%{
@@ -1165,7 +1165,7 @@ a {
     0%{
         width: 0;
         height: 0;
-        border-width: 4px;
+        border-width: 8px;
         opacity: 1;
 
     }
@@ -1181,7 +1181,7 @@ a {
     0%{
         width: 0;
         height: 0;
-        border-width: 4px;
+        border-width: 8px;
         opacity: 1;
 
     }
@@ -1197,7 +1197,7 @@ a {
     0%{
         width: 0;
         height: 0;
-        border-width: 4px;
+        border-width: 8px;
         opacity: 1;
 
     }
@@ -1467,7 +1467,28 @@ a {
 #faq-home .heading-1 {
     padding-bottom: 50px;
 }
+.faq-item {
+    border: none;
+    margin-bottom: 12px;
+}
 
+.faq-item button {
+    font-family: 'Montserrat';
+    font-weight: 600 !important;
+    font-size: 16px;
+    color: #52667B;
+}
+
+.faq-item .accordion-body {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #52667B;
+}
+
+.faq-item .accordion-button:not(.collapsed) {
+    color: #52667B;
+    background-color: #ffffff;
+}
 
 /* client-comments */
 #client-comments {
@@ -1511,7 +1532,11 @@ a {
     display: grid;
     right: 20px;
 }
-
+.comment-body-c svg{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 .client-name {
     font-family: MSB;
     font-weight: 600;
@@ -1548,7 +1573,7 @@ footer .footer-top{
     top: -30%;
     left: 50%;
     transform: translateX(-50%);
-    width: 800px;
+    width: 900px;
     height: 270px;
     background: #F2F5FB;
     border-radius: 10px;

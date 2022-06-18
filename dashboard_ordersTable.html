@@ -77,6 +77,9 @@
               <div class="text">
                 <p>Yeni Sipariş</p>
               </div>
+              <div class="explanation">
+                <p>Yeni Sipariş</p>
+              </div>
             </a>
           </li>
           <li>
@@ -99,6 +102,9 @@
               <div class="text">
                 <p>Siparişler</p>
               </div>
+              <div class="explanation">
+                <p>Siparişler</p>
+              </div>
             </a>
           </li>
           <li>
@@ -119,6 +125,9 @@
                 </svg>
               </div>
               <div class="text">
+                <p>Fiyat Listesi</p>
+              </div>
+              <div class="explanation">
                 <p>Fiyat Listesi</p>
               </div>
             </a>
@@ -144,6 +153,9 @@
                 <p>Bakiye Yükle</p>
                 <span>10.00 ₺</span>
               </div>
+              <div class="explanation">
+                <p>Bakiye Yükle</p>
+              </div>
             </a>
           </li>
           <li>
@@ -166,6 +178,9 @@
               <div class="text">
                 <p>Destek</p>
                 <span>Bekleyen: 0</span>
+              </div>
+              <div class="explanation">
+                <p>Destek</p>
               </div>
             </a>
           </li>
@@ -190,6 +205,9 @@
                 <p>Referans Sistemi</p>
                 <span>Kazanç: 10.00 ₺</span>
               </div>
+              <div class="explanation">
+                <p>Referans Sistemi</p>
+              </div>
             </a>
           </li>
           <li>
@@ -210,6 +228,9 @@
                 </svg>
               </div>
               <div class="text">
+                <p>Drip-feed</p>
+              </div>
+              <div class="explanation">
                 <p>Drip-feed</p>
               </div>
             </a>
@@ -242,6 +263,9 @@
                 <div class="text">
                   <p>Gösterge Paneli</p>
                 </div>
+                <div class="explanation">
+                  <p>Gösterge Paneli</p>
+                </div>
               </a>
             </li>
             <li>
@@ -262,6 +286,9 @@
                   </svg>
                 </div>
                 <div class="text">
+                  <p>API</p>
+                </div>
+                <div class="explanation">
                   <p>API</p>
                 </div>
               </a>
@@ -286,6 +313,9 @@
                 <div class="text">
                   <p>Sıkça Sorulan Sorular</p>
                 </div>
+                <div class="explanation">
+                  <p>Sıkça Sorulan Sorular</p>
+                </div>
               </a>
             </li>
             <li>
@@ -306,6 +336,9 @@
                   </svg>
                 </div>
                 <div class="text">
+                  <p>Kullanıcı Sözeşmesi</p>
+                </div>
+                <div class="explanation">
                   <p>Kullanıcı Sözeşmesi</p>
                 </div>
               </a>
@@ -337,6 +370,9 @@
                 <div class="text">
                   <p>Referans Sistemi</p>
                 </div>
+                <div class="explanation">
+                  <p>Referans Sistemi</p>
+                </div>
               </a>
             </li>
             <li>
@@ -357,6 +393,9 @@
                   </svg>
                 </div>
                 <div class="text">
+                  <p>Ortaklık</p>
+                </div>
+                <div class="explanation">
                   <p>Ortaklık</p>
                 </div>
               </a>
@@ -592,7 +631,7 @@
 
         <section class="oneContents orderListContents">
           <div class="orderListTabs">
-            <div class="tabWay">
+            <div class="tabWay tabWayDekstop">
               <button class="taBTN active">
                 <i class="fa-solid fa-filter"></i> Hepsi
               </button>
@@ -615,6 +654,34 @@
                 <i class="fa-solid fa-ban"></i> İptal Edildi
               </button>
             </div>
+            <div class="tabWayMobile">
+              <button class="openFilter Btn Btn-bg-blue Btn-white Btn-bordered">
+                <i class="fa-solid fa-filter"></i> Filtrele
+              </button>
+              <div class="filterContent">
+                <button class="taBTN active">
+                  <i class="fa-solid fa-filter"></i> Hepsi
+                </button>
+                <button class="taBTN">
+                  <i class="fa-solid fa-spinner"></i> Sipariş Alındı
+                </button>
+                <button class="taBTN">
+                  <i class="fa-solid fa-list-check"></i> Yükleniyor
+                </button>
+                <button class="taBTN">
+                  <i class="fa-solid fa-circle-check"></i> Tamamlandı
+                </button>
+                <button class="taBTN">
+                  <i class="fa-solid fa-share-nodes"></i> Kısmen Tamamlandı
+                </button>
+                <button class="taBTN">
+                  <i class="fa-solid fa-diagram-cells"></i> Sırada
+                </button>
+                <button class="taBTN">
+                  <i class="fa-solid fa-ban"></i> İptal Edildi
+                </button>
+              </div>
+            </div>
             <div class="searchMainDiv">
               <div class="searchDiv">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -623,559 +690,124 @@
               </div>
             </div>
             <div class="tabContent">
-              <!-- Swiper -->
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="OrdersList">
-                        <table>
-                            <tr>
-                                <th>Siparişlerim</th>
-                                <th>Link</th>
-                                <th>Tarih</th>
-                                <th>Durum</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td class="sayProblemTd">
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="OrdersList">
-                        <table>
-                            <tr>
-                                <th>Siparişlerim</th>
-                                <th>Link</th>
-                                <th>Tarih</th>
-                                <th>Durum</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td class="sayProblemTd">
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="OrdersList">
-                        <table>
-                            <tr>
-                                <th>Siparişlerim</th>
-                                <th>Link</th>
-                                <th>Tarih</th>
-                                <th>Durum</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td class="sayProblemTd">
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="OrdersList">
-                        <table>
-                            <tr>
-                                <th>Siparişlerim</th>
-                                <th>Link</th>
-                                <th>Tarih</th>
-                                <th>Durum</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td class="sayProblemTd">
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="OrdersList">
-                        <table>
-                            <tr>
-                                <th>Siparişlerim</th>
-                                <th>Link</th>
-                                <th>Tarih</th>
-                                <th>Durum</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td>
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa-solid fa-copy"></i> 10220736</td>
-                                <td>
-                                    <p>https://www.facebook.com/sebzemeyvegetircom</p>
-                                    <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
-                                </td>
-                                <td>2022-04-19 16:51:00</td>
-                                <td>
-                                    <div class="situation">
-                                        Tamamlandı
-                                    </div>
-                                </td>
-                                <td class="sayProblemTd">
-                                    <button class="sayProblem">Sorun Bildir</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-button-next">İleri</div>
-                <div class="swiper-button-prev">Geri</div>
-                <div class="swiper-pagination"></div>
-              </div>
+              <div class="OrdersList">
+                <table>
+                    <tr>
+                        <th>Siparişlerim</th>
+                        <th>Link</th>
+                        <th>Tarih</th>
+                        <th>Durum</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-copy"></i> 10220736</td>
+                        <td>
+                            <p>https://www.facebook.com/sebzemeyvegetircom</p>
+                            <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
+                        </td>
+                        <td>2022-04-19 16:51:00</td>
+                        <td>
+                            <div class="situation">
+                                Tamamlandı
+                            </div>
+                        </td>
+                        <td>
+                            <button class="sayProblem">Sorun Bildir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-copy"></i> 10220736</td>
+                        <td>
+                            <p>https://www.facebook.com/sebzemeyvegetircom</p>
+                            <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
+                        </td>
+                        <td>2022-04-19 16:51:00</td>
+                        <td>
+                            <div class="situation">
+                                Tamamlandı
+                            </div>
+                        </td>
+                        <td>
+                            <button class="sayProblem">Sorun Bildir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-copy"></i> 10220736</td>
+                        <td>
+                            <p>https://www.facebook.com/sebzemeyvegetircom</p>
+                            <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
+                        </td>
+                        <td>2022-04-19 16:51:00</td>
+                        <td>
+                            <div class="situation">
+                                Tamamlandı
+                            </div>
+                        </td>
+                        <td>
+                            <button class="sayProblem">Sorun Bildir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-copy"></i> 10220736</td>
+                        <td>
+                            <p>https://www.facebook.com/sebzemeyvegetircom</p>
+                            <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
+                        </td>
+                        <td>2022-04-19 16:51:00</td>
+                        <td>
+                            <div class="situation">
+                                Tamamlandı
+                            </div>
+                        </td>
+                        <td>
+                            <button class="sayProblem">Sorun Bildir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-copy"></i> 10220736</td>
+                        <td>
+                            <p>https://www.facebook.com/sebzemeyvegetircom</p>
+                            <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
+                        </td>
+                        <td>2022-04-19 16:51:00</td>
+                        <td>
+                            <div class="situation">
+                                Tamamlandı
+                            </div>
+                        </td>
+                        <td>
+                            <button class="sayProblem">Sorun Bildir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-copy"></i> 10220736</td>
+                        <td>
+                            <p>https://www.facebook.com/sebzemeyvegetircom</p>
+                            <span>Tutar: 27.00 Miktar: 300 Başlangıç: 1 Kalan: 0</span>
+                        </td>
+                        <td>2022-04-19 16:51:00</td>
+                        <td>
+                            <div class="situation">
+                                Tamamlandı
+                            </div>
+                        </td>
+                        <td class="sayProblemTd">
+                            <button class="sayProblem">Sorun Bildir</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tableWays">
+              <button class="prev">Geri</button>
+              <a href="#" class="tableNumber">1</a>
+              <a href="#" class="tableNumber active">2</a>
+              <a href="#" class="tableNumber">3</a>
+              <a href="#" class="tableNumber">4</a>
+              <a href="#" class="tableNumber">5</a>
+              <button class="next">Geri</button>
+
+            </div>
             </div>
 
             <div class="sayProblemDivContent hidden">
@@ -1223,27 +855,13 @@
     <script src="assets/js/dashboard/balance.js"></script>
     <script src="assets/js/dashboard/dashboardHeader.js"></script>
     <script src="assets/js/dashboard/sayProblem.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.3/swiper-bundle.min.js"
-      integrity="sha512-d3gZ3Oo0k2qZ8HJ3JNdmqH/YHjFj3qYaS7HQBhF6P6ohVKpCnUy3KovWTv0V9UBkO9Auo1uhPsIzNE5I4C/CpQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            renderBullet: function (index, className) {
-              return '<span class="' + className + '">' + (index + 1) + "</span>";
-            },
-          },
-          navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        });
-      </script>
+      const openFilter = document.querySelector('.openFilter')
+      const tabWayMobile = document.querySelector('.tabWayMobile .filterContent')
+      openFilter.addEventListener('click' , (e) => {
+        tabWayMobile.classList.toggle('active')
+      })
+    </script>
+    
   </body>
 </html>

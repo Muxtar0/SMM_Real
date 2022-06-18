@@ -142,6 +142,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 0;
 }
 .dekstopHeader .content .logo img{
     width: 185px;
@@ -373,7 +374,7 @@ a {
 
 /* banner */
 #banner{
-    padding-top: 87px;
+    padding-top: 135px;
 }
 
 #banner .leftContent h2{

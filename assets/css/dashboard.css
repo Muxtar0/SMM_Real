@@ -258,6 +258,13 @@ a {
     margin-left: 11px;
     position: relative;
 }
+.filterDiv > .filterItem .filterBtnFirst{
+    transition: all 300ms;
+}
+.filterDiv > .filterItem .filterBtnFirst:hover{
+    background: white;
+    color: black;
+}
 .filterDiv > .filterItem .filterDropDownDiv{
     position: absolute;
     top: 120%;
@@ -320,6 +327,21 @@ a {
     margin-right: 10px;
     color: #2F5AFF;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* searchMainDiv */
 
 .searchMainDiv{
@@ -1600,7 +1622,7 @@ a {
 /* Most Asking Questions Page */
 
 .mostAskingQuestions .item .topTexts{
-padding: 8px 0;
+padding: 8px 2px;
 border-bottom: 1px solid #E6ECFF;
 margin: 16px 0;
 }
@@ -2228,91 +2250,49 @@ margin: 16px 0;
     color: white;
 }
 
+.orderListContents .orderListTabs .tabWayMobile{
+    position: relative;
+}
+.orderListContents .orderListTabs .tabWayMobile .filterContent{
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: all 300ms;
+}
+.orderListContents .orderListTabs .tabWayMobile .filterContent.active{
+    height: 270px;
 
-
-
-
+}
+.orderListContents .orderListTabs .tabWayMobile .filterContent button{
+    width: 100%;
+    height: 40px;
+    background: white;
+    color: #0F1419;
+    font-size: 14px;
+    font-family: MM;
+    border: 1px solid #E6ECFF;
+}
+.orderListContents .orderListTabs .tabWayMobile button.active{
+    background: #2F5AFF;
+    color: white;
+}
 
 
 
 /* orderListTabs */
-.orderListTabs .swiper{
-    padding-bottom: 75px;
+.orderListTabs .OrdersList{
+    overflow: auto;
 }
-.orderListTabs .swiper .swiper-pagination{
-    text-align: end;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: auto !important;
-    right: 92px;
-    left: auto;
-}
-.orderListTabs .swiper .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
-    height: 45px;
-    width: 45px;
-    background: #FFFFFF;
-    opacity: 1;
-    border: 1px solid #E6ECFF ;
-    border-radius: 10px;
-    color: #99A1B1;
-    font-size: 14px;
-    font-family: MB;
-    display: flex;
-    align-items:center ;
-    justify-content: center;
-}
-
-.orderListTabs .swiper .swiper-pagination-bullet-active{
-     background: #2F5AFF;
-     color: white;
-}
-
-.orderListTabs .swiper .swiper-button-next::after,
-.orderListTabs .swiper .swiper-button-prev::after{
-    display: none;
-}
-.orderListTabs .swiper .swiper-button-next{
-    top: auto;
-    bottom: 10px;
-    right: 0;
-    width: 82px;
-    height: 45px;
-    background: white;
-    color: #99A1B1;
-    font-size: 14px;
-    font-family: MB;
-    border-radius: 10px;
-}
-.orderListTabs .swiper .swiper-button-prev{
-    top: auto;
-    bottom: 10px;
-    right: 367px;
-    left: auto;
-    width: 82px;
-    height: 45px;
-    background: white;
-    color: #99A1B1;
-    font-size: 14px;
-    font-family: MB;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 .orderListTabs .OrdersList{
     border: 1px solid #DEE3EC;
     border-bottom: none;
+    background: white;
 }
 .orderListTabs .OrdersList,
 .orderListTabs .OrdersList table{
@@ -2390,12 +2370,53 @@ margin: 16px 0;
     padding: 5px 0;
 }
 
+.orderListTabs .tableWays{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
 
+.orderListTabs .tableWays .prev,
+.orderListTabs .tableWays .next{
+    width: 82px;
+    height: 45px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #E6ECFF;
+    color: #99A1B1;
+    font-size: 14px;
+    font-family: MSB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orderListTabs .tableWays .prev{
+    margin-right: 5px;
+}
+.orderListTabs .tableWays .next{
+    margin-left: 5px;
+}
+.orderListTabs .tableWays a{
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #E6ECFF;
+    color: #99A1B1;
+    font-size: 14px;
+    font-family: MSB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px ;
 
-
-
-
-
+}
+.orderListTabs .tableWays a.active{
+    background: #2F5AFF;
+    color: white;
+}
 
 
 /* sayProblemDivContent */
@@ -2409,9 +2430,13 @@ margin: 16px 0;
     width: 100vw;
     height: 100vh;
     z-index: 100;
+    visibility: visible;
+    opacity: 1;
+    transition: all 300ms;
 }
 .sayProblemDivContent.hidden{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 .sayProblemDivContent .headerTextNoOutPadding{
     display: flex;
@@ -3185,6 +3210,9 @@ margin: 16px 0;
     .uploadMoneyBTNsRight{
         display: none;
     }
+    .orderListContents .orderListTabs .tabWay{
+        display: none;
+    }
 }
 
 @media (max-width:425px){
@@ -3212,16 +3240,7 @@ margin: 16px 0;
         height: 30px;
         width: 30px;
     }
-    .orderListTabs .swiper .swiper-button-next{
-        height: 30px;
-        width: 60px;
-    }
-    .orderListTabs .swiper .swiper-button-prev{
-        height: 30px;
-        width: 60px;
-        right: auto;
-        left: 0;
-    }
+   
     .payMethods{
         padding: 10px 12px;
     }
