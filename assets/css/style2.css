@@ -1154,6 +1154,7 @@ footer .copyrightContainer .col-12 p{
     .mobileHeader{
         display: none;
     }
+   
 }
 @media (max-width:992px){
         body .body-bg-img{

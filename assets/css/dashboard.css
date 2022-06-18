@@ -36,6 +36,7 @@ Fonts
     outline: none;
     border: none;
     list-style: none;
+    transition: all 300ms;
 }
 body,html {
     position: relative;
@@ -44,6 +45,9 @@ body,html {
     background: #F5F6F7;
     display: flex;
     justify-content: space-between;
+}
+body.dark{
+    background: black;
 }
 h1,
 h2,
@@ -59,9 +63,40 @@ p {
 a {
     text-decoration: none;
 }
-
-
-
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p,
+body.dark a,
+body.dark span,
+body.dark button,
+body.dark ul li,
+body.dark input,
+body.dark input::placeholder,
+body.dark select::placeholder,
+body.dark textarea,
+body.dark select,
+body.dark textarea::placeholder{
+    color: white !important;
+    border-color: #23252E !important;
+}
+body.dark textarea,
+body.dark input,
+body.dark select{
+    background: #23252E;
+}
+body.dark table{
+    background: #0F1419;
+}
+body.dark table tr,
+body.dark table td,
+body.dark table th{
+    border-color: #23252E !important;
+    color:white !important; 
+}
 /* rightContentCol , leftContentCol */
 
 .rightContentCol > div:not(:first-child),
@@ -102,11 +137,17 @@ a {
 .content-bordered{
     border: 1px solid #E6ECFF;
 }
+body.dark .content-bordered{
+    border-color: #292F34;
+}
 .content-border-radius{
     border-radius: 5px;
 }
 .content-bg-white{
     background: white;
+}
+body.dark .content-bg-white{
+    background: #0F1419;
 }
 .Btn{
     border: none;
@@ -152,6 +193,9 @@ a {
     padding: 15px;
     border-bottom: 1px solid #E6ECFF;
 }
+body.dark .headerTextNoOutPadding{
+    border-color: #23252E;
+}
 .headerTextNoOutPadding h3{
     font-size: 18px;
     font-weight: MB;
@@ -167,6 +211,9 @@ a {
     font-family: MM;
     color: #23252E;
     padding: 15px 19px;
+}
+body.dark .input{
+    border-color: #23252E;
 }
 .disable-input-bg-transparent{
     background: transparent;
@@ -199,6 +246,9 @@ a {
 
 .input.forCopy{
     background: #E6ECFF;
+}
+body.dark .input.forCopy{
+    background: #3e4046;
 }
 .item-input-group{
     margin-top: 15px;
@@ -265,6 +315,9 @@ a {
     background: white;
     color: black;
 }
+body.dark .filterDiv > .filterItem .filterBtnFirst:hover{
+    background: #0F1419;
+}
 .filterDiv > .filterItem .filterDropDownDiv{
     position: absolute;
     top: 120%;
@@ -275,7 +328,10 @@ a {
     width: 288px;
     z-index: 100;
 }
-
+body.dark .filterDiv > .filterItem .filterDropDownDiv{
+    background: #23252E;
+    border-color: #292C36;
+}
 .filterDiv > .filterItem .filterDropDownDiv.hidden{
     display: none;
 }
@@ -290,6 +346,10 @@ a {
     border-top: 1px solid #E6ECFF;
     border-left: 1px solid #E6ECFF;
     background: white;
+}
+body.dark .filterDiv > .filterItem .filterDropDownDiv::before{
+    background: #23252E;
+    border-color:#23252E ;
 }
 .filterDropDownDiv .searchFilter{
     padding: 11px;
@@ -323,6 +383,10 @@ a {
 .filterDiv > .filterItem .filterDropDownDiv ul li button:hover{
     background: #F2F5FB;
 }
+
+body.dark .filterDiv > .filterItem .filterDropDownDiv ul li button:hover{
+    background: #292F34;
+}
 .filterDiv > .filterItem .filterDropDownDiv ul li button i{
     margin-right: 10px;
     color: #2F5AFF;
@@ -354,6 +418,9 @@ a {
     align-items: center;
     justify-content: center;
 }
+body.dark .searchMainDiv{
+    background: #0F1419;
+}
 .searchMainDiv .searchDiv{
     width: 100%;
     height: 100%;
@@ -364,6 +431,9 @@ a {
     justify-content: space-between;
     padding: 15px 24px;
     padding-right: 10px;
+}
+body.dark .searchMainDiv .searchDiv{
+    background: #23252E;
 }
 .searchMainDiv .searchDiv i{
     color: #52667B;
@@ -486,6 +556,9 @@ a {
     transition: all 300ms;
 
 }
+body.dark .sidebar{
+    background: #0F1419;
+}
 .sidebar.smallSidebar{
     width: 90px;
     padding: 47px 18px;
@@ -537,6 +610,9 @@ a {
     padding: 9px 24px;
     margin-top: 75px;
 }
+body.dark .sidebar .balanceMainDiv{
+    background: #23252E;
+}
 .sidebar .balanceMainDiv .icon{
     position: absolute;
     left: 24px;
@@ -549,6 +625,10 @@ a {
     border-radius: 50%;
     width: 75px;
     height: 75px;
+}
+body.dark .sidebar .balanceMainDiv .icon{
+    background: #23252E;
+
 }
 .sidebar .balanceMainDiv .balanceDiv h5{
     font-size: 16px;
@@ -586,6 +666,9 @@ a {
     border-radius: 5px;
     position: relative;
 }
+body.dark .sidebar .sidebarList ul li a svg path{
+    fill: white;
+}
 .sidebar .sidebarList ul li a:hover .explanation{
     right: -120px;
     opacity: 1;
@@ -607,6 +690,10 @@ a {
     opacity: 0;
     display: none;
 }
+body.dark .sidebar .sidebarList ul li a .explanation{
+    background: #292C36;
+    border-color: #23252E;
+}
 .sidebar.smallSidebar .sidebarList ul li a .explanation{
     display: flex;
 
@@ -623,6 +710,10 @@ a {
     border-left: 1px solid #E7E7E8;
     border-bottom: 1px solid #E7E7E8;
 }
+body.dark .sidebar .sidebarList ul li a .explanation::before{
+    background: #292C36;
+    border-color: #292C36;
+}
 .sidebar .sidebarList ul li a .explanation p{
     font-size: 12px;
     font-family: MSB;
@@ -634,6 +725,9 @@ a {
 }
 .sidebar .sidebarList ul li a:hover{
     background: #E7E7E8;
+}
+body.dark .sidebar .sidebarList ul li a:hover{
+    background: #292C36;
 }
 .sidebar .sidebarList ul li a .icon{
     margin-right: 12px;
@@ -685,6 +779,9 @@ a {
     border-radius: 5px;
     padding: 14px 19px;
 }
+body.dark .sidebar .showMore .showMoreContent ul{
+    background: #292C36;
+}
 .sidebar .showMore .showMoreContent ul li a{
     width: 100%;
     height: 50px;
@@ -692,6 +789,9 @@ a {
     align-items: center;
     justify-content: flex-start;
     position: relative;
+}
+body.dark .sidebar .showMore .showMoreContent ul li a svg path{
+    fill: white;
 }
 .sidebar .showMore .showMoreContent ul li a:hover .explanation{
     right: -140px;
@@ -714,6 +814,10 @@ a {
     opacity: 0;
     display: none;
 }
+body.dark .sidebar .showMore .showMoreContent ul li a .explanation{
+    background: #292C36;
+    border-color: #23252E;
+}
 .sidebar .showMore .showMoreContent ul li a .explanation::before{
     content: " ";
     position: absolute;
@@ -725,6 +829,10 @@ a {
     background: white;
     border-left: 1px solid #E7E7E8;
     border-bottom: 1px solid #E7E7E8;
+}
+body.dark .sidebar .showMore .showMoreContent ul li a .explanation::before{
+    background: #292C36;
+    border-color: #292F34;
 }
 .sidebar.smallSidebar .showMore ul li a .explanation p{
     font-size: 12px;
@@ -777,6 +885,9 @@ a {
     height: 60px;
     padding: 0 30px;
 }
+body.dark .dashboardContent header{
+    background: #0F1419;
+}
 .dashboardContent header  > div{
     margin: 0 7.5px;
     position: relative;
@@ -817,6 +928,10 @@ a {
     transition: all 300ms;
     z-index: 100;
 }
+body.dark .dashboardContent header .profile .dropdownProfile{
+    background: #0F1419;
+    border-color: #23252E;
+}
 .dashboardContent header .profile .dropdownProfile.hidden{
     visibility: 0;
     opacity: 0;
@@ -835,12 +950,19 @@ a {
     border-top: 1px solid #E6ECFF;
     border-left: 1px solid #E6ECFF;
 }
+body.dark .dashboardContent header .profile .dropdownProfile::before{
+    background: #0F1419;
+    border-color: #0F1419;
+}
 .dashboardContent header .profile .dropdownProfile .top{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 23px 11px;
     border-bottom: 1px solid #E6ECFF;
+}
+body.dark .dashboardContent header .profile .dropdownProfile .top{
+    border-color: #23252E;
 }
 .dashboardContent header .profile .dropdownProfile .top .logo{
     margin-right: 10px;
@@ -867,12 +989,18 @@ a {
 .dashboardContent header .profile .dropdownProfile .dropdownList li a:hover{
     background:#E6ECFF ;
 }
+body.dark .dashboardContent header .profile .dropdownProfile .dropdownList li a:hover{
+    background: #3e4046;
+}
 .dashboardContent header .profile .dropdownProfile .dropdownList li a .icon{
     margin-right: 21px;
 }
 .dashboardContent header .profile .dropdownProfile .dropdownList li a .icon i{
     font-size: 20px;
     color: #23252E;
+}
+body.dark .dashboardContent header .profile .dropdownProfile .dropdownList li a .icon i{
+    color: white;
 }
 .dashboardContent header .profile .dropdownProfile .dropdownList li a .text p{
     font-size: 14px;
@@ -909,6 +1037,10 @@ a {
 
 
 }
+body.dark .dashboardContent header .bars .dropdownBars{
+    background: #0F1419;
+    border-color: #23252E;
+}
 .dashboardContent header .bars .dropdownBars.hidden{
     visibility: 0;
     opacity: 0;
@@ -927,6 +1059,10 @@ a {
     background: white;
     border-top: 1px solid #E6ECFF;
     border-left: 1px solid #E6ECFF;
+}
+body.dark .dashboardContent header .bars .dropdownBars::before{
+    background: #0F1419;
+    border-color: #0F1419;
 }
 .dashboardContent header .bars .dropdownBars .dropdownList{
     padding-top: 10px;
@@ -986,6 +1122,10 @@ a {
 
 
 }
+body.dark .dashboardContent header .notifications .dropdownNotifications{
+    background: #0F1419;
+    border-color: #23252E;
+}
 .dashboardContent header .notifications .dropdownNotifications.hidden{
     visibility: 0;
     opacity: 0;
@@ -1005,12 +1145,19 @@ a {
     border-top: 1px solid #E6ECFF;
     border-left: 1px solid #E6ECFF;
 }
+body.dark .dashboardContent header .notifications .dropdownNotifications::before{
+    background: #0F1419;
+    border-color: #0F1419;
+}
 .dashboardContent header .notifications .dropdownNotifications .top{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 23px 11px;
     border-bottom: 1px solid #E6ECFF;
+}
+body.dark .dashboardContent header .notifications .dropdownNotifications .top{
+    border-color: #23252E;
 }
 .dashboardContent header .notifications .dropdownNotifications .top > div:nth-child(1){
     display: flex;
@@ -1045,7 +1192,9 @@ a {
     justify-content: center;
     cursor: pointer;
 }
-
+body.dark .dashboardContent header .notifications .dropdownNotifications .top button{
+    background: #292F34;
+}
 .dashboardContent header .notifications .dropdownNotifications .dropdownList li{
     display: flex;
     align-items: center;
@@ -1123,6 +1272,9 @@ a {
     padding: 18px 45px;
     margin-bottom: 30px;
 }
+body.dark .dashboardContent .dashboardTop{
+    background: #0F1419;
+}
 .dashboardContent .dashboardTop .content{
     margin-left: 48px;
 }
@@ -1158,11 +1310,7 @@ a {
 
 
 /* Orders Page */
-.dashboardContent .doubleContents .leftContentCol .OrderContent{
-    background: white;
-    border-radius: 5px;
-    border: 1px solid #E6ECFF;
-}
+
 .dashboardContent .doubleContents .leftContentCol .OrderContent .tabContent{
     display: none;
 }
@@ -1192,11 +1340,17 @@ a {
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button:hover{
     background: #f4f7ff;
 }
+body.dark .dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button:hover{
+    background: #23252E;
+}
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button:last-child{
     border-right: none;
 }
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button.active{
     background: #E6ECFF;
+}
+body.dark .dashboardContent .doubleContents .leftContentCol .OrderContent .orderWays button.active{
+    background: #292C36;
 }
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item{
     padding: 11px 21px;
@@ -1223,6 +1377,11 @@ a {
     color: #23252E;
     width: 100%;
     padding: 15px 19px;
+}
+body.dark .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item textarea,
+body.dark  .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item input{
+    border-color: #23252E;
+    color: white;
 }
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item textarea::placeholder,
 .dashboardContent .doubleContents .leftContentCol .OrderContent .orderInfo .item input::placeholder{
@@ -1259,7 +1418,9 @@ a {
     align-items: center;
     padding: 15px;
 }
-
+body.dark .OrderContent .orderInfo .item  .select{
+    border-color: #23252E;
+}
 .OrderContent .orderInfo .item  .select .selectedContent{
     width: 100%;
     display: flex;
@@ -1289,6 +1450,9 @@ a {
     overflow-y: auto;
     z-index: 100;
 
+}
+body.dark .OrderContent .orderInfo .item  .select .selections{
+    background: #292C36;
 }
 /* .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
     width: 10px;
@@ -1338,7 +1502,9 @@ a {
     align-items: center;
     padding: 15px;
 }
-
+body.dark .OrderContent .orderInfo .item  .select.selectForService{
+    border-color: #23252E;
+}
 .OrderContent .orderInfo .item  .select.selectForService .selectedContentService{
     width: 100%;
     display: flex;
@@ -1356,6 +1522,9 @@ a {
     height: 400px;
     overflow-y: auto;
 }
+body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsForService{
+    background: #23252E;
+}
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService.hidden{
     display: none;
 }
@@ -1366,6 +1535,9 @@ a {
     padding: 14px;
     background: white;
     transition: all 300ms;
+}
+body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li{
+    background: #292C36;
 }
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li .serviceSelectionContent{
     position: relative;
@@ -1523,6 +1695,9 @@ a {
     background: #E6ECFF;
     padding: 16px 15px;
 }
+body.dark .OrderContentRight .mainText{
+    background: #292F34;
+}
 .OrderContentRight .mainText p{
     font-size: 12px;
     color: #23252E;
@@ -1626,6 +1801,9 @@ padding: 8px 2px;
 border-bottom: 1px solid #E6ECFF;
 margin: 16px 0;
 }
+body.dark .mostAskingQuestions .item .topTexts{
+    border-color: #23252E;
+}
 .mostAskingQuestions .item .topTexts h4{
     font-size: 14px;
     font-family: MM;
@@ -1643,15 +1821,27 @@ margin: 16px 0;
     font-family: MM;
     color: #23252E;
 }
-
-
+body.dark .mostAskingQuestions .item .accordion-button{
+    background: #0F1419;
+}
+body.dark .mostAskingQuestions .item .accordion-item{
+    border-color: #23252E;
+}
 .mostAskingQuestions .item  .accordion-body{
     font-size: 12px;
     font-family: MM;
     color: #292C36;
 }
-
-
+body.dark .mostAskingQuestions .item  .accordion-body{
+    background: #23252E;
+    color: white;
+}
+body.dark .accordion-item:first-of-type .accordion-button{
+    box-shadow: none;
+}
+body.dark .mostAskingQuestions .item .accordion-item{
+    border: none;
+}
 
 /* User Agreement */
 
@@ -1670,16 +1860,24 @@ margin: 16px 0;
     font-size: 16px;
     font-family: MB;
 }
+body.dark .userAgreement .tabWays button{
+    background: #0F1419;
+}
 .userAgreement .tabWays button.active{
     background: #E6ECFF;
 }
-
+body.dark .userAgreement .tabWays button.active{
+    background: #23252E;
+}
 .userAgreement .tabContent{
     background: white;
     margin-top: 29px;
     border-radius: 5px;
     padding: 24px 26px;
     display: none;
+}
+body.dark .userAgreement .tabContent{
+    background: #0F1419;
 }
 .userAgreement .tabContent.active{
     display: block;
@@ -1847,8 +2045,14 @@ margin: 16px 0;
     border-radius: 5px;
     margin: 3px 0;
 }
+body.dark .refeacneSystemInfos .referanceItem{
+    border-color: #23252E;
+}
 .refeacneSystemInfos .referanceItem.referanceItemDisable{
     background: #E6ECFF;
+}
+body.dark .refeacneSystemInfos .referanceItem.referanceItemDisable{
+    background: #292C36;
 }
 .refeacneSystemInfos .referanceItem p{
     font-size: 14px;
@@ -1892,9 +2096,16 @@ margin: 16px 0;
 .servicesContent .content{
     background: white;
 }
+body.dark .servicesContent .content{
+    border: none;
+}
 .servicesContent .content .topText{
     padding: 17px 9px;
     border-bottom: 1px solid #E6ECFF;
+}
+body.dark .servicesContent .content .topText{
+    background: #292C36;
+    border-color: #23252E;
 }
 .servicesContent .content .topText h2{
     font-size: 14px;
@@ -1904,6 +2115,7 @@ margin: 16px 0;
 .servicesContent .content .topText h2 i{
     margin-right: 8px;
 }
+
 
 
 
@@ -1974,9 +2186,15 @@ margin: 16px 0;
     border-radius: 5px 5px 0 0 ;
     padding: 17px 24px;
 }
+body.dark .payMethods label .mainContent{
+    border-color: #23252E;
+}
 .payMethods label.selected .mainContent{
     background: #E6ECFF;
 
+}
+body.dark .payMethods label.selected .mainContent{
+    background: #292C36;
 }
 .payMethods label .mainContent input{
     margin-right: 16px;
@@ -2002,6 +2220,9 @@ margin: 16px 0;
     border-radius: 0px 0 5px 5px;
     padding: 17px 24px;
     display: none;
+}
+body.dark .payMethods label .explanation{
+    border-color: #23252E;
 }
 .payMethods label.selected .explanation{
     display:block;
@@ -2124,6 +2345,9 @@ margin: 16px 0;
 .pastPayments  .content table tr.headerTR{
     background: #E6ECFF;
 }
+body.dark .pastPayments  .content table tr.headerTR{
+    background: #23252E;
+}
 .pastPayments  .content table tr th,
 .pastPayments  .content table tr td{
     padding: 13px 19px;
@@ -2168,11 +2392,17 @@ margin: 16px 0;
     border: none;
     background: #E6ECFF !important;
 }
+body.dark .balanceLoadingAndProblemsContentRight .accordion .accordion-item{
+    background: #23252E !important;
+}
 .balanceLoadingAndProblemsContentRight .accordion .accordion-item .accordion-button{
     background: #E6ECFF;
     color: #52667B;
     font-size: 14px;
     font-family: MB;
+}
+body.dark .balanceLoadingAndProblemsContentRight .accordion .accordion-item .accordion-button{
+    background: #23252E;
 }
 .balanceLoadingAndProblemsContentRight .accordion .accordion-item .accordion-button::after{
     display: none !important;
@@ -2181,6 +2411,10 @@ margin: 16px 0;
     font-size: 14px;
     font-family: MR;
     color: #52667B;
+}
+body.dark .balanceLoadingAndProblemsContentRight .accordion .accordion-body{
+    background: #23252E;
+    color: white;
 }
 
 
@@ -2239,6 +2473,9 @@ margin: 16px 0;
     font-family: MM;
     border: 1px solid #E6ECFF;
 }
+body.dark .orderListContents .orderListTabs .tabWay button{
+    background: #23252E;
+}
 .orderListContents .orderListTabs .tabWay button:nth-child(5){
     width: 200px;
 }
@@ -2249,7 +2486,10 @@ margin: 16px 0;
     background: #2F5AFF;
     color: white;
 }
-
+body.dark .orderListContents .orderListTabs .tabWay button.active{
+    background: #2F5AFF;
+    color: white;
+}
 .orderListContents .orderListTabs .tabWayMobile{
     position: relative;
 }
@@ -2293,6 +2533,9 @@ margin: 16px 0;
     border: 1px solid #DEE3EC;
     border-bottom: none;
     background: white;
+}
+body.dark .orderListTabs .OrdersList{
+    border: none;
 }
 .orderListTabs .OrdersList,
 .orderListTabs .OrdersList table{
@@ -2392,6 +2635,10 @@ margin: 16px 0;
     align-items: center;
     justify-content: center;
 }
+.orderListTabs .tableWays .prev,
+.orderListTabs .tableWays .next{
+    background: #23252E;
+}
 .orderListTabs .tableWays .prev{
     margin-right: 5px;
 }
@@ -2413,11 +2660,17 @@ margin: 16px 0;
     margin: 0 5px ;
 
 }
+body.dark .orderListTabs .tableWays a{
+    background: #0F1419;
+}
 .orderListTabs .tableWays a.active{
     background: #2F5AFF;
     color: white;
 }
-
+body.dark .orderListTabs .tableWays a.active{
+    background: #2F5AFF;
+    color: white;
+}
 
 /* sayProblemDivContent */
 .sayProblemDivContent{
@@ -2491,9 +2744,15 @@ margin: 16px 0;
     justify-content: flex-start;
     padding: 15px 10px;
 }
+body.dark .supportRequestContents .supportRequestTabContent .content .tabWays button{
+    background: #292C36;
+}
 .supportRequestContents .supportRequestTabContent .content .tabWays button.active{
     color: white;
     background: #2F5AFF;
+}
+body.dark .supportRequestContents .supportRequestTabContent .content .tabWays button.active{
+    background: #3e4046;
 }
 .supportRequestContents .supportRequestTabContent .content .tabs{
     width: 80%;
@@ -2504,6 +2763,9 @@ margin: 16px 0;
     border-radius: 10px;
     padding: 24px 14px;
     display: none;
+}
+body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabContent{
+    background: #23252E;
 }
 .supportRequestContents .supportRequestTabContent .content .tabs .tabContent.active{
     display: block;
@@ -2541,6 +2803,9 @@ margin: 16px 0;
     font-family: MSB;
     color: #52667B;
     padding: 14px 35px;
+}
+body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN a{
+    background: #292F34;
 }
 .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN a:not(:last-child){
     margin-bottom: 9px;
@@ -2681,6 +2946,9 @@ margin: 16px 0;
     color: #52667B;
     margin-right: 15px;
 }
+body.dark .demandsChatContent .chatScreen .messgaes .message.other p{
+    background: #23252E;
+}
 .demandsChatContent .chatScreen .messgaes .message.me{
     justify-content: flex-end;
     margin-left: auto;
@@ -2691,6 +2959,9 @@ margin: 16px 0;
     font-family: MR;
     color: #2F5AFF;
     margin-left: 15px;
+}
+body.dark .demandsChatContent .chatScreen .messgaes .message.me p{
+    background: #292C36;
 }
 .demandsChatContent .chatScreen .messgaes .message p{
     padding: 19px 16px;
@@ -2811,10 +3082,20 @@ margin: 16px 0;
     margin: 6px 0;
     transition: all 300ms;
 }
+body.dark .supportDemondsContentRight .mainContent ul li{
+    background: #23252E;
+}
 .supportDemondsContentRight .mainContent ul li.active{
     background: #2F5AFF;
 }
+body.dark .supportDemondsContentRight .mainContent ul li.active{
+    background: #2F5AFF;
+
+}
 .supportDemondsContentRight .mainContent ul li:hover{
+    background: #2F5AFF;
+}
+body.dark .supportDemondsContentRight .mainContent ul li:hover{
     background: #2F5AFF;
 }
 .supportDemondsContentRight .mainContent ul li .demondInfo{
@@ -2920,7 +3201,13 @@ margin: 16px 0;
     border-radius: 5px;
     border: 1px solid #E6ECFF;
 }
-
+body.dark .dashboardMainContent .infoCol .content{
+    background: #0F1419;
+    border-color: #23252E;
+}
+body.dark .dashboardMainContent .infoCol .content i{
+    color: white;
+}
 .dashboardMainContent .infoCol .content i{
     font-size: 32px;
 }
@@ -2991,6 +3278,9 @@ margin: 16px 0;
     width: 23%;
     margin: 10px;
 
+}
+body.dark .serviceCardsContent .cardsDiv .Card{
+    background: #23252E;
 }
 .serviceCardsContent .cardsDiv .Card .topText{
     width: 100%;
@@ -3147,7 +3437,11 @@ margin: 16px 0;
 
 
 
-
+@media (min-width:992px){
+    .orderListContents .orderListTabs .tabWayMobile{
+        display: none;
+    }
+}
 
 @media (max-width:992px){
     .sidebar{
