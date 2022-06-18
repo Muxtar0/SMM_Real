@@ -1,10 +1,22 @@
 const selectedTextService  = document.querySelector('.selectForService .selectedText');
 const selectService = document.querySelector('.selectForService')
 const selectionsLi = document.querySelectorAll('.selectionsForService li')
-const selectionsService = document.querySelector('.selectionsForService')
+const selectionsService2 = document.querySelector('.selectionsForService')
+const selections2 = document.querySelector('.selectForCategory .selections')
 
 selectService.addEventListener('click',(e) => {
-    selectionsService.classList.toggle('hidden')
+    if(e.target.className == "serviceSaveBTN"){
+
+    }
+    if(e.target.parentElement.className == "serviceSaveBTN"){
+
+    }
+    else{
+        selectionsService2.classList.toggle('hidden')
+        selections2.classList.add('hidden')
+    }
+    
+
 })
 
 for(let i = 0 ; i < selectionsLi.length;i++){
