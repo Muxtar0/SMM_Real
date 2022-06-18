@@ -3020,7 +3020,106 @@ margin: 16px 0;
 
 
 
-@media (max-width:768px){
+
+
+
+
+
+
+
+
+
+
+
+/* detailSec */
+#detailSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+#detailSec .content{
+    background: #FFFFFF;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    width: 844px;
+}
+#detailSec .content .headerText{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 22px 24px;
+    border-bottom: 1px solid #E6ECFF;
+
+}
+#detailSec .content .headerText .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#detailSec .content .headerText button{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #B8BFCD;
+}
+
+#detailSec .content .mainContent{
+    padding: 22px 24px;
+
+}
+#detailSec .content .mainContent ul {
+    width: 100%;
+    padding: 34px 0;
+    border-top: 1px solid #E6ECFF;
+}
+#detailSec .content .mainContent ul:nth-child(3){
+    margin-top: 30px;
+}
+#detailSec .content .mainContent ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+#detailSec .content .mainContent ul li p{
+    font-size: 16px;
+    font-family: MM;
+    color: #23252E;
+}
+
+#detailSec .content .mainContent ul li h6{
+    font-size: 16px;
+    font-family: MB;
+    color: #23252E;
+}
+#detailSec .content .mainContent .submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+#detailSec .content .mainContent .submit button{
+    width: 140px;
+}
+#detailSec .content .mainContent .submit button i{
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:992px){
     .sidebar{
         position: absolute;
         top: 0;
@@ -3146,5 +3245,12 @@ margin: 16px 0;
     }
     .serviceCardsContent .cardsDiv .Card{
         width: 100%;
+    }
+    #detailSec .content .headerText .left{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #detailSec .content .headerText .left h4{
+        margin: 5px 0;
     }
 }
