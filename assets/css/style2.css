@@ -1159,9 +1159,15 @@ footer .copyrightContainer .col-12 p{
         body .body-bg-img{
             height: 300px;
         }
+        header{
+            height:55px;
+        }
         header .dekstopHeader{
             display: none;
         } 
+        #banner{
+            padding-top: 80px;
+        }
         #banner .rightContent{
             margin-top: 40px;
             display: flex;
@@ -1218,6 +1224,9 @@ footer .copyrightContainer .col-12 p{
         }
 }
 @media (max-width:425px){
+    #banner{
+        padding-top: 40px;
+    }
     #banner .rightContent img{
         width: 100%;
     }
