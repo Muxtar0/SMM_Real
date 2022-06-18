@@ -24,8 +24,8 @@ for(let i = 0 ; i < selectionsLi.length;i++){
         e.preventDefault();
         let data = selectionsLi[i].getAttribute('data-value');
         console.log(data)
-        if(data.length > 50){
-            data =  data.substring(0,50) + "..."
+        if(data.length > 68){
+            data =  data.substring(0,68) + "..."
             selectedTextService.textContent=data;
 
         }
