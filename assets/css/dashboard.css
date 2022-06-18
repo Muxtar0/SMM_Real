@@ -3058,12 +3058,14 @@ margin: 16px 0;
     align-items: center;
     justify-content: center;
 }
-
+#detailSec .content .headerText .left img{
+    margin-right: 20px;
+}
 #detailSec .content .headerText button{
     background: transparent;
     border: none;
     outline: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #B8BFCD;
 }
 
