@@ -1982,7 +1982,7 @@ margin: 16px 0;
     display: none;
 }
 .payMethods label.selected .explanation{
-    display: inline-block;
+    display:block;
 }
 .payMethods label .explanation p{
     font-size: 12px;
