@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Resets */
 * {
     margin: 0;
@@ -7,13 +10,14 @@
     outline: none;
     border: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+
 }
 body,html {
     position: relative;
     width: 100%;
     overflow-x: hidden;
     background: white;
-    font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -340,6 +344,17 @@ header .mobileNav button{
     display: flex;
     align-items: center;
     justify-content: center ;
+    position: relative;
+}
+#banner .textsCol .icon1{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#banner .textsCol .icon2{
+    position: absolute;
+    bottom: -25%;
+    left: 16%;
 }
 #banner .textsContent{
     display: flex;
@@ -349,9 +364,10 @@ header .mobileNav button{
     padding: 30px 0;
 }
 #banner .textsContent h2{
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
 font-weight: 700;
-font-size: 60px;
+font-size: 58px;
 line-height: 140%;
 color: #000000;
 text-transform: capitalize;
@@ -423,7 +439,7 @@ line-height: 27px;
     justify-content: space-between;
     box-shadow: 0px 4px 4px rgba(135, 146, 161, 0.16), 0px 6px 41px rgba(135, 146, 161, 0.11);
 border-radius: 18px;
-margin-top: 87px;
+margin-top: 187px;
 padding: 25px 100px;
 }
 #banner .loginCol .content .item h4{
@@ -1017,6 +1033,7 @@ footer .logoContent p span{
 
 
 footer .footerWayContent h4{
+    font-family: 'Urbanist', sans-serif;
     font-style: normal;
 font-weight: 600;
 font-size: 24px;
@@ -1038,6 +1055,7 @@ footer .footerWayContent ul li{
     margin: 10px 0;
 }
 footer .footerWayContent ul li  a{
+    font-family: 'Lato', sans-serif;    
     font-style: normal;
 font-weight: 600;
 font-size: 18px;
@@ -1059,6 +1077,7 @@ footer .otherButtonsContent ul li:nth-child(1){
     margin-top: 0;
 }
 footer .otherButtonsContent ul li a{
+    font-family: 'Urbanist', sans-serif;
     font-style: normal;
 font-weight: 600;
 font-size: 24px;
@@ -1075,6 +1094,7 @@ color: #FFFFFF;
 
 
 footer .contactCol .contactItem h5{
+    font-family: 'Lato', sans-serif;
     font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -1090,6 +1110,7 @@ color: #FFFFFF;
 margin-bottom: 5px;
 }
 footer .contactCol .contactItem p{
+    font-family: 'Urbanist', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1114,6 +1135,7 @@ footer .contactCol .contactItem:nth-child(2){
     padding: 27px 0;
 }
 .copyrightContent p{
+    font-family: 'Lato', sans-serif;
     font-style: normal;
 font-weight: 500;
 font-size: 14px;

@@ -209,6 +209,7 @@ header{
     align-items: center;
     justify-content: center;
     color: white;
+    font-family: MSB;
 }
 .dekstopHeader .content .loginandRegisterWrapper button i{
     margin-right: 14px;
@@ -231,6 +232,11 @@ header{
     position: absolute;
     top: 10px;
     left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 10%;
 }
 .mobileHeader button{
     font-size: 30px;
@@ -239,7 +245,9 @@ header{
     border: none;
     outline: none;
 }
-
+.mobileHeader img{
+    height: 40px;
+}
 /* mobileOpenMenu */
 
 .mobileOpenMenu{
