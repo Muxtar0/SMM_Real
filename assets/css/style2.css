@@ -251,7 +251,7 @@ header{
 /* mobileOpenMenu */
 
 .mobileOpenMenu{
-    background: #22133A;
+
     position: fixed;
     top: 0;
     left: -100%;
@@ -260,8 +260,6 @@ header{
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 1000;
     transition: all 300ms;
 }
@@ -270,22 +268,32 @@ header{
     visibility: visible;
     opacity: 1;
 }
-.mobileOpenMenu .content{
+.mobileOpenMenu .bg-close{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background: black;
+    opacity: .5;
+    z-index: 1;
+}
+.mobileOpenMenu .content{
+    width: 80%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
+    background: #22133A;
+    z-index: 100;
 }
 .mobileOpenMenu .content .closeButton{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    padding: 10px;
 }
 .mobileOpenMenu .content .closeButton button{
     color: white;
@@ -308,18 +316,23 @@ header{
     width: 100%;
     height: 100%;
 }
-
+.mobileOpenMenu .content .navList{
+    width: 100%;
+}
 .mobileOpenMenu .content .navList ul{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 .mobileOpenMenu .content .navList ul li{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 8px 0px;
+    justify-content: flex-start;
+    padding: 8px 20px;
+    border-bottom: 1px solid #545659;
+    width: 100%;
 }
 .mobileOpenMenu .content .navList ul li a{
     color: white;
@@ -352,14 +365,17 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 20px;
 }
 .mobileOpenMenu .content .loginandRegisterWrapper button{
     border: none;
     outline: none;
-    width: 150px;
+    width: 100%;
     height: 43px;
-    border-radius: 30px;
+    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,16 +384,14 @@ header{
 .mobileOpenMenu .content .loginandRegisterWrapper button i{
     margin-right: 14px;
 }
-.mobileOpenMenu .content .loginandRegisterWrapper button.loginBTN{
-    margin-right: 15px;
-}
+
 .mobileOpenMenu .content .loginandRegisterWrapper button.loginBTN{
     background: #FF0045;
-    box-shadow: -1px 0px 20px #EB4A63;
+    box-shadow: -1px 0px 5px #EB4A63;
 }
 .mobileOpenMenu .content .loginandRegisterWrapper button.registerBTN{
     background: #4F46E5;
-    box-shadow: -1px 0px 20px #4F46E5;
+    box-shadow: -1px 0px 5px #4F46E5;
 }
 
 

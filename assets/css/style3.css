@@ -292,36 +292,62 @@ header .mobileNav button{
     transition: all 600ms;
     width: 0%;
     height: 100vh;
-    background: white;
     z-index: 1000;
     display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
+}
+.mobileOpenMenu .bg-close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .5;
+    z-index: 1;
+
+}
+.mobileOpenMenu .content{
+    background: white;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 100;
 }
 .mobileOpenMenu.active{
     width: 100%;
 }
+.mobileOpenMenu .btnDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
 .mobileOpenMenu  .closeMobileNavBtn{
-    position: absolute;
-    top: 15px;
-    right: 20px;
     background: transparent;
     border: none;
     outline: none;
     font-size: 25px;
 }
 .mobileOpenMenu .content .navList{
-    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
 }
 .mobileOpenMenu .content .navList ul{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 .mobileOpenMenu .content .navList ul li{
-    margin: 8px 0px;
+    width: 100%;
+    padding: 5px 25px;
+    border-bottom: 1px solid #DDDDDD;
 }
 .mobileOpenMenu .content .navList ul li a{
     font-style: normal;
@@ -336,6 +362,17 @@ header .mobileNav button{
 }
 .mobileOpenMenu .content .navList ul li a i{
     margin-right: 5px;
+}
+.mobileOpenMenu .content .navButtons{
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px ;
+}
+.mobileOpenMenu .content .navButtons button{
+    height: 50px;
+    width: 100%;
+    border-radius: 0;
+    margin: 5px 0;
 }
 /* banner */
 #banner{

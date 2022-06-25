@@ -15,10 +15,26 @@
 <body>
         <!-- mobile header  -->
         <div class="mobileHeader bg-blue">
-            <button class="mobileNavBtn"><i class="fa-solid fa-bars"></i></button>
-            <img src="assets/img/Path 28267.png" alt="">
+            <div class="comunicationDiv">
+                <a href="#"> <i class="fa-solid fa-phone"></i> +90 850 307 8252 </a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i> info@dijitalistasyon.com </a>
+
+            </div>
+            <ul class="socialMediaMobile">
+                <li class="sosial-item">
+                    <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                </li>
+                <li class="sosial-item">
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                </li>
+                <li class="sosial-item">
+                    <a href="#"> <i class="fa-brands fa-pinterest-p"></i> </a>
+                </li>
+            </ul>
+            
         </div>
         <!-- mobile header  -->
+
         <!-- top-header-start -->
         <div id="top-header">
             <div class="container header-container">
@@ -62,7 +78,7 @@
                 <div class="col-6 header-col-left">
                     <a href="#"> <img src="assets/img/Katman_x0020_1.png" alt="logo/img"> </a>
                 </div>
-                <div class="col-lg-6 col-md-12 header-col-right d-flex justify-content-end align-items-end">
+                <div class="col-6 header-col-right d-flex justify-content-end align-items-end">
                     <nav>
                         <ul class="d-flex align-items-center">
                             <li><a href="#"> Anasayfa </a></li>
@@ -116,30 +132,39 @@
                                 </div>
                             </li>
                         </ul>
+
                     </nav>
+                    <button class="mobileNavBtn"><i class="fa-solid fa-bars"></i></button>
+
                 </div>
             </div>
         </div>
     </header>
 
     <!-- mobile open menu -->
-    <div class="mobileOpenMenu bg-blue ">
-        <ul class="nav header-2-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Giriş Yap</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Kayıt Ol</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Sık Sorulan Sorular</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Kullanım Koşulları</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">API</a></li>
-
-        </ul>
-        <div class="comunication d-flex flex-column justify-content-center align-items-center">
-            <a href="#"> <i class="fa-solid fa-phone"></i> +90 850 307 8252 </a>
-            <a href="#"> <i class="fa-solid fa-envelope"></i> info@dijitalistasyon.com </a>
+    <div class="mobileOpenMenu  ">
+        <div class="bg-close"></div>
+        <div class="content">
+            <div class="closeBtnDiv">
+                <button class="closeNavBarbtn"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <ul class="nav header-2-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Giriş Yap</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Kayıt Ol</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sık Sorulan Sorular</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Kullanım Koşulları</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">API</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    Anasayfa</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Servisler</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Güncellemeler</a></li>  
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>  
+    
+            </ul>
         </div>
-        <div class="socila-media">
-            
-        </div>
+        
+       
     </div>
     <!-- mobile open menu -->
     <!-- Banner -->
@@ -683,10 +708,9 @@
             });
             var swiper = new Swiper(".commentsSwiper", {
         spaceBetween: 10,
-        centeredSlides: true,
         autoplay: {
           delay: 1500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         },
         breakpoints: {
           640: {
