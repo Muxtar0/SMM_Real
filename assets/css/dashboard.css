@@ -157,6 +157,8 @@ body.dark .content-bg-white{
     padding: 5px 15px;
     font-size: 12px;
     font-family: MB;
+    transition: all 300ms;
+    background: transparent;
 }
 .Btn.Btn-bg-blue{
     background: #2F5AFF;
@@ -198,7 +200,7 @@ body.dark .headerTextNoOutPadding{
 }
 .headerTextNoOutPadding h3{
     font-size: 18px;
-    font-weight: MB;
+    font-family: MB;
     color: #292C36;
 }
 
@@ -312,8 +314,8 @@ body.dark .input.forCopy{
     transition: all 300ms;
 }
 .filterDiv > .filterItem .filterBtnFirst:hover{
-    background: white;
-    color: black;
+    background: #2F5AFF;
+    color: white;
 }
 body.dark .filterDiv > .filterItem .filterBtnFirst:hover{
     background: #0F1419;
@@ -758,6 +760,9 @@ body.dark .sidebar .sidebarList ul li a:hover{
 .sidebar .showMore .showMoreBTN i{
     transition: all 300ms;
 }
+.sidebar.smallSidebar .showMore .showMoreBTN{
+    justify-content: center;
+} 
 .sidebar .showMore .showMoreBTN.active i{
     transform: rotate(180deg);
 }
@@ -1449,7 +1454,8 @@ body.dark .OrderContent .orderInfo .item  .select{
     max-height: 250px;
     overflow-y: auto;
     z-index: 100;
-
+    box-shadow: rgb(99 99 99 / 20%) 0px 10px 8px 0px;
+    border-radius: 0 0 10px 10px;
 }
 body.dark .OrderContent .orderInfo .item  .select .selections{
     background: #292C36;
@@ -1501,6 +1507,7 @@ body.dark .OrderContent .orderInfo .item  .select .selections{
     display: flex;
     align-items: center;
     padding: 15px;
+
 }
 body.dark .OrderContent .orderInfo .item  .select.selectForService{
     border-color: #23252E;
@@ -1521,6 +1528,8 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService{
     z-index: 100;
     height: 400px;
     overflow-y: auto;
+    box-shadow: rgb(99 99 99 / 20%) 0px 10px 8px 0px;
+    border-radius: 0 0 10px 10px;
 }
 body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsForService{
     background: #23252E;
@@ -1669,7 +1678,7 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsFo
     border: 1px solid #E6ECFF ;
     max-width: 200px;
     min-width: 150px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .OrderContentRight .top .search input{
     background: transparent;
@@ -1689,7 +1698,7 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsFo
 .OrderContentRight .top .search i{
     width: 10%;
     padding: 10px;
-
+    color: #B8BFCD;
 }
 .OrderContentRight .mainText{
     background: #E6ECFF;
@@ -1874,13 +1883,23 @@ body.dark .userAgreement .tabWays button.active{
     margin-top: 29px;
     border-radius: 5px;
     padding: 24px 26px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 300ms;
     display: none;
 }
 body.dark .userAgreement .tabContent{
     background: #0F1419;
 }
 .userAgreement .tabContent.active{
+
     display: block;
+}
+.userAgreement .tabContent.active2{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 .userAgreement .tabContent .headerText{
     border-bottom: 1px solid #707070;
@@ -2267,9 +2286,9 @@ body.dark .payMethods label .explanation{
     position: absolute;
     top: 50%;
     left: 0%;
-    transform: translate(-80%,-50%);
-    width: 53px;
-    height: 52px;
+    transform: translate(-70%,-50%);
+    width: 66px;
+    height: 66px;
     border-radius: 5px;
     color: white;
     display: flex;
@@ -2493,6 +2512,10 @@ body.dark .orderListContents .orderListTabs .tabWay button.active{
 .orderListContents .orderListTabs .tabWayMobile{
     position: relative;
 }
+.orderListContents .orderListTabs .tabWayMobile .openFilter:hover{
+    background:#2F5AFF ;
+    color: white;
+}
 .orderListContents .orderListTabs .tabWayMobile .filterContent{
     width: 100%;
     background: white;
@@ -2540,6 +2563,14 @@ body.dark .orderListTabs .OrdersList{
 .orderListTabs .OrdersList,
 .orderListTabs .OrdersList table{
     width: 100%;
+}
+.orderListTabs .OrdersList table button{
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 .orderListTabs .OrdersList table tr{
     border-bottom: 1px solid #DEE3EC;
@@ -2635,8 +2666,8 @@ body.dark .orderListTabs .OrdersList{
     align-items: center;
     justify-content: center;
 }
-.orderListTabs .tableWays .prev,
-.orderListTabs .tableWays .next{
+body.dark .orderListTabs .tableWays .prev,
+body.dark .orderListTabs .tableWays .next{
     background: #23252E;
 }
 .orderListTabs .tableWays .prev{
@@ -2716,11 +2747,20 @@ body.dark .orderListTabs .tableWays a.active{
 
 /* supportRequestContents */
 .supportRequestContents .supportRequestTabContent .content{
-    display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     padding: 60px 13px;
+    display: none;
+}
+.supportRequestMainSection .rightContentCol{
+    display: none;
+}
+.supportRequestMainSection .rightContentCol.active{
+    display: block;
+}
+.supportRequestContents .supportRequestTabContent .content.active{
+    display: flex;
 }
 .supportRequestContents .supportRequestTabContent .content .tabWays{
     display: flex;
@@ -3378,6 +3418,7 @@ body.dark .serviceCardsContent .cardsDiv .Card{
 }
 #detailSec .content .headerText .left img{
     margin-right: 20px;
+    border: none;
 }
 #detailSec .content .headerText button{
     background: transparent;
@@ -3431,12 +3472,93 @@ body.dark .serviceCardsContent .cardsDiv .Card{
     margin-right: 5px;
 }
 
+/* mailConfirmationContent */
+.mailConfirmationContent .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 110px;
+    padding-bottom:  240px;
+}
+
+.mailConfirmationContent .content p{
+    max-width: 830px;
+    font-size: 18px;
+    font-family: MM;
+    color: #52667B;
+    text-align: center;
+    margin: 40px 0;
+}
+.mailConfirmationContent .content p span{
+    font-family: MB;
+}
+.mailConfirmationContent .content .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mailConfirmationContent .content .buttons button{
+    width: 150px;
+}
 
 
 
 
+.modalEmail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms;
+}
+.modalEmail.show{
+    visibility: visible;
+    opacity: 1;
+}
+.modalEmail .bg-close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .5;
+    z-index: 1;
+}
+.modalEmail .mainContent{
+    width: 500px;
+    z-index: 100;
+}
+.modalEmail .mainContent .headerTextNoOutPadding{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modalEmail .mainContent .headerTextNoOutPadding button{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #B8BFCD;
+}
+.modalEmail .content{
+    padding: 15px;
+}
+.modalEmail .content .submit button{
+    width: 140px;
+}
 
 
+
+
+/* medias */
 @media (min-width:992px){
     .orderListContents .orderListTabs .tabWayMobile{
         display: none;
@@ -3454,7 +3576,7 @@ body.dark .serviceCardsContent .cardsDiv .Card{
         left: 0;
     }
     .sidebar.smallSidebar{
-        left: -90px;
+        left: -92px;
         animation: sidebar 250ms ease-in-out;
     }
     @keyframes sidebar {
@@ -3570,5 +3692,14 @@ body.dark .serviceCardsContent .cardsDiv .Card{
     }
     #detailSec .content .headerText .left h4{
         margin: 5px 0;
+    }
+    .modalEmail .mainContent{
+        width: 90%;
+    }
+    .mailConfirmationContent .content img{
+        width: 95%;
+    }
+    .mailConfirmationContent .content{
+        padding-bottom: 110px;
     }
 }

@@ -5,20 +5,19 @@ const selectionsService2 = document.querySelector('.selectionsForService')
 const selections2 = document.querySelector('.selectForCategory .selections')
 
 selectService.addEventListener('click',(e) => {
-    if(e.target.className == "serviceSaveBTN"){
-
-    }
-    if(e.target.parentElement.className == "serviceSaveBTN"){
-
-    }
-    else{
-        selectionsService2.classList.toggle('hidden')
+    e.stopPropagation();
+    selectionsService2.classList.toggle('hidden')
+    selections2.classList.add('hidden')
+})
+selectionsService2.addEventListener('click',(e) => {
+    e.stopPropagation();
+})
+window.addEventListener('click' , (e) => {
+    if(!e.target.matches('.selectionsForService') && !e.target.matches('.selectForService')){
+        selectionsService2.classList.add('hidden')
         selections2.classList.add('hidden')
     }
-    
-
 })
-
 for(let i = 0 ; i < selectionsLi.length;i++){
     selectionsLi[i].addEventListener("click",(e) => {
         e.preventDefault();

@@ -6,12 +6,19 @@ const selectionsService = document.querySelector('.selectionsForService')
 
 
 select.addEventListener('click',(e) => {
+    e.stopPropagation();
     selectionsService.classList.add('hidden')
-
     selections.classList.toggle('hidden')
-
 })
-
+selections.addEventListener('click',(e) => {
+    e.stopPropagation();
+})
+window.addEventListener('click' , (e) => {
+    if(!e.target.matches('.selectForCategory .selections') && !e.target.matches('.selectForCategory')){
+        selectionsService2.classList.add('hidden')
+        selections2.classList.add('hidden')
+    }
+})
 for(let i = 0 ; i < selectionsli.length;i++){
     selectionsli[i].addEventListener("click",(e) => {
         e.preventDefault();

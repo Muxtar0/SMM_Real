@@ -472,16 +472,16 @@ header{
     animation: bg-circle-1 4500ms infinite;
 }
 #banner .rightContent .bg-circle-2{
-    animation: bg-circle-2 5500ms infinite;
-    animation-delay: 300ms;
+    animation: bg-circle-2 6500ms infinite;
+    animation-delay: 50ms;
 }
 #banner .rightContent .bg-circle-3{
-    animation: bg-circle-3 6500ms infinite;
-    animation-delay: 600ms;
+    animation: bg-circle-3 8500ms infinite;
+    animation-delay: 100ms;
 }
 #banner .rightContent .bg-circle-4{
-    animation: bg-circle-4 7500ms infinite;
-    animation-delay: 900ms;
+    animation: bg-circle-4 10500ms infinite;
+    animation-delay: 150ms;
 }
 @keyframes bg-circle-4 {
     0%{
@@ -491,8 +491,8 @@ header{
         opacity: 1;
     }
     100%{
-        width: 130%;
-        height: 140%;
+        width: 100%;
+        height: 100%;
         border-width: 1px;
         opacity: 0;
 
@@ -507,8 +507,8 @@ header{
 
     }
     100%{
-        width: 130%;
-        height: 140%;
+        width: 100%;
+        height: 100%;
         border-width: 1px;
         opacity: 0;
 
@@ -523,8 +523,8 @@ header{
 
     }
     100%{
-        width: 130%;
-        height: 140%;
+        width: 100%;
+        height: 100%;
         border-width: 1px;
         opacity: 0;
 
@@ -539,8 +539,8 @@ header{
 
     }
     100%{
-        width: 130%;
-        height: 140%;
+        width: 100%;
+        height: 100%;
         border-width: 1px;
         opacity: 0;
     }

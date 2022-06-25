@@ -3,15 +3,17 @@ const filterItemFirst = document.querySelector('.filterItemFirst');
 const filterDropDownDivFirst = document.querySelector('.filterDropDownDivFirst');
 
 filterBtnFirst.addEventListener('click' , (e) => {
+    e.stopPropagation();
     filterDropDownDivFirst.classList.toggle('hidden')
 })
+filterDropDownDivFirst.addEventListener('click' , (e) =>  {
+    e.stopPropagation();
+})
 
-// window.addEventListener('click' , (e) => {
-//     if(e.target.className == "filterBtnFirst"){
-//         filterDropDownDivFirst.classList.toggle('hidden')
-//     }
-//     else if(e.target.className != "filterItemFirst"){
-//         filterDropDownDivFirst.classList.toggle('hidden')
+window.addEventListener("click",(e) => {
+    if(!e.target.matches("filterBtnFirst") && !e.target.matches('.filterBtnFirst')){
+        filterDropDownDivFirst.classList.add('hidden')
+        
+    }
+})
 
-//     }
-// })

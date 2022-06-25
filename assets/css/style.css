@@ -279,9 +279,25 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
-
+.MapSection .mapouter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.MapSection .mapouter div{
+    width: 100%;
+    height: 100%;
+}
+.MapSection .mapouter iframe{
+    width: 100%;
+    height: 100%;
+}
 
 .MapSection .mapText{
     width: 480px;
@@ -294,6 +310,7 @@ a {
     border: 2px solid #2F5AFF;
     background: white;
     margin-bottom: 120px;
+    z-index: 100;
 }
 .MapSection .mapText .textItem:first-child{
     margin-right: 10px;
@@ -315,6 +332,7 @@ a {
 .MapSection > i{
     font-size: 72px;
     color: #2F5AFF;
+    z-index: 100;
 }
 
 
@@ -1560,7 +1578,97 @@ a {
 }
 
 
+/* loginSection */
+#loginRegisterSection{
+    height: 100vh;
+}
+#loginRegisterSection .mainContent{
+    display: flex;
+    justify-content: space-between;
+}
+#loginRegisterSection .mainContent > div{
+    width: 50%;
+    position: relative;
+}
 
+#loginRegisterSection .mainContent .imgDiv::before{
+    content:  " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0F33FF;
+    opacity: .7;
+}
+#loginRegisterSection .mainContent .imgDiv img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#loginRegisterSection .mainContent .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+#loginRegisterSection .mainContent .left .logo{
+    margin-bottom: 100px;
+}
+#loginRegisterSection .mainContent .left .inputs .headerText{
+    margin-bottom: 56px;
+}
+#loginRegisterSection .mainContent .left .inputs .headerText h3{
+    font-size: 36px;
+    font-family: MSB;
+    color: #080812;
+}
+#loginRegisterSection .mainContent .left .inputs .headerText p{
+    font-size: 18px;
+    font-family: MM;
+    color: #B8BFCD;
+    margin-top: 5px;
+}
+#loginRegisterSection .mainContent .left .inputs .inputItem{
+    margin-top: 25px;
+}
+#loginRegisterSection .mainContent .left .inputs .inputItem .inputToptext{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+#loginRegisterSection .mainContent .left .inputs .inputItem .inputToptext p,
+#loginRegisterSection .mainContent .left .inputs .inputItem .inputToptext a{
+    color: #B8BFCD;
+    font-size: 18px;
+    font-family: MM;
+}
+#loginRegisterSection .mainContent .left .inputs .inputItem input{
+    width: 383px;
+    height: 49px;
+    background: #F9FAFF;
+    border: 1px solid #E6ECFF;
+    border-radius: 3px;
+    padding: 10px;
+}
+#loginRegisterSection .mainContent .left .content > button{
+    width: 383px;
+    height: 49px;
+    margin-top: 27px;
+}
+#loginRegisterSection .mainContent .left .content > p{
+    font-size: 18px;
+    font-family: MM;
+    color: #B8BFCD;
+    margin-top: 17px;
+    text-align: center;
+}
+#loginRegisterSection .mainContent .left .content > p a{
+    color: #2F5AFF;
+    margin-left: 5px;
+}
 /* footer */
 footer{
     background: #0434AD;
@@ -1714,7 +1822,7 @@ footer .footer-main-container .copyrightContent p{
     }
 }
 
-@media (max-width:768px){
+@media (max-width:992px){
     .header2Main{
         display: none;
     }
@@ -1787,6 +1895,12 @@ footer .footer-main-container .copyrightContent p{
     #client-comments .mianImageCol img{
         height: 400px;
         width: auto;
+    }
+    #loginRegisterSection .mainContent{
+        flex-direction: column;
+    }
+    #loginRegisterSection .mainContent > div{
+        width: 100%;
     }
     footer .footer-main-container .footerWaysContent ul{
         flex-wrap: wrap;
@@ -1928,6 +2042,21 @@ footer .footer-main-container .copyrightContent p{
         font-size: 14px;
     }
     #header .container .header-col-right nav ul li .country-list li{
+        width: 100%;
+    }
+    #loginRegisterSection .mainContent .left .logo{
+        margin-bottom: 50px;
+    }
+    #loginRegisterSection .mainContent .left{
+        padding: 50px 20px;
+    }
+    #loginRegisterSection .mainContent .left .content{
+        width: 100%;
+    }
+    #loginRegisterSection .mainContent .left .inputs .inputItem input{
+        width: 100%;
+    }
+    #loginRegisterSection .mainContent .left .content > button{
         width: 100%;
     }
     footer{

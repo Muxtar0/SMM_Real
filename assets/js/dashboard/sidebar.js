@@ -31,8 +31,7 @@ closeOpenSidebarButton.addEventListener('click' , (e) => {
     for(let i= 0 ; i < sidebarListTexts.length;i++){
         sidebarListTexts[i].classList.toggle('notShowing')
     }
-    showMoreBTN.classList.toggle('notShowing')
-    showMoreContent.classList.remove('hidden')
+    showMoreBTN.querySelector("span").classList.toggle('notShowing')
     for(let i= 0 ; i < showMoreContentTexts.length;i++){
         showMoreContentTexts[i].classList.toggle('notShowing')
     }
@@ -49,8 +48,7 @@ window.addEventListener("resize" , (e) => {
         for(let i= 0 ; i < sidebarListTexts.length;i++){
             sidebarListTexts[i].classList.toggle('notShowing')
         }
-        showMoreBTN.classList.toggle('notShowing')
-        showMoreContent.classList.remove('hidden')
+        showMoreBTN.querySelector("span").classList.toggle('notShowing')
         for(let i= 0 ; i < showMoreContentTexts.length;i++){
             showMoreContentTexts[i].classList.toggle('notShowing')
         }
@@ -66,8 +64,8 @@ window.addEventListener("DOMContentLoaded" , (e) => {
     for(let i= 0 ; i < sidebarListTexts.length;i++){
         sidebarListTexts[i].classList.toggle('notShowing')
     }
-    showMoreBTN.classList.toggle('notShowing')
-    showMoreContent.classList.remove('hidden')
+    showMoreBTN.querySelector("span").classList.toggle('notShowing')
+
     for(let i= 0 ; i < showMoreContentTexts.length;i++){
         showMoreContentTexts[i].classList.toggle('notShowing')
     }
@@ -81,8 +79,7 @@ window.addEventListener("DOMContentLoaded" , (e) => {
         for(let i= 0 ; i < sidebarListTexts.length;i++){
             sidebarListTexts[i].classList.toggle('notShowing')
         }
-        showMoreBTN.classList.toggle('notShowing')
-        showMoreContent.classList.remove('hidden')
+        showMoreBTN.querySelector("span").classList.toggle('notShowing')
         for(let i= 0 ; i < showMoreContentTexts.length;i++){
             showMoreContentTexts[i].classList.toggle('notShowing')
         }

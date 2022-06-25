@@ -11,6 +11,17 @@ const body = document.querySelector('body')
 let theme = "light";
 
 
+
+dropdownBars.addEventListener('click',function(event){
+    event.stopPropagation();
+});
+dropdownProfile.addEventListener('click',function(event){
+    event.stopPropagation();
+});
+dropdownNotifications.addEventListener('click',function(event){
+    event.stopPropagation();
+});
+
 const controlTheme = () => {
     if(localStorage.getItem('theme') == null){
         // Do nothing
@@ -47,11 +58,15 @@ themeChangeBtn.addEventListener('click' , (e) => {
 const dashboardHeader = document.querySelector('.dashboardHeader')
 
 profileBTN.addEventListener("click",(e) => {
+    e.stopPropagation();
+
     dropdownProfile.classList.toggle('hidden')
     dropdownBars.classList.add('hidden')
     dropdownNotifications.classList.add('hidden')
 })
 barsBTN.addEventListener("click",(e) => {
+    e.stopPropagation();
+
     dropdownBars.classList.toggle('hidden')
     dropdownNotifications.classList.add('hidden')
     dropdownProfile.classList.add('hidden')
@@ -59,7 +74,19 @@ barsBTN.addEventListener("click",(e) => {
 
 })
 notificationsBTN.addEventListener("click",(e) => {
+    e.stopPropagation();
     dropdownProfile.classList.add('hidden')
     dropdownBars.classList.add('hidden')
     dropdownNotifications.classList.toggle('hidden')
+})
+
+
+// Close the dropdown menu if the user clicks outside of it
+window.addEventListener('click' , (event) => {
+    if (!event.target.matches('.dropdownProfile') && !event.target.matches('.profileBTN') && !event.target.matches('.dropdownBars') && !event.target.matches('.barsBTN') && !event.target.matches('.dropdownNotifications') && !event.target.matches('.notificationsBTN')) {
+        dropdownProfile.classList.add('hidden')
+        dropdownBars.classList.add('hidden')
+        dropdownNotifications.classList.add('hidden')
+
+    }
 })
