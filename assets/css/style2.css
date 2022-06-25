@@ -546,6 +546,88 @@ header{
     }
 }
 
+.loginComponent{
+    background: #FF0045;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 21px 64px;
+    z-index: 100;
+    width: 100%;
+    margin: 80px 0;
+}
+ .loginComponent .loginItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+  .loginComponent .loginItem:first-child{
+    margin-right: 30px;
+}
+.loginComponent .loginItem h4{
+    font-size: 14px;
+    font-family: MR;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-align: start;
+}
+ .loginComponent .loginItem > input{
+    width: 500px;
+    height: 60px;
+    background: white;
+    border: none;
+    outline: none;
+    color: #23252E;
+    font-size: 14px;
+    font-family: MR;
+    padding: 10px 20px;
+}
+
+ .loginComponent .loginItem .rememberMeDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+}
+ .loginComponent .loginItem .rememberMeDiv p{
+    margin-left: 12px;
+    font-size: 14px;
+    font-family: MR;
+    color: #FFFFFF;
+}
+ .loginComponent .loginItem .inputDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 60px;
+    background: white;
+    position: relative;
+}
+ .loginComponent .loginItem .inputDiv input{
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+}
+.loginComponent .loginItem .inputDiv button{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 125px;
+    height: 45px;
+    background: #FF0045;
+    color: white;
+}
+.loginComponent .loginItem a{
+    margin-left: 12px;
+    font-size: 14px;
+    font-family: MR;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
 
 
 /* shortInfos */
@@ -999,6 +1081,10 @@ header{
     font-size: 16px;
     font-family: MSB;
 }
+#MostAskingQuestions .questionsContent .questionItem .questionBTN span{
+    width: calc(100% - 42px);
+    margin-right: 5px;
+}
 #MostAskingQuestions .questionsContent .questionItem .questionBTN .icon{
     width: 42px;
     height: 42px;
@@ -1178,10 +1264,7 @@ footer .copyrightContainer .col-12 p{
             padding-top: 80px;
         }
         #banner .rightContent{
-            margin-top: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: none;
         }
         #shortInfos .content{
             flex-wrap: wrap;
@@ -1223,6 +1306,15 @@ footer .copyrightContainer .col-12 p{
             align-items: center;
             justify-content: center;
         }
+        .loginComponent .loginItem > input{
+            width: 250px;
+        }
+         .loginComponent .loginItem .inputDiv{
+            width: 250px;
+        }
+         .loginComponent .loginItem .inputDiv button{
+            width: 105px;
+        }
         footer .footer-top{
             width: 90%;
             top: -10%;
@@ -1236,9 +1328,7 @@ footer .copyrightContainer .col-12 p{
     #banner{
         padding-top: 40px;
     }
-    #banner .rightContent img{
-        width: 100%;
-    }
+
     #shortInfos .content .infoItem{
         width: 100%;
     }
@@ -1255,6 +1345,9 @@ footer .copyrightContainer .col-12 p{
     #howUse .rightContent .cardItem:last-child{
         margin-top: 30px;
     }
+    #ProfessionallyExperienced {
+        padding: 40px 10px;
+    }
     #ProfessionallyExperienced .container{
         padding: 20px;
         height: auto;
@@ -1269,13 +1362,32 @@ footer .copyrightContainer .col-12 p{
         width: 100%;
         transform: translate(-15% , 70%);
     }
+     .loginComponent{
+        flex-direction: column;
+        width: 95%;
+    }
+     .loginComponent .loginItem:first-child{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+     .loginComponent .loginItem > input{
+        width: 300px;
+    }
+     .loginComponent .loginItem .inputDiv{
+        width: 300px;
+    }
     footer{
         padding-top: 275px;
     }
     footer .footer-main-container .logoCol img{
         width: 100%;
     }
-    
+    footer .footer-main-container .logoCol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     footer .footer-top{
         height: auto;
         flex-direction: column;
@@ -1287,5 +1399,24 @@ footer .copyrightContainer .col-12 p{
     footer .footer-top .right .inputArea button{
         margin: 0;
         margin-top: 15px;
+    }
+    footer .footer-main-container .WidthLogoContent{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 29px;
+    }
+    footer .footer-main-container p, footer .footer-main-container ul li a{
+        text-align: center;
+    }
+    footer .footer-main-container .content .item{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .footer-main-container ul li{
+        text-align: center;
     }
 }

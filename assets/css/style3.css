@@ -229,6 +229,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.12));
 }
 
 header .DekstopHeader .content{
@@ -533,7 +534,7 @@ color: #666666;
     background-image: url(../img/Pattern\ Image\ and\ Dot\ Color.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 20px 0;
 }
 #shortInfos .col-12{
@@ -689,6 +690,7 @@ color: #858585;
 }
 #services .cardsContent .serviceCard:hover{
     transform: scale(1.1);
+    box-shadow: 0px 4px 26px 14px rgba(0, 0, 0, 0.31);
 }
 #services .cardsContent .serviceCard.facebook{
     background: #0075DF;
@@ -786,9 +788,10 @@ color: #FFFFFF;
 /* mostAksingQuestions */
 #mostAksingQuestions{
     background-image: url(../img/Group\ 1913.png);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 250px;
 }
 #mostAksingQuestions .questionContent{
     display: flex;
@@ -860,7 +863,7 @@ transition: all 300ms;
 
 /* comments */
 #comments {
-    margin-top: 120px;
+    margin-top: -120px;
 }
 #comments .commentsCol .swiper{
     padding: 40px 0;
