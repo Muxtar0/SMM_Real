@@ -862,8 +862,8 @@
                                           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                                           </div>
-                                        </div>
-                                        <div class="accordion-item">
+                                        </div >
+                                        <div  class="accordion-item">
                                           <h2 class="accordion-header" id="flush-headingThree">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
                                                 PayTR – Havale/EFT/Atm
@@ -911,7 +911,7 @@
                                             <p>2021-07-26 17:55:46</p>
                                         </div>
                                     </div>
-                                    <button class="closeAboutBlankBtn"><i class="fa-solid fa-x"></i></button>
+                                    <button onclick="window.close()" class="closeAboutBlankBtn"><i class="fa-solid fa-x"></i></button>
                                 </div>
                                 <div class="mainContent">
                                     <div class="item-input-group">
@@ -964,14 +964,16 @@
                                         ${divContents}
                                     
                                 </body>  
-                                
+                               
                               </html>
                             `
                             a.document.write(' ');
                             a.document.write(aboutBlankContent);
+                            
                                   
-                                })
-                            }
+        })
+      }
+                                 
       
                                 
 
