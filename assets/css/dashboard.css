@@ -2834,13 +2834,21 @@ body.dark .supportRequestContents .supportRequestTabContent .content .tabWays bu
 }
 .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .bottomAccordion{
     margin: 20px 0;
+    background: #E6ECFF;
+    overflow: hidden;
 }
 .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .bottomAccordion .moreInfo{
     margin-top: 20px;
     display: none;
+    transform: translateY(-50px);
+    transition: all 300ms;
+    overflow: hidden;
 }
 .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .bottomAccordion.active .moreInfo{
     display: block;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .bottomAccordion.active2 .moreInfo{
+    transform: translateY(0);
 }
 body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabContent{
     background: #23252E;
