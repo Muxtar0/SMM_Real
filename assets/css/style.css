@@ -2055,6 +2055,9 @@ footer .footer-main-container .copyrightContent p{
         width: 100%;
         height: auto;
     }
+    #banner .slideContent .right h2{
+        padding-right: 25px;
+    }
     .blogDetail .content{
         width: 100%;
         padding: 10px 22px;
