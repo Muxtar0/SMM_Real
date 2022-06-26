@@ -1460,19 +1460,22 @@ body.dark .OrderContent .orderInfo .item  .select{
 body.dark .OrderContent .orderInfo .item  .select .selections{
     background: #292C36;
 }
-/* .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
+.OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
     width: 10px;
     margin: 2px;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-thumb{
-    background: #E6ECFF; 
+    background: #c0c0c0; 
     border-radius: 10px;
 }
+.OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-thumb:hover {
+    background: #7C7C7C;
+  }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-track {
-    background: #6B7280;
+    background: white;
     padding: 2px;
     border-radius: 10px;
-  } */
+  }
 .OrderContent .orderInfo .item  .select .selections.hidden{
     display: none;
 }
