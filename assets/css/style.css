@@ -1129,9 +1129,12 @@ a {
 #banner .swiper{
     height: 435px;
 }
+#banner .swiper-pagination-vertical.swiper-pagination-bullets, #banner .swiper-vertical>.swiper-pagination-bullets{
+    right: 15px;
+}
 #banner .swiper-pagination-bullet{
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
     background: transparent;
     border: 3px solid #FFFFFF;
@@ -1139,7 +1142,7 @@ a {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 10px 0;
+    margin: 12px 0;
     opacity: 1;
 }
 #banner .swiper-pagination-bullet::before{
@@ -1174,7 +1177,7 @@ a {
 #banner .swiper-button-next, 
 #banner .swiper-button-prev{
     top: 50%;
-    right: 5px;
+    right: 10px;
     transform: translateY(-50%);
     color: white;
     bottom: auto;
