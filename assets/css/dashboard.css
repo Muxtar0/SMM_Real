@@ -2822,6 +2822,16 @@ body.dark .supportRequestContents .supportRequestTabContent .content .tabWays bu
     padding: 24px 14px;
     display: none;
 }
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .bottomAccordion{
+    margin: 20px 0;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .bottomAccordion .moreInfo{
+    margin-top: 20px;
+    display: none;
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .bottomAccordion.active .moreInfo{
+    display: block;
+}
 body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabContent{
     background: #23252E;
 }
@@ -2850,7 +2860,7 @@ body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabC
     color: #52667B;
     margin: 10px 0;
 }
-.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN a{
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN button{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -2862,10 +2872,10 @@ body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabC
     color: #52667B;
     padding: 14px 35px;
 }
-body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN a{
+body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN button{
     background: #292F34;
 }
-.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN a:not(:last-child){
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN button:not(:last-child){
     margin-bottom: 9px;
 }
 .supportRequestContents .supportRequestTabContent .content .tabs .ceateRequestDiv{
