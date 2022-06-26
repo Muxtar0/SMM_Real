@@ -13,7 +13,7 @@ createSupportFirstBtn.addEventListener('click' , (e) => {
     setInterval(() => {
     supportTabContent.classList.add('active')
         
-    }, 200);
+    }, 100);
     createSupportRequestContentLeft.classList.add('hidden')
 })
 createSupportBtnSecond.addEventListener('click' , (e) => {
