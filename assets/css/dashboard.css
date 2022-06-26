@@ -1537,6 +1537,22 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService{
 body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsForService{
     background: #23252E;
 }
+.OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar{
+    width: 8px;
+    margin: 2px;
+}
+.OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-thumb{
+    background: #c0c0c0; 
+    border-radius: 10px;
+}
+.OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-thumb:hover {
+    background: #7C7C7C;
+  }
+.OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-track {
+    background: white;
+    padding: 2px;
+    border-radius: 10px;
+  }
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService.hidden{
     display: none;
 }
