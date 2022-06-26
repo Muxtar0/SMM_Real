@@ -536,7 +536,11 @@ header{
     }
   }
   
-
+.loginComponentCon .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
 .loginComponent{
     background: #FF0045;
     display: flex;
