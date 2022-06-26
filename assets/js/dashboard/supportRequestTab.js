@@ -9,12 +9,17 @@ for(let i= 0 ; i < tabBtn.length;i++){
         }
         for(let i= 0 ; i < tabContent.length;i++){
             tabContent[i].classList.remove('active')
+            tabContent[i].classList.remove('active2')
         }
         for(let i= 0 ; i < tabContent.length;i++){
             if(btnWay == tabContent[i].getAttribute('data-kind')){
                 tabContent[i].classList.add("active")
+                setTimeout(() => {
+                    tabContent[i].classList.add("active2")
+                }, 100);
             }
         }
         tabBtn[i].classList.add("active")
+        
     })
 }
