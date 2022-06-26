@@ -2933,7 +2933,7 @@ body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabC
     top: 0;
     left: 0;
     width: 100vw;
-    height:100vh;
+    height:auto;
     min-height: 100vh;
     display: flex;
     align-items: center;
