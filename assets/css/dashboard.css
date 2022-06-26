@@ -1461,7 +1461,7 @@ body.dark .OrderContent .orderInfo .item  .select .selections{
     background: #292C36;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
-    width: 10px;
+    width: 8px;
     margin: 2px;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-thumb{
