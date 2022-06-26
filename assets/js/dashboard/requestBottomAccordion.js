@@ -8,6 +8,6 @@ for(let i = 0 ; i < bottomAccordionsButtons.length;i++){
         setTimeout(() => {
         bottomAccordions[i].classList.toggle('active2')
             
-        }, 10);
+        }, 50);
     })
 }
