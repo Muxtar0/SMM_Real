@@ -1649,6 +1649,9 @@ a {
     justify-content: space-between;
     height: 100%;
 }
+#loginRegisterSection.registerSection .mainContent{
+    height: auto;
+}
 #loginRegisterSection .mainContent > div{
     width: 50%;
     position: relative;
