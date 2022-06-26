@@ -2750,22 +2750,35 @@ body.dark .orderListTabs .tableWays a.active{
 
 
 /* supportRequestContents */
+.supportRequestContents .supportRequestTabContent {
+    display: none;
+}
+.supportRequestContents .supportRequestTabContent.active {
+    display: flex;
+}
 .supportRequestContents .supportRequestTabContent .content{
+    display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     padding: 60px 13px;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms;
 }
 
 .supportRequestMainSection .rightContentCol{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms;
 }
 .supportRequestMainSection .rightContentCol.active{
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 .supportRequestContents .supportRequestTabContent .content.active{
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 .supportRequestContents .supportRequestTabContent .content .tabWays{
     display: flex;

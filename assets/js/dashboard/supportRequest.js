@@ -1,4 +1,5 @@
 const supportTabContent = document.querySelector('.supportRequestContents .supportRequestTabContent .content')
+const supportTabContentMain = document.querySelector('.supportRequestContents .supportRequestTabContent')
 const createSupportRequestContentLeft = document.querySelector('.supportRequestMainSection .leftContentCol .createSupportRequestContent')
 const createSupportFirstBtn = document.querySelector('.createSupportFirstBtn')
 const createSupportBtnSecond = document.querySelector('.createSupportBtnSecond')
@@ -8,7 +9,11 @@ const bgCloseRequest = document.querySelector('.supportRequestMainSection .right
 const closeSupportModalBTN = document.querySelector('.supportRequestMainSection .rightContentCol .closeSupportModalBTN')
 
 createSupportFirstBtn.addEventListener('click' , (e) => {
+    supportTabContentMain.classList.add('active')
+    setInterval(() => {
     supportTabContent.classList.add('active')
+        
+    }, 200);
     createSupportRequestContentLeft.classList.add('hidden')
 })
 createSupportBtnSecond.addEventListener('click' , (e) => {
