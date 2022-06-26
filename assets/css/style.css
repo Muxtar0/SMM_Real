@@ -438,7 +438,22 @@ a {
     height: 100vh;
     width: 100%;
     display: flex;
+
     z-index: 1000;
+
+}
+.mobileOpenMenu  .buttons{
+    padding: 0 20px;
+}
+.mobileOpenMenu  .buttons button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #213EB3;
+    color: white;
+    font-family: MM;
+    margin: 10px 0;
 }
 .mobileOpenMenu .bg-close{
     position: absolute;
@@ -736,62 +751,56 @@ a {
 .blogList{
     padding: 80px 10px;
 }
-.blogList .swiper{
-    padding-bottom: 70px;
-}
-.blogList .swiper-pagination{
+.blogList .blogWays{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto !important;
-    left: 50% !important;
-    right: auto;
-    transform: translateX(-50%);
+    margin: 20px 0;
 }
-.blogList .swiper-pagination-bullet{
+
+.blogList .blogWays .prev,
+.blogList .blogWays .next{
+    width: 82px;
+    height: 45px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #E6ECFF;
+    color: #99A1B1;
+    font-size: 14px;
+    font-family: MSB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogList .blogWays .prev{
+    margin-right: 5px;
+}
+.blogList .blogWays .next{
+    margin-left: 5px;
+}
+.blogList .blogWays a{
     width: 45px;
     height: 45px;
     background: white;
     border-radius: 10px;
     border: 1px solid #E6ECFF;
+    color: #99A1B1;
+    font-size: 14px;
+    font-family: MSB;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    color: #99A1B1;
-    font-family: MSB;
-    opacity: 1;
+    margin: 0 5px ;
+
 }
-.blogList .swiper-pagination-bullet-active{
+
+.blogList .blogWays a.active{
     background: #2F5AFF;
     color: white;
 }
 
-.blogList .swiper-button-next:after, 
-.blogList .swiper-button-prev:after{
-    display: none;
-}
-.blogList .swiper-button-next, 
-.blogList .swiper-button-prev{
-    bottom: 10px;
-    left: 50%;
-    right: auto;
-    top: auto;
-    width: 82px;
-    height: 45px;
-    border-radius: 10px;
-    background: white;
-    border: 1px solid #E6ECFF;
-    font-size: 14px;
-    color: #99A1B1;
-    font-family: MSB;
-}
-.blogList .swiper-button-next{
-    transform: translateX(150px);
-}
-.blogList .swiper-button-prev{
-    transform: translateX(-230px);
-}
 .blogList .slideContent{
     display: flex;
     align-items: center;
@@ -949,7 +958,7 @@ a {
     cursor: pointer;
     width: 175px;
     position: relative;
-    background: #0F33FF;
+    background: #2a51e5;
 }
 
 #header .container .header-col-right nav ul li.country span {
@@ -982,7 +991,7 @@ a {
     visibility: hidden;
     padding-left: 30px;
     width: 175px;
-    background: #0F33FF;
+    background: #2a51e5;
     transition: 400ms all;
 }
 #header .container .header-col-right nav ul li .country-list ul{
@@ -1145,7 +1154,7 @@ a {
     border-radius: 50%;
 }
 #banner .swiper-pagination-bullet-active{
-    font-size:32px;
+    font-size:38px;
     font-family: MSB;
     color: #FFFFFF;
     border: none;
@@ -1234,9 +1243,9 @@ a {
         opacity: 1;
     }
     100%{
-        width: 130%;
-        height: 140%;
-        border-width: 1px;
+        width: 100%;
+        height: 100%;
+        border-width: 0px;
         opacity: 0;
 
     }
@@ -1250,9 +1259,9 @@ a {
 
     }
     100%{
-        width: 130%;
-        height: 140%;
-        border-width: 1px;
+        width: 100%;
+        height: 100%;
+        border-width: 0px;
         opacity: 0;
 
     }
@@ -1266,9 +1275,9 @@ a {
 
     }
     100%{
-        width: 130%;
-        height: 140%;
-        border-width: 1px;
+        width: 100%;
+        height: 100%;
+        border-width: 0px;
         opacity: 0;
 
     }
@@ -1282,9 +1291,9 @@ a {
 
     }
     100%{
-        width: 130%;
-        height: 140%;
-        border-width: 1px;
+        width: 100%;
+        height: 100%;
+        border-width: 0px;
         opacity: 0;
     }
 }
@@ -1394,8 +1403,10 @@ a {
     margin-top: 10px;
 }
 
-
-
+/* commentsSwiper */
+.commentsSwiper{
+    padding-left: 20px;
+}
 
 /* our-platforms */
 
@@ -1898,11 +1909,21 @@ footer .footer-main-container .copyrightContent p{
     .header2Main{
         display: none;
     }
+    #header{
+        padding-top: 10px;
+    }
+    .header-col-left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #header .container .header-col-left img{
+        margin-top: 10px;
+    }
     .header-col-right{
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        transform: translateY(-10px);
     }
     .header-col-right  .mobileNavBtn{
         background: transparent;
@@ -2027,6 +2048,7 @@ footer .footer-main-container .copyrightContent p{
 @media (max-width:425px){
     #header .container .header-col-left img{
         width: 100%;
+        height: auto;
     }
     .blogDetail .content{
         width: 100%;
@@ -2053,6 +2075,15 @@ footer .footer-main-container .copyrightContent p{
     .blogList .swiper-button-prev {
         transform: translateX(-163px);
     }
+    .blogList .blogWays .prev,
+.blogList .blogWays .next{
+    width: 52px;
+    height: 40px;   
+}
+.blogList .blogWays a{
+    height: 40px;
+    width: 35px;
+}
     .businessInfoCardsContent .infoCards .infoCard{
         width: 100%;
     }
@@ -2171,6 +2202,9 @@ footer .footer-main-container .copyrightContent p{
     }
     footer{
         padding-top: 275px;
+    }
+    footer .footer-main-container .copyrightContent p{
+        font-size: 13px;
     }
     footer .footer-main-container .logoCol img{
         width: 100%;
