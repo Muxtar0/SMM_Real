@@ -1984,6 +1984,11 @@ footer .footer-main-container .copyrightContent p{
     #banner .slideContent .left{
         width: 100% ;
     }
+    #banner .slideContent .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     #banner .slideContent .left img{
         width: 300px;
         margin: auto;
