@@ -2835,8 +2835,13 @@ body.dark .supportRequestContents .supportRequestTabContent .content .tabWays bu
 .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .accordion-item{
 
     background: #E6ECFF;
-    margin: 20px 0;
+    margin: 10px 0;
+    border: none;
+    box-sizing: none;
 
+}
+.supportRequestContents .supportRequestTabContent .content .tabs .tabContent .accordion-button:not(.collapsed){
+    box-shadow: none;
 }
 .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .accordion-button::after{
     display: none;
