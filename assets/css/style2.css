@@ -1083,6 +1083,7 @@ header{
     border-radius: 30px;
     padding: 25px 9px 25px 25px;
     margin: 10px 0;
+    overflow: hidden;
 }
 #MostAskingQuestions .questionsContent .questionItem .questionBTN{
     background: transparent;
@@ -1115,9 +1116,18 @@ header{
 #MostAskingQuestions .questionsContent .questionItem .otherInfo{
     display: none;
     margin-top: 30px;
+    visibility: 0;
+    opacity: 0;
+    transition: all 300ms;
+    transform: translateX(-100px);
 }
 #MostAskingQuestions .questionsContent .questionItem.active .otherInfo{
     display: inline-block;
+}
+#MostAskingQuestions .questionsContent .questionItem.active.active2 .otherInfo{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
 }
 #MostAskingQuestions .questionsContent .questionItem .otherInfo p{
     color: #6B7280;
