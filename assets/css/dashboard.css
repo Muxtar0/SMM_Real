@@ -3691,6 +3691,9 @@ body.dark .serviceCardsContent .cardsDiv .Card{
 }
 
 @media (max-width:992px){
+    .supportRequestContents .supportRequestTabContent .content .tabs .tabContent .fillIN button{
+        height: auto;
+    }
     .sidebar{
         position: absolute;
         top: 0;
