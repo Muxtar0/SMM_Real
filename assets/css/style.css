@@ -1133,8 +1133,8 @@ a {
     right: 15px;
 }
 #banner .swiper-pagination-bullet{
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background: transparent;
     border: 3px solid #FFFFFF;
@@ -1148,11 +1148,11 @@ a {
 #banner .swiper-pagination-bullet::before{
     content: " ";
     position: absolute;
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     top: 50%;
     left: 50%;
-    transform: translate(-48%,-49%);
+    transform: translate(-50%,-50%);
     background: #2F5AFF;
     border-radius: 50%;
 }
