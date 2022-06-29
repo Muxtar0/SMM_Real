@@ -682,7 +682,9 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
 .sidebar .sidebarList ul li a:hover::before{
     width: 4px;
 }
-
+.sidebar .sidebarList ul li.active a::before{
+    width: 4px;
+}
 .sidebar .sidebarList ul li a .icon{
     margin-right: 12px;
     height: 100%;
@@ -702,6 +704,10 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
     display: none;
 }
 .sidebar .sidebarList ul li a:hover p{
+    color: #2F5AFF;
+
+}
+.sidebar .sidebarList ul li.active a p{
     color: #2F5AFF;
 
 }
