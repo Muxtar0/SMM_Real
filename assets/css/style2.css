@@ -1040,6 +1040,21 @@ header{
     font-family: MSB;
     color: #FFFFFF;
     margin: 0 15px;
+    position: relative;
+    padding-bottom: 2px;
+}
+#ProfessionallyExperienced .mainContent .texts .socialMedia button::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: all 300ms;
+}
+#ProfessionallyExperienced .mainContent .texts .socialMedia button.active::before{
+    width: 100%;
 }
 #ProfessionallyExperienced .imgContent   {
     height: 100%;
@@ -1356,11 +1371,11 @@ footer .copyrightContainer .col-12 p{
         width: 100%;
     }
     #ProfessionallyExperienced .mainContent .texts p{
-        width: 86%;
+        width: 100%;
     }
     #ProfessionallyExperienced .mainContent .texts .socialMedia{
         width: 100%;
-        transform: translate(-15% , 70%);
+        transform: translate(0% , 70%);
     }
      .loginComponent{
         flex-direction: column;
