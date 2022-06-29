@@ -2624,6 +2624,9 @@ body.dark .orderListTabs .OrdersList{
 .orderListTabs .OrdersList table tr td:nth-child(1) i{
     margin-right: 10px;
     color: #2F5AFF;
+    background: #e7e7e7;
+    padding: 10px;
+    border-radius: 50%;
 }
 .orderListTabs .OrdersList table tr td:nth-child(2){
     display: flex;
