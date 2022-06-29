@@ -578,6 +578,7 @@ header{
     font-size: 14px;
     font-family: MR;
     padding: 10px 20px;
+    border-radius: 8px;
 }
 
  .loginComponent .loginItem .rememberMeDiv{
@@ -601,11 +602,13 @@ header{
     height: 60px;
     background: white;
     position: relative;
+    border-radius: 8px;
 }
  .loginComponent .loginItem .inputDiv input{
     padding: 10px 20px;
     width: 100%;
     height: 100%;
+    border-radius: 8px;
 }
 .loginComponent .loginItem .inputDiv button{
     position: absolute;
@@ -680,7 +683,7 @@ header{
 /* howUse */
 
 #howUse {
-    padding-top: 250px;
+    padding-top: 150px;
 }
 #howUse .leftContent .content a{
     display: flex;
