@@ -22,6 +22,8 @@ supportTabContentBgClose.addEventListener('click' ,(e) => {
 })
 createSupportBtnSecond.addEventListener('click' , (e) => {
     rightContentCol.classList.add('active')
+    supportTabContentMain.classList.remove('active')
+    supportTabContent.classList.remove('active')
 })
 bgCloseRequest.addEventListener('click' , (e) => {
     rightContentCol.classList.remove('active')
