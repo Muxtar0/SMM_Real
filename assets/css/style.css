@@ -1127,7 +1127,7 @@ a {
     position: relative;
 }
 #banner .swiper{
-    height: 435px;
+    height: 480px;
 }
 #banner .swiper-pagination-vertical.swiper-pagination-bullets, #banner .swiper-vertical>.swiper-pagination-bullets{
     right: 15px;
