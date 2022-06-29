@@ -77,10 +77,7 @@ window.addEventListener("DOMContentLoaded" , (e) => {
     sidebar.classList.toggle('smallSidebar')
     bigLogo.classList.toggle('notShowing')
     smallLogo.classList.toggle('notShowing')
-    balanceMainDiv.classList.toggle('notShowing')
-    for(let i= 0 ; i < sidebarListTexts.length;i++){
-        sidebarListTexts[i].classList.toggle('notShowing')
-    }
+
    
     }
     if(window.outerWidth <= 768){
@@ -90,10 +87,7 @@ window.addEventListener("DOMContentLoaded" , (e) => {
         sidebar.classList.toggle('smallSidebar')
         bigLogo.classList.toggle('notShowing')
         smallLogo.classList.toggle('notShowing')
-        balanceMainDiv.classList.toggle('notShowing')
-        for(let i= 0 ; i < sidebarListTexts.length;i++){
-            sidebarListTexts[i].classList.toggle('notShowing')
-        }
+
       
       }
 })
