@@ -8,6 +8,7 @@ const dropdownNotifications = document.querySelector('.dropdownNotifications')
 
 const themeChangeBtn = document.querySelector('.themeChangeBtn')
 const body = document.querySelector('body')
+const html = document.querySelector('html')
 let theme = "light";
 
 
@@ -28,12 +29,14 @@ const controlTheme = () => {
     }
     else if(localStorage.getItem('theme') == "dark"){
         body.classList.add('dark')
+        html.classList.add('dark')
         themeChangeBtn.innerHTML='<i class="fa-solid fa-sun"></i>'
         theme = "dark";
         
     }
     else if(localStorage.getItem('theme') == "light"){
         body.classList.remove('dark')
+        html.classList.remove('dark')
         themeChangeBtn.innerHTML='<i class="fa-solid fa-moon"></i>'
         theme = "light"
     }
@@ -43,12 +46,14 @@ controlTheme();
 themeChangeBtn.addEventListener('click' , (e) => {
     if(theme == "light"){
         body.classList.add('dark')
+        html.classList.add('dark')
         themeChangeBtn.innerHTML='<i class="fa-solid fa-sun"></i>'
         theme = "dark";
         localStorage.setItem('theme','dark')
     }
     else if (theme == "dark"){
         body.classList.remove('dark')
+        html.classList.add('dark')
         themeChangeBtn.innerHTML='<i class="fa-solid fa-moon"></i>'
         theme = "light"
         localStorage.setItem('theme','light')

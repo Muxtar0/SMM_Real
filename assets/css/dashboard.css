@@ -38,16 +38,23 @@ Fonts
     list-style: none;
     transition: all 300ms;
 }
+html{
+    overflow-x: hidden;
+    background: #F5F6F7;
 
-body,html {
+}
+html.dark{
+    background: black;
+}
+body{
     position: relative;
     width: 100%;
     overflow-x: hidden;
     background: #F5F6F7;
     display: flex;
     justify-content: space-between;
-    height: 100%;
 }
+
 body.dark{
     background: black;
 }
@@ -2771,11 +2778,31 @@ body.dark .orderListTabs .tableWays a.active{
 
 
 /* supportRequestContents */
-.supportRequestContents .supportRequestTabContent {
+.supportRequestContents{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: none;
 }
-.supportRequestContents .supportRequestTabContent.active {
+.supportRequestContents .bg-close{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+.supportRequestContents.active {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.supportRequestContents .supportRequestTabContent{
+    z-index: 100;
 }
 .supportRequestContents .supportRequestTabContent .content{
     display: flex;
