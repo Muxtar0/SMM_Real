@@ -26,10 +26,7 @@ closeOpenSidebarButton.addEventListener('click' , (e) => {
     bigLogo.classList.toggle('notShowing')
     smallLogo.classList.toggle('notShowing')
 
-    showMoreBTN.querySelector("span").classList.toggle('notShowing')
-    for(let i= 0 ; i < showMoreContentTexts.length;i++){
-        showMoreContentTexts[i].classList.toggle('notShowing')
-    }
+  
 })
 
 
@@ -42,10 +39,7 @@ window.addEventListener("resize" , (e) => {
         bigLogo.classList.toggle('notShowing')
         smallLogo.classList.toggle('notShowing')
 
-        showMoreBTN.querySelector("span").classList.toggle('notShowing')
-        for(let i= 0 ; i < showMoreContentTexts.length;i++){
-            showMoreContentTexts[i].classList.toggle('notShowing')
-        }
+        
       }
 })
 window.addEventListener("DOMContentLoaded" , (e) => {
@@ -60,11 +54,7 @@ window.addEventListener("DOMContentLoaded" , (e) => {
     for(let i= 0 ; i < sidebarListTexts.length;i++){
         sidebarListTexts[i].classList.toggle('notShowing')
     }
-    showMoreBTN.querySelector("span").classList.toggle('notShowing')
-
-    for(let i= 0 ; i < showMoreContentTexts.length;i++){
-        showMoreContentTexts[i].classList.toggle('notShowing')
-    }
+   
     }
     if(window.outerWidth <= 768){
         dashboardContent.classList.toggle('bigDashboard')
@@ -75,9 +65,6 @@ window.addEventListener("DOMContentLoaded" , (e) => {
         for(let i= 0 ; i < sidebarListTexts.length;i++){
             sidebarListTexts[i].classList.toggle('notShowing')
         }
-        showMoreBTN.querySelector("span").classList.toggle('notShowing')
-        for(let i= 0 ; i < showMoreContentTexts.length;i++){
-            showMoreContentTexts[i].classList.toggle('notShowing')
-        }
+      
       }
 })

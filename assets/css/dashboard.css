@@ -694,8 +694,8 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
     margin: 0 !important;
 }
 .sidebar .sidebarList ul li a .text p{
-    font-size: 12px;
-    font-family: MB;
+    font-size: 16px;
+    font-family: MSB;
     color: #01133D;
 }
 .sidebar.smallSidebar .sidebarList ul li a .text{
@@ -3742,9 +3742,10 @@ body.dark .serviceCardsContent .cardsDiv .Card{
     }
     .sidebar{
         position: absolute;
-        top: 0;
+        top: 60px;
         z-index: 1000;
-        height: 100%;
+        height: calc(100vh - 60px);
+        overflow-y: auto;
     }
     .sidebar{
         left: 0;
