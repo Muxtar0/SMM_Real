@@ -3740,7 +3740,7 @@ body.dark .serviceCardsContent .cardsDiv .Card{
         display: none;
     }
     .sidebar-bg-close{
-        display: none;
+        display: block;
     }
 }
 
