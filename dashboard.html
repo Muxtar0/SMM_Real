@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body >
+  <div class="sidebar-bg-close"></div>
   <div class="sidebar">
     <div class="logo">
       <img class="bigLogo" src="assets/img/Group 627.png" alt="" />
@@ -18,42 +19,9 @@
         src="assets/img/Path 2943.png"
         alt=""
       />
-      <div class="closeOpenSidebarDiv">
-        <button class="closeOpenSidebarButton">
-          <i class="fa-solid fa-angles-right"></i>
-        </button>
-      </div>
+      
     </div>
-    <div class="balanceMainDiv">
-      <div class="icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30.154"
-          height="29.267"
-          viewBox="0 0 30.154 29.267"
-        >
-          <path
-            id="svg8"
-            d="M10.543,17.577V16.069m6.034,1.509V13.051m6.034,4.526V10.034M10.543,29.646l6.034-6.034,6.034,6.034M3,4H30.154M4.509,4H28.646V22.1a1.509,1.509,0,0,1-1.509,1.509H6.017A1.509,1.509,0,0,1,4.509,22.1Z"
-            transform="translate(-1.5 -2.5)"
-            fill="none"
-            stroke="#fff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
-          />
-        </svg>
-      </div>
-      <div class="balanceDiv">
-        <h5>Bakiyeniz</h5>
-        <div class="balance">
-          <p class="balanceText"><span>10.00</span> ₺</p>
-          <button class="showHiddenBalance">
-            <i class="fa-solid fa-eye-slash"></i>
-          </button>
-        </div>
-      </div>
-    </div>
+    
     <div class="sidebarList">
       <ul>
         <li>
@@ -405,22 +373,134 @@
   </div>
     <section class="dashboardContent">
       <header class="dashboardHeader">
-        <div class="balance">
-          <p class="balanceText"><span>10.00</span> ₺</p>
-          <button class="showHiddenBalance">
-            <i class="fa-solid fa-eye-slash"></i>
+        <div class="closeOpenSidebarDiv">
+          <button class="closeOpenSidebarButton">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </button>
         </div>
-        <div class="theme">
-          <button class="themeChangeBtn"><i class="fa-solid fa-moon"></i></button>
-        </div>
-        <div class="notifications">
-          <button class="notificationsBTN">
-            <i class="fa-solid fa-bell"></i>
-          </button>
-          <div class="dropdownNotifications hidden">
-            <div class="top">
-              <div>
+        <div class="right">
+          <div class="balance">
+            <p class="balanceText"><span>10.00</span> ₺</p>
+            <button class="showHiddenBalance">
+              <i class="fa-solid fa-eye-slash"></i>
+            </button>
+          </div>
+          <div class="theme">
+            <button class="themeChangeBtn"><i class="fa-solid fa-moon"></i></button>
+          </div>
+          <div class="notifications">
+            <button class="notificationsBTN">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <div class="dropdownNotifications hidden">
+              <div class="top">
+                <div>
+                  <div class="logo">
+                    <img src="assets/img/Path 2943.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3>Zarif BALCI</h3>
+                    <p>Hoşgeldiniz.</p>
+                  </div>
+                </div>
+                <div>
+                  <button>Temizle</button>
+                </div>
+              </div>
+              <ul class="dropdownList">
+                <li>
+                  <div class="icon">
+                    <div class="iconWrapper">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <span>Instagram İzlenme</span>
+                    <p>
+                      Instagram İzlenme ve etkileşim gönderimi yapan servisimiz
+                      aktif
+                    </p>
+                    <span> 20 Dk önce </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <div class="iconWrapper">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <span>Mutlu Yıllar !</span>
+                    <p>
+                      Yeni bir yıla başlarken , bizleri tercih eden tüm
+                      müşterilerimize teşekkür ederiz.
+                    </p>
+                    <span> 20 Dk önce </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <div class="iconWrapper">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <span>Arayüz</span>
+                    <p>
+                      Yeni arayüz aktif edildi, daha kolay ve daha hızlı sipariş
+                      verebilirsiniz.
+                    </p>
+                    <span> 20 Dk önce </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bars">
+            <button class="barsBTN"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdownBars hidden">
+              <ul class="dropdownList">
+                <li>
+                  <h5>Servis güncellenmiştir</h5>
+                  <p>#443 - Instagram Reels İzlenme</p>
+                  <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
+                  <p>| Minimum: 50 » 50</p>
+                  <p>| Maximum: 20000000 » 20000000</p>
+                  <a href="#">Servise Git</a>
+                </li>
+                <li>
+                  <h5>Servis güncellenmiştir</h5>
+                  <p>#443 - Instagram Reels İzlenme</p>
+                  <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
+                  <p>| Minimum: 50 » 50</p>
+                  <p>| Maximum: 20000000 » 20000000</p>
+                  <a href="#">Servise Git</a>
+                </li>
+                <li>
+                  <h5>Servis güncellenmiştir</h5>
+                  <p>#443 - Instagram Reels İzlenme</p>
+                  <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
+                  <p>| Minimum: 50 » 50</p>
+                  <p>| Maximum: 20000000 » 20000000</p>
+                  <a href="#">Servise Git</a>
+                </li>
+                <li>
+                  <h5>Servis güncellenmiştir</h5>
+                  <p>#443 - Instagram Reels İzlenme</p>
+                  <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
+                  <p>| Minimum: 50 » 50</p>
+                  <p>| Maximum: 20000000 » 20000000</p>
+                  <a href="#">Servise Git</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile">
+            <button class="profileBTN"><i class="fa-solid fa-user"></i></button>
+            <div class="dropdownProfile hidden">
+              <div class="top">
                 <div class="logo">
                   <img src="assets/img/Path 2943.png" alt="" />
                 </div>
@@ -429,188 +509,85 @@
                   <p>Hoşgeldiniz.</p>
                 </div>
               </div>
-              <div>
-                <button>Temizle</button>
-              </div>
+              <ul class="dropdownList">
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="text">
+                      <p>Account</p>
+                      <span>Hesabınızı görüntüleyin.</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div class="text">
+                      <p>Balance: 0</p>
+                      <span>Bakiye Ekleyin</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="text">
+                      <p>Koyu Mod</p>
+                      <span>Koyu modu aktif edin</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <div class="text">
+                      <p>API</p>
+                      <span>API dökümanınızı görüntüleyin</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="text">
+                      <p>Yardım Merkezi</p>
+                      <span>Yardım merkezini ziyaret edin</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-square-rss"></i>
+                    </div>
+                    <div class="text">
+                      <p>Blog</p>
+                      <span>Son makelelerimizi okuyun</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-power-off"></i>
+                    </div>
+                    <div class="text">
+                      <p>Çıkış Yap</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="dropdownList">
-              <li>
-                <div class="icon">
-                  <div class="iconWrapper">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <span>Instagram İzlenme</span>
-                  <p>
-                    Instagram İzlenme ve etkileşim gönderimi yapan servisimiz
-                    aktif
-                  </p>
-                  <span> 20 Dk önce </span>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <div class="iconWrapper">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <span>Mutlu Yıllar !</span>
-                  <p>
-                    Yeni bir yıla başlarken , bizleri tercih eden tüm
-                    müşterilerimize teşekkür ederiz.
-                  </p>
-                  <span> 20 Dk önce </span>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <div class="iconWrapper">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <span>Arayüz</span>
-                  <p>
-                    Yeni arayüz aktif edildi, daha kolay ve daha hızlı sipariş
-                    verebilirsiniz.
-                  </p>
-                  <span> 20 Dk önce </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="bars">
-          <button class="barsBTN"><i class="fa-solid fa-bars"></i></button>
-          <div class="dropdownBars hidden">
-            <ul class="dropdownList">
-              <li>
-                <h5>Servis güncellenmiştir</h5>
-                <p>#443 - Instagram Reels İzlenme</p>
-                <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
-                <p>| Minimum: 50 » 50</p>
-                <p>| Maximum: 20000000 » 20000000</p>
-                <a href="#">Servise Git</a>
-              </li>
-              <li>
-                <h5>Servis güncellenmiştir</h5>
-                <p>#443 - Instagram Reels İzlenme</p>
-                <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
-                <p>| Minimum: 50 » 50</p>
-                <p>| Maximum: 20000000 » 20000000</p>
-                <a href="#">Servise Git</a>
-              </li>
-              <li>
-                <h5>Servis güncellenmiştir</h5>
-                <p>#443 - Instagram Reels İzlenme</p>
-                <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
-                <p>| Minimum: 50 » 50</p>
-                <p>| Maximum: 20000000 » 20000000</p>
-                <a href="#">Servise Git</a>
-              </li>
-              <li>
-                <h5>Servis güncellenmiştir</h5>
-                <p>#443 - Instagram Reels İzlenme</p>
-                <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
-                <p>| Minimum: 50 » 50</p>
-                <p>| Maximum: 20000000 » 20000000</p>
-                <a href="#">Servise Git</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="profile">
-          <button class="profileBTN"><i class="fa-solid fa-user"></i></button>
-          <div class="dropdownProfile hidden">
-            <div class="top">
-              <div class="logo">
-                <img src="assets/img/Path 2943.png" alt="" />
-              </div>
-              <div class="info">
-                <h3>Zarif BALCI</h3>
-                <p>Hoşgeldiniz.</p>
-              </div>
-            </div>
-            <ul class="dropdownList">
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-user"></i>
-                  </div>
-                  <div class="text">
-                    <p>Account</p>
-                    <span>Hesabınızı görüntüleyin.</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-wallet"></i>
-                  </div>
-                  <div class="text">
-                    <p>Balance: 0</p>
-                    <span>Bakiye Ekleyin</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-film"></i>
-                  </div>
-                  <div class="text">
-                    <p>Koyu Mod</p>
-                    <span>Koyu modu aktif edin</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-file-code"></i>
-                  </div>
-                  <div class="text">
-                    <p>API</p>
-                    <span>API dökümanınızı görüntüleyin</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                  </div>
-                  <div class="text">
-                    <p>Yardım Merkezi</p>
-                    <span>Yardım merkezini ziyaret edin</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-square-rss"></i>
-                  </div>
-                  <div class="text">
-                    <p>Blog</p>
-                    <span>Son makelelerimizi okuyun</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-power-off"></i>
-                  </div>
-                  <div class="text">
-                    <p>Çıkış Yap</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </header>

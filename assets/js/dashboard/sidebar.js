@@ -5,8 +5,6 @@ const sidebar = document.querySelector('.sidebar')
 const closeOpenSidebarButton = document.querySelector('.closeOpenSidebarButton')
 const bigLogo = document.querySelector('.bigLogo')
 const smallLogo = document.querySelector('.smallLogo')
-const balanceMainDiv = document.querySelector('.balanceMainDiv')
-const sidebarListTexts = document.querySelectorAll('.sidebarList ul li a .text')
 const showMoreContentTexts = document.querySelectorAll('.showMoreContent ul li a .text')
 showMoreBTN.addEventListener('click' , (e) => {
     showMoreBTN.classList.toggle('active')
@@ -22,15 +20,12 @@ closeOpenSidebarButton.addEventListener('click' , (e) => {
 
 
     }
-
+    closeOpenSidebarButton.classList.toggle('small')
     dashboardContent.classList.toggle('bigDashboard')
     sidebar.classList.toggle('smallSidebar')
     bigLogo.classList.toggle('notShowing')
     smallLogo.classList.toggle('notShowing')
-    balanceMainDiv.classList.toggle('notShowing')
-    for(let i= 0 ; i < sidebarListTexts.length;i++){
-        sidebarListTexts[i].classList.toggle('notShowing')
-    }
+
     showMoreBTN.querySelector("span").classList.toggle('notShowing')
     for(let i= 0 ; i < showMoreContentTexts.length;i++){
         showMoreContentTexts[i].classList.toggle('notShowing')
@@ -40,14 +35,13 @@ closeOpenSidebarButton.addEventListener('click' , (e) => {
 
 window.addEventListener("resize" , (e) => {
       if(window.outerWidth <= 768){
+    closeOpenSidebarButton.classList.add('small')
+
         dashboardContent.classList.toggle('bigDashboard')
         sidebar.classList.toggle('smallSidebar')
         bigLogo.classList.toggle('notShowing')
         smallLogo.classList.toggle('notShowing')
-        balanceMainDiv.classList.toggle('notShowing')
-        for(let i= 0 ; i < sidebarListTexts.length;i++){
-            sidebarListTexts[i].classList.toggle('notShowing')
-        }
+
         showMoreBTN.querySelector("span").classList.toggle('notShowing')
         for(let i= 0 ; i < showMoreContentTexts.length;i++){
             showMoreContentTexts[i].classList.toggle('notShowing')
@@ -56,6 +50,8 @@ window.addEventListener("resize" , (e) => {
 })
 window.addEventListener("DOMContentLoaded" , (e) => {
     if(localStorage.getItem('sidebar') == "smallSidebar"){
+    closeOpenSidebarButton.classList.add('small')
+
         dashboardContent.classList.toggle('bigDashboard')
     sidebar.classList.toggle('smallSidebar')
     bigLogo.classList.toggle('notShowing')

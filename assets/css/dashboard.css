@@ -562,7 +562,7 @@ body.dark .searchMainDiv .searchDiv{
 .sidebar{
     width: 300px;
     background: white;
-    padding: 42px;
+    padding: 42px 0;
     position: relative;
     transition: all 300ms;
 
@@ -578,93 +578,24 @@ body.dark .sidebar{
 .sidebar .notShowing{
     display: none !important;
 }
-
+.sidebar .logo{
+    padding: 0 40px;
+}
+.sidebar.smallSidebar .logo{
+    padding: 0;
+}
 .sidebar .logo img{
     object-fit: contain;
 }
-.sidebar .logo .closeOpenSidebarDiv{
-    position: absolute;
-    top: 32px;
-    right: -20px;
-    transition: all 300ms;
 
-}
-.sidebar.smallSidebar .closeOpenSidebarDiv{
-    transform: rotate(180deg);
-    right: -50px;
-}
-.sidebar .closeOpenSidebarDiv button{
-    background: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    background-image: url(../img/Path\ 2934.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 70px;
-    width:70px;
-}
-.sidebar .logo .closeOpenSidebarDiv button i{
-    transform: rotate(180deg);
-}
 
-.sidebar .balanceMainDiv{
-    height: 59px;
-    width: 100%;
-    border-radius: 10px;
-    background: #2F5AFF;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    padding: 9px 24px;
-    margin-top: 75px;
-}
-body.dark .sidebar .balanceMainDiv{
-    background: #23252E;
-}
-.sidebar .balanceMainDiv .icon{
-    position: absolute;
-    left: 24px;
-    top: -60%;
-    border: 2px solid white;
-    background: #2F5AFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-}
-body.dark .sidebar .balanceMainDiv .icon{
-    background: #23252E;
 
-}
-.sidebar .balanceMainDiv .balanceDiv h5{
-    font-size: 16px;
-    font-family: MB;
-    color: #E6ECFF;
-}
-.sidebar .balanceMainDiv .balanceDiv .balance{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.sidebar .balanceMainDiv .balanceDiv .balance .balanceText{
-    font-size: 16px;
-    font-family: MB;
-    color: #E6ECFF;
-}
-.sidebar .balanceMainDiv .balanceDiv .balance button{
-    color: white;
-    background: transparent;
-    border: none;
-    outline: none;
-}
 .sidebar .sidebarList{
     margin-top: 75px;
     margin-bottom: 30px;
+}
+.sidebar .sidebarList ul li{
+    width: 100%;
 }
 .sidebar .sidebarList ul li a{
     width: 100%;
@@ -672,10 +603,13 @@ body.dark .sidebar .balanceMainDiv .icon{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 16px 19px;
+    padding: 0 10px 0 40px;
     transition: all 300ms;
     border-radius: 5px;
     position: relative;
+}
+.sidebar.smallSidebar  .sidebarList ul li a{
+    padding: 0 5px;
 }
 body.dark .sidebar .sidebarList ul li a svg path{
     fill: white;
@@ -734,17 +668,26 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
 .sidebar.smallSidebar .sidebarList ul li a{
     justify-content: center;
 }
-.sidebar .sidebarList ul li a:hover{
-    background: #E7E7E8;
+
+.sidebar .sidebarList ul li a::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #2F5AFF;
+    transition: all 300ms;
 }
-body.dark .sidebar .sidebarList ul li a:hover{
-    background: #292C36;
+.sidebar .sidebarList ul li a:hover::before{
+    width: 4px;
 }
+
 .sidebar .sidebarList ul li a .icon{
     margin-right: 12px;
     height: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 .sidebar.smallSidebar .sidebarList ul li a .icon{
@@ -754,6 +697,13 @@ body.dark .sidebar .sidebarList ul li a:hover{
     font-size: 12px;
     font-family: MB;
     color: #01133D;
+}
+.sidebar.smallSidebar .sidebarList ul li a .text{
+    display: none;
+}
+.sidebar .sidebarList ul li a:hover p{
+    color: #2F5AFF;
+
 }
 .sidebar .sidebarList ul li a .text{
     display: flex;
@@ -765,13 +715,21 @@ body.dark .sidebar .sidebarList ul li a:hover{
     color: #52535D;
 }
 
-
+.sidebar .showMore {
+    padding: 0 40px;
+}
+.sidebar.smallSidebar .showMore{
+    padding: 0 0px;
+}
 .sidebar .showMore .showMoreBTN i{
     transition: all 300ms;
 }
 .sidebar.smallSidebar .showMore .showMoreBTN{
     justify-content: center;
 } 
+.sidebar.smallSidebar .showMore .showMoreBTN span{
+    display: none;
+}
 .sidebar .showMore .showMoreBTN.active i{
     transform: rotate(180deg);
 }
@@ -789,7 +747,7 @@ body.dark .sidebar .sidebarList ul li a:hover{
 }
 .sidebar .showMore .showMoreContent ul{
     margin-top: 26px;
-    background: #E7E7E8;
+    background: #f5f5f5;
     border-radius: 5px;
     padding: 14px 19px;
 }
@@ -872,6 +830,9 @@ body.dark .sidebar .showMore .showMoreContent ul li a .explanation::before{
     align-items: center;
     justify-content: center;
 }
+.sidebar.smallSidebar .showMore .showMoreContent ul li a .text{
+    display: none;
+}
 .sidebar .showMore .showMoreContent ul li a .text p{
     color: #0F1419;
     font-size: 12px;
@@ -894,15 +855,76 @@ body.dark .sidebar .showMore .showMoreContent ul li a .explanation::before{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     background: white;
     height: 60px;
     padding: 0 30px;
 }
+.dashboardContent header .closeOpenSidebarDiv{
+    transition: all 300ms;
+}
+
+.dashboardContent header .closeOpenSidebarDiv button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.dashboardContent header .closeOpenSidebarDiv button .line{
+    background: #2F5AFF;
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 26px;
+}
+.dashboardContent header .closeOpenSidebarDiv button .line:nth-child(1) {
+    width: 20px;
+}
+.dashboardContent header .closeOpenSidebarDiv button .line:nth-child(3) {
+    width: 22px;
+}
+.dashboardContent header .closeOpenSidebarDiv button:hover .line:nth-child(1){
+    width: 26px;
+}
+.dashboardContent header .closeOpenSidebarDiv button:hover .line:nth-child(3){
+    width: 26px;
+}
+
+.dashboardContent header .closeOpenSidebarDiv button.small .line:nth-child(1), .dashboardContent header .closeOpenSidebarDiv button.small .line:nth-child(3) {
+    width: 10px;
+    height: 2px;
+}
+
+.dashboardContent header .closeOpenSidebarDiv button.small .line:nth-child(1) {
+    -webkit-transform: translateY(4px) rotate(45deg);
+    transform: translateY(4px) rotate(45deg);
+}
+.dashboardContent header .closeOpenSidebarDiv button.small .line:nth-child(3) {
+    -webkit-transform: translateY(-4px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.dashboardContent header .closeOpenSidebarDiv button.small .line:nth-child(2) {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    width: 22px;
+    height: 2px;
+}
+
+
+.dashboardContent header .right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 body.dark .dashboardContent header{
     background: #0F1419;
 }
-.dashboardContent header  > div{
+.dashboardContent header .right  > div{
     margin: 0 7.5px;
     position: relative;
 }
