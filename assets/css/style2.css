@@ -550,6 +550,7 @@ header{
     z-index: 100;
     width: 100%;
     margin: 80px 0;
+    border-radius: 18px;
 }
  .loginComponent .loginItem {
     display: flex;
