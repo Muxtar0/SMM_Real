@@ -517,6 +517,9 @@ header{
   .wave__container .wave__circle:nth-child(3) {
     animation-delay: 1s;
   }
+  .wave__container .wave__circle:nth-child(4) {
+    animation-delay: 1.5s;
+  }
   
   @keyframes ripple {
     0% {
