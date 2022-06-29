@@ -2540,6 +2540,17 @@ body.dark .orderListContents .orderListTabs .tabWay button.active{
 .orderListContents .orderListTabs .tabWayMobile{
     position: relative;
 }
+body.dark .orderListContents .orderListTabs .tabWayMobile .openFilter{
+    background: #0F1419;
+}
+body.dark .orderListContents .orderListTabs .tabWayMobile .openFilter:hover{
+    background:#2F5AFF ;
+    color: white;
+}
+body.dark .orderListContents .orderListTabs .tabWayMobile .openFilter.active{
+    background:#2F5AFF ;
+    color: white;
+}
 .orderListContents .orderListTabs .tabWayMobile .openFilter:hover{
     background:#2F5AFF ;
     color: white;
@@ -2572,6 +2583,13 @@ body.dark .orderListContents .orderListTabs .tabWay button.active{
     font-size: 14px;
     font-family: MM;
     border: 1px solid #E6ECFF;
+}
+body.dark .orderListContents .orderListTabs .tabWayMobile .filterContent button{
+    background:#0F1419;
+}
+body.dark .orderListContents .orderListTabs .tabWayMobile .filterContent button.active{
+    background: #2F5AFF;
+
 }
 .orderListContents .orderListTabs .tabWayMobile button.active{
     background: #2F5AFF;
@@ -2627,6 +2645,9 @@ body.dark .orderListTabs .OrdersList{
     background: #e7e7e7;
     padding: 10px;
     border-radius: 50%;
+}
+body.dark .orderListTabs .OrdersList table tr td:nth-child(1) i{
+    background: #000000;
 }
 .orderListTabs .OrdersList table tr td:nth-child(2){
     display: flex;
