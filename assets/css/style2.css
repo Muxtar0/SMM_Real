@@ -505,7 +505,7 @@ header{
    
   
     animation-name: ripple;
-    animation-duration: 6s;
+    animation-duration: 1s;
     animation-timing-function: cubic-bezier(0, 0.2, 0.8, 1);
     animation-iteration-count: infinite;
   }
