@@ -996,22 +996,19 @@ header{
     align-items: flex-start;
     justify-content: space-between;
 }
-#ProfessionallyExperienced .mainContent .icon{
-    margin-right: 12px;
-}
-#ProfessionallyExperienced .mainContent .icon button{
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    outline: none;
-    background: linear-gradient(-45deg,#EC5450,#7F09A3);
-    color: white;
-}
 
+#ProfessionallyExperienced .mainContent .texts .tabContent{
+    display: none;
+    visibility: hidden;
+    opacity: 1;
+}
+#ProfessionallyExperienced .mainContent .texts .tabContent.active{
+    display: block;
+}
+#ProfessionallyExperienced .mainContent .texts .tabContent.active.active2{
+    visibility: visible;
+    opacity: 1;
+}
 #ProfessionallyExperienced .mainContent .texts h4{
     font-size: 16px;
     font-family: MSB;
@@ -1035,7 +1032,10 @@ header{
     width: 60%;
     transform: translateY(50%);
 }
-#ProfessionallyExperienced .mainContent .texts .socialMedia a{
+#ProfessionallyExperienced .mainContent .texts .socialMedia button{
+    border: none;
+    background: transparent;
+    outline: none;
     font-size: 16px;
     font-family: MSB;
     color: #FFFFFF;
