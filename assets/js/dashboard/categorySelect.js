@@ -25,6 +25,8 @@ for(let i = 0 ; i < selectionsli.length;i++){
         const data = selectionsli[i].getAttribute('data-value');
         selectedText.innerHTML=data;
         selectedText.setAttribute('data-selectedValue',data)
+    selections.classList.toggle('hidden')
+
 
     })
 }
