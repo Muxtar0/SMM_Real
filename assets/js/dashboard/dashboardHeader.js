@@ -4,12 +4,34 @@ const notificationsBTN = document.querySelector('.notificationsBTN')
 const dropdownProfile = document.querySelector('.dropdownProfile')
 const dropdownBars = document.querySelector('.dropdownBars')
 const dropdownNotifications = document.querySelector('.dropdownNotifications')
+const dashboardHeaderMain = document.querySelector('.dashboardHeader');
+const main = document.querySelector('main');
+
 
 
 const themeChangeBtn = document.querySelector('.themeChangeBtn')
 const body = document.querySelector('body')
 const html = document.querySelector('html')
 let theme = "light";
+
+
+
+window.addEventListener("DOMContentLoaded" , (e) => {
+    if(window.outerWidth <= 992){
+
+        dashboardHeaderMain.classList.add('small')
+        main.classList.add('small')
+      
+      }
+      else{
+        dashboardHeaderMain.classList.remove('small')
+        main.classList.remove('small')
+
+      }
+})
+
+
+
 
 
 

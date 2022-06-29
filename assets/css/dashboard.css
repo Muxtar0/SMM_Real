@@ -406,8 +406,10 @@ body.dark .filterDiv > .filterItem .filterDropDownDiv ul li button:hover{
 
 
 
-
-
+/* main */
+main.small{
+    margin-top: 60px;
+}
 
 
 
@@ -864,6 +866,11 @@ body.dark .sidebar .showMore .showMoreContent ul li a .explanation::before{
     background: white;
     height: 60px;
     padding: 0 30px;
+}
+.dashboardContent header.small{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .dashboardContent header .closeOpenSidebarDiv{
     transition: all 300ms;
