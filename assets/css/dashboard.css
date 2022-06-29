@@ -2784,6 +2784,7 @@ body.dark .orderListTabs .tableWays a.active{
     left: 0;
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
     display: none;
 }
 .supportRequestContents .bg-close{
@@ -2803,6 +2804,9 @@ body.dark .orderListTabs .tableWays a.active{
 }
 .supportRequestContents .supportRequestTabContent{
     z-index: 100;
+    max-height: 95vh;
+    width: 95%;
+    overflow-y: auto;
 }
 .supportRequestContents .supportRequestTabContent .content{
     display: flex;
@@ -3040,6 +3044,7 @@ body.dark .supportRequestContents .supportRequestTabContent .content .tabs .tabC
     max-height: 100vh;
     overflow: auto;
     height: 99%;
+    width: 500px;
 }
 .createSupportRequestContentRight .mainContent{
     padding: 10px 15px;
@@ -3752,6 +3757,9 @@ body.dark .serviceCardsContent .cardsDiv .Card{
 }
 
 @media (max-width:425px){
+    .createSupportRequestContentRight > div{
+        width: 95%;
+    }
     .dashboardContent main{
         padding: 20px 5px;
     }
