@@ -67,8 +67,7 @@ window.addEventListener("DOMContentLoaded" , (e) => {
         sidebar.classList.toggle('smallSidebar')
         bigLogo.classList.toggle('notShowing')
         smallLogo.classList.toggle('notShowing')
-
-   
+        sidebarBgClose.classList.add("active")
     }
     
     if(window.outerWidth <= 768){
