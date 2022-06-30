@@ -767,6 +767,12 @@ body.dark .sidebar .sidebarList ul li.active a .icon i{
 .sidebar.smallSidebar .showMore{
     padding: 0 0px;
 }
+.sidebar .showMore .showMoreBTN{
+    border-radius: 5px;
+}
+.sidebar .showMore .showMoreBTN span{
+    font-size: 15px;
+}
 .sidebar .showMore .showMoreBTN i{
     transition: all 300ms;
 }
@@ -3810,7 +3816,7 @@ body.dark .serviceCardsContent .cardsDiv .Card{
     }
 }
 
-@media (max-width:992px){
+@media (max-width:1025px){
     .dashboardHeader{
         position: sticky;
         top: 0;
