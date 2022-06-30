@@ -105,7 +105,7 @@ a {
     border: 1px solid #000000;
 }
 .Btn-bg-orange{
-    background: #FF0045;
+    background: #a5002c;
 }
 .Btn-bg-black{
     background: #000000;
@@ -685,7 +685,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 4px 4px rgba(135, 146, 161, 0.16), 0px 6px 41px rgba(135, 146, 161, 0.11);
+    background: #FF0045;
 border-radius: 18px;
 margin-top: 187px;
 padding: 25px 100px;
@@ -730,10 +730,14 @@ margin-bottom: 10px;
     margin-left: 10px;
 border-radius: 8px;
 padding: 10px;
+color: white;
 
 }
+.loginComponentCon .loginCol .content .item .inputDiv input::placeholder{
+    color: white;
+}
 .loginComponentCon .loginCol .content .item .inputDiv i{
-    color: #FF0045;
+    color: #ffffff;
 }
 
 .loginComponentCon .loginCol .content .item .rememberPass{
