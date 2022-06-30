@@ -726,6 +726,7 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
 .sidebar .sidebarList ul li a .text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .sidebar .sidebarList ul li a .text span{
     font-size:12px;
