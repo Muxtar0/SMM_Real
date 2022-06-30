@@ -10,7 +10,9 @@
     <title>Document</title>
 </head>
 <body >
+  <div class="sidebar-bg-close"></div>
   <div class="sidebar">
+
     <div class="logo">
       <img class="bigLogo" src="assets/img/Group 627.png" alt="" />
       <img
@@ -18,60 +20,15 @@
         src="assets/img/Path 2943.png"
         alt=""
       />
-      <div class="closeOpenSidebarDiv">
-        <button class="closeOpenSidebarButton">
-          <i class="fa-solid fa-angles-right"></i>
-        </button>
-      </div>
+      
     </div>
-    <div class="balanceMainDiv">
-      <div class="icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30.154"
-          height="29.267"
-          viewBox="0 0 30.154 29.267"
-        >
-          <path
-            id="svg8"
-            d="M10.543,17.577V16.069m6.034,1.509V13.051m6.034,4.526V10.034M10.543,29.646l6.034-6.034,6.034,6.034M3,4H30.154M4.509,4H28.646V22.1a1.509,1.509,0,0,1-1.509,1.509H6.017A1.509,1.509,0,0,1,4.509,22.1Z"
-            transform="translate(-1.5 -2.5)"
-            fill="none"
-            stroke="#fff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
-          />
-        </svg>
-      </div>
-      <div class="balanceDiv">
-        <h5>Bakiyeniz</h5>
-        <div class="balance">
-          <p class="balanceText"><span>10.00</span> ₺</p>
-          <button class="showHiddenBalance">
-            <i class="fa-solid fa-eye-slash"></i>
-          </button>
-        </div>
-      </div>
-    </div>
+    
     <div class="sidebarList">
       <ul>
-        <li>
+        <li class="active">
           <a href="#">
             <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24.001"
-                height="24"
-                viewBox="0 0 24.001 24"
-              >
-                <path
-                  id="siparislerim"
-                  d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
-                  transform="translate(-2 -2)"
-                  fill="#23252e"
-                />
-              </svg>
+              <i class="fi fi-rr-shopping-cart-add"></i>
             </div>
             <div class="text">
               <p>Yeni Sipariş</p>
@@ -84,19 +41,7 @@
         <li>
           <a href="#">
             <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  id="reklam-paketi"
-                  d="M12.461,9.641l.082.106.325.514,0,0,.561.883,5.4,8.508a.75.75,0,0,1-1.183.912l-.082-.108-.023-.033-5.19,1.624A3.011,3.011,0,0,1,11.266,25.5l-.138.09a2.789,2.789,0,0,1-3.691-.714l-.132-.2-.567-.87-1.581.5a.75.75,0,0,1-1.3.585l-.082-.108-.324-.507-.012-.015-.993-1.567-.006-.007-.325-.513a.75.75,0,0,1,.954-1.08l8.25-10.47-.045-.07a.75.75,0,0,1,1.185-.91Zm3.3-7.383.159.114,2.062,1.663,2.646-.13A1.678,1.678,0,0,1,22.271,4.97l.057.172L23.019,7.7l2.22,1.449a1.679,1.679,0,0,1,.709,1.815l-.06.187-.943,2.475L25.89,16.1a1.68,1.68,0,0,1-.495,1.887l-.157.115-2.218,1.444-.694,2.557A1.679,1.679,0,0,1,20.8,23.348h-.18l-2.647-.132-2.062,1.662a.751.751,0,0,1-.96-.015l-.094-.1a.75.75,0,0,1,.015-.96l.1-.094,2.286-1.84a.751.751,0,0,1,.372-.159l.135-.006,2.934.145a.176.176,0,0,0,.154-.075l.026-.057.771-2.835a.739.739,0,0,1,.207-.346l.108-.085,2.457-1.6A.179.179,0,0,0,24.5,16.7l-.012-.06L23.442,13.9a.766.766,0,0,1-.036-.4l.036-.132,1.045-2.745a.176.176,0,0,0-.024-.169l-.045-.042L21.96,8.8a.74.74,0,0,1-.265-.3l-.048-.129L20.88,5.534a.18.18,0,0,0-.12-.123L20.7,5.4l-2.932.145a.735.735,0,0,1-.394-.09l-.114-.075L14.973,3.539a.182.182,0,0,0-.171-.03l-.052.03L12.464,5.384a.75.75,0,0,1-.372.159l-.136.006L9.023,5.4a.186.186,0,0,0-.154.076l-.026.056L8.077,8.366a.742.742,0,0,1-.207.345L7.762,8.8,5.3,10.4a.179.179,0,0,0-.081.153l.012.06,1.045,2.743a.751.751,0,0,1,.036.4l-.036.132-.448,1.174a.75.75,0,0,1-1.438-.4l.037-.13.345-.907-.945-2.478a1.683,1.683,0,0,1,.495-1.885l.157-.115L6.7,7.7,7.4,5.138A1.679,1.679,0,0,1,8.918,3.9H9.1l2.646.133,2.064-1.665a1.68,1.68,0,0,1,1.948-.112ZM10.925,22.5l-2.7.844.349.534a1.29,1.29,0,0,0,1.618.511l.208-.115a1.506,1.506,0,0,0,.525-1.774ZM12.17,11.963,4,22.337l.334.525.067.108L16.71,19.115l-4.54-7.15Z"
-                  transform="translate(-2 -2)"
-                  fill="#23252e"
-                />
-              </svg>
+              <i class="fi fi-rr-list"></i>
             </div>
             <div class="text">
               <p>Siparişler</p>
@@ -109,19 +54,7 @@
         <li>
           <a href="#">
             <div class="icon">
-              <svg
-                id="koleksiyon-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  id="Shape"
-                  d="M22.1,12.9a6.5,6.5,0,1,1-9.192,0A6.5,6.5,0,0,1,22.1,12.9Zm-8.17,1.021a5.055,5.055,0,1,0,7.313.172l-.164-.172-.172-.164a5.056,5.056,0,0,0-6.978.164Zm3.574.325a.75.75,0,0,1,.743.648l.007.1v1.5a.25.25,0,0,0,.25.25H20a.75.75,0,0,1,0,1.5H18.5a.25.25,0,0,0-.25.25V20a.75.75,0,0,1-1.5,0V18.5a.25.25,0,0,0-.25-.25H15a.75.75,0,1,1,0-1.5h1.5a.25.25,0,0,0,.25-.25V15A.75.75,0,0,1,17.5,14.25ZM2.25,12a.75.75,0,0,1,0,1.5H.75a.75.75,0,1,1,0-1.5Zm6.5,0a.75.75,0,1,1,0,1.5H5.25a.75.75,0,0,1,0-1.5ZM2.25,6a.75.75,0,1,1,0,1.5H.75A.75.75,0,1,1,.75,6Zm17,0a.75.75,0,1,1,0,1.5h-14a.75.75,0,0,1,0-1.5Zm-17-6a.75.75,0,0,1,0,1.5H.75A.75.75,0,0,1,.75,0Zm17,0a.75.75,0,1,1,0,1.5h-14a.75.75,0,0,1,0-1.5Z"
-                  fill="#23252e"
-                />
-              </svg>
+              <i class="fi fi-rr-tags"></i>
             </div>
             <div class="text">
               <p>Fiyat Listesi</p>
@@ -134,19 +67,7 @@
         <li>
           <a href="#">
             <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="16.5"
-                viewBox="0 0 24 16.5"
-              >
-                <path
-                  id="hesap-hareketlerim"
-                  d="M25.25,9a.751.751,0,0,1,.738.615L26,9.75v9a2.25,2.25,0,0,1-2.034,2.239L23.75,21H7.25a.75.75,0,0,1-.135-1.488L7.25,19.5h16.5a.751.751,0,0,0,.738-.615l.012-.135v-9A.75.75,0,0,1,25.25,9Zm-4.5-4.5A2.251,2.251,0,0,1,23,6.75v9A2.251,2.251,0,0,1,20.75,18H4.25A2.251,2.251,0,0,1,2,15.75v-9A2.251,2.251,0,0,1,4.25,4.5Zm0,1.5H4.25a.75.75,0,0,0-.75.75v9a.75.75,0,0,0,.75.75h16.5a.75.75,0,0,0,.75-.75v-9A.75.75,0,0,0,20.75,6Zm-1.875,6.75.153.011a1.125,1.125,0,1,1-.306,0ZM15.152,8.6a3.75,3.75,0,1,1-5.3,0A3.752,3.752,0,0,1,15.152,8.6Zm-4.243,1.06a2.251,2.251,0,1,0,3.337.171l-.155-.171L13.92,9.5A2.253,2.253,0,0,0,10.909,9.658ZM6.125,7.5l.153.01a1.125,1.125,0,1,1-.306,0Z"
-                  transform="translate(-2 -4.5)"
-                  fill="#23252e"
-                />
-              </svg>
+              <i class="fi fi-rr-money"></i>
             </div>
             <div class="text">
               <p>Bakiye Yükle</p>
@@ -160,19 +81,7 @@
         <li>
           <a href="#">
             <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="16.5"
-                viewBox="0 0 24 16.5"
-              >
-                <path
-                  id="mesajlarim"
-                  d="M23.75,4.5A2.251,2.251,0,0,1,26,6.75v12A2.251,2.251,0,0,1,23.75,21H4.25A2.251,2.251,0,0,1,2,18.75v-12A2.251,2.251,0,0,1,4.25,4.5Zm.75,2.436L18.883,10.81,22.009,13.7a.75.75,0,0,1-.91,1.184l-.107-.083-3.375-3.117L15.793,12.94a3.152,3.152,0,0,1-3.364.14l-.221-.138-1.826-1.258L7.009,14.8a.75.75,0,0,1-1.109-1l.09-.1,3.126-2.889L3.5,6.938V18.75a.751.751,0,0,0,.615.738l.135.012h19.5a.75.75,0,0,0,.75-.75ZM23.216,6H4.783l8.277,5.707a1.657,1.657,0,0,0,1.707.1l.174-.1Z"
-                  transform="translate(-2 -4.5)"
-                  fill="#0f1419"
-                />
-              </svg>
+              <i class="fi fi-rr-life-ring"></i>
             </div>
             <div class="text">
               <p>Destek</p>
@@ -186,19 +95,7 @@
         <li>
           <a href="#">
             <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="16.5"
-                viewBox="0 0 24 16.5"
-              >
-                <path
-                  id="indirimler"
-                  d="M23.63,5a2.375,2.375,0,0,1,2.358,2.135L26,7.357V10.3a.886.886,0,0,1-.889.884,2.063,2.063,0,1,0,0,4.125A.887.887,0,0,1,26,16.2v2.946A2.364,2.364,0,0,1,23.63,21.5H4.37a2.375,2.375,0,0,1-2.358-2.135L2,19.144V16.2a.886.886,0,0,1,.889-.883,2.063,2.063,0,1,0,0-4.125A.887.887,0,0,1,2,10.3V7.358A2.365,2.365,0,0,1,4.37,5Zm0,1.769H4.37a.59.59,0,0,0-.593.588V9.523l.06.015a3.835,3.835,0,0,1,2.895,3.471l.008.241a3.838,3.838,0,0,1-2.9,3.714l-.06.012v2.115l0,.122a.591.591,0,0,0,.588.519H23.63a.59.59,0,0,0,.593-.588l0-2.167-.058-.012a3.838,3.838,0,0,1-2.9-3.472l-.008-.241a3.838,3.838,0,0,1,2.9-3.714l.058-.015,0-2.114-.006-.12a.591.591,0,0,0-.588-.519ZM20.12,14.53a2.345,2.345,0,0,1,0,3.333,2.377,2.377,0,0,1-3.351,0,2.345,2.345,0,0,1,0-3.333A2.377,2.377,0,0,1,20.12,14.53ZM18.332,8.942a.881.881,0,0,1,.1,1.128l-.1.122-7.407,7.366a.893.893,0,0,1-1.257,0,.881.881,0,0,1-.1-1.128l.1-.122,7.407-7.366A.893.893,0,0,1,18.332,8.942Zm-.306,6.837a.586.586,0,0,0,0,.834.6.6,0,0,0,.837,0,.588.588,0,0,0,.077-.741l-.075-.093L18.77,15.7a.6.6,0,0,0-.744.075ZM11.972,8.638a2.348,2.348,0,0,1,0,3.333,2.379,2.379,0,0,1-3.352,0,2.348,2.348,0,0,1,0-3.333A2.379,2.379,0,0,1,11.972,8.638ZM9.878,9.887a.586.586,0,0,0,0,.834.6.6,0,0,0,.837,0,.586.586,0,0,0,.075-.741l-.075-.093-.093-.075a.594.594,0,0,0-.744.075Z"
-                  transform="translate(-2 -5)"
-                  fill="#23252e"
-                />
-              </svg>
+              <i class="fi fi-rr-ticket"></i>
             </div>
             <div class="text">
               <p>Referans Sistemi</p>
@@ -212,19 +109,7 @@
         <li>
           <a href="#">
             <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="14.705"
-                viewBox="0 0 24 14.705"
-              >
-                <path
-                  id="satici-bilgi-merkezi"
-                  d="M17.279,5.3l.27.086,4.374,1.6a1.676,1.676,0,0,1,1.146-.576l2.181,0a.75.75,0,0,1,.135,1.488L25.25,7.9H23.219a.223.223,0,0,0-.205.117L23,8.067V14.45a.206.206,0,0,0,.168.193l.083.008h2a.75.75,0,0,1,.135,1.488l-.135.012H23.28a1.694,1.694,0,0,1-1.347-.577l-4.662.894a.752.752,0,0,1-.2.012l-.048.141a2.406,2.406,0,0,1-2.085,1.507l-.218,0-.019.126a2.1,2.1,0,0,1-.515.978l-.162.157a2.092,2.092,0,0,1-2.8-.055l-.147-.153L7.793,15.5l-1.658,0a1.682,1.682,0,0,1-1.2.648l-.18,0h-2a.75.75,0,0,1-.135-1.488l.135-.012H4.781a.228.228,0,0,0,.177-.075.55.55,0,0,1,.04-.13L5,8.1a.209.209,0,0,0-.169-.192L4.749,7.9h-2a.75.75,0,0,1-.135-1.488L2.75,6.4H4.719a1.708,1.708,0,0,1,1.74,1.361L9.92,6.378a2.83,2.83,0,0,1,2.554.222l.206.138,2.413-1.212A3.1,3.1,0,0,1,17.279,5.3Zm-6.3,2.375a1.285,1.285,0,0,0-.336.045l-.164.053L6.5,9.36,6.5,14H8.13a.75.75,0,0,1,.466.165l.093.085L12.21,18.2a.59.59,0,0,0,.834.063.6.6,0,0,0,.192-.321l.013-.128V17.5l-.76-.759a.75.75,0,0,1,.957-1.148l.1.086.875.876.027.012a.905.905,0,0,0,1.177-.506L15.653,16l-1.2-1.2a.75.75,0,0,1,.957-1.148l.1.085,1.245,1.247h.18a.717.717,0,0,0,.717-.719.75.75,0,0,0-.078-.327l-.057-.09L14.7,10.235l-1.521.5a1.91,1.91,0,0,1-2.043-3.056,1.373,1.373,0,0,0-.161-.011Zm4.962-.88-.172.075L12.41,8.553a.414.414,0,0,0-.187.546.4.4,0,0,0,.391.233l.1-.019,3.468-1.146a.75.75,0,0,1,.594,1.371l-.123.054-.437.142,2.495,3.195a2.241,2.241,0,0,1,.442,1.329,2.347,2.347,0,0,1-.024.327l2.373-.456v-5.7L17.035,6.792a1.6,1.6,0,0,0-1.1,0Z"
-                  transform="translate(-2 -5.196)"
-                  fill="#23252e"
-                />
-              </svg>
+              <i class="fi fi-rr-handshake"></i>
             </div>
             <div class="text">
               <p>Drip-feed</p>
@@ -245,19 +130,7 @@
           <li>
             <a href="#">
               <div class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    id="sattiklarim"
-                    d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
-                    transform="translate(-2 -2)"
-                    fill="#23252e"
-                  />
-                </svg>
+                <i class="fi fi-rr-dashboard"></i>
               </div>
               <div class="text">
                 <p>Gösterge Paneli</p>
@@ -270,19 +143,7 @@
           <li>
             <a href="#">
               <div class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24.004"
-                  height="24"
-                  viewBox="0 0 24.004 24"
-                >
-                  <path
-                    id="bilgilerim-ayarlarim"
-                    d="M15.846,2.893a2.712,2.712,0,0,1,4.719,1.956l-.072,1.4a1.211,1.211,0,0,0,1.147,1.268h.12l1.4-.072a2.712,2.712,0,0,1,1.951,4.72l-1.043.94a1.214,1.214,0,0,0-.087,1.711c.029.03.057.059.087.086l1.043.941a2.71,2.71,0,0,1-1.956,4.717l-1.4-.071a1.21,1.21,0,0,0-1.27,1.145v.125l.072,1.406a2.711,2.711,0,0,1-4.711,1.947L14.9,24.07a1.21,1.21,0,0,0-1.709-.087,1.232,1.232,0,0,0-.089.089l-.946,1.042a2.711,2.711,0,0,1-4.713-1.951l.072-1.4a1.21,1.21,0,0,0-1.145-1.27H6.251l-1.4.072a2.71,2.71,0,0,1-1.959-4.716l1.042-.941A1.21,1.21,0,0,0,4.02,13.2a.985.985,0,0,0-.089-.089L2.89,12.162A2.709,2.709,0,0,1,4.843,7.45l1.4.071A1.208,1.208,0,0,0,7.516,6.378V6.245l-.068-1.4a2.709,2.709,0,0,1,4.713-1.95l.943,1.04a1.21,1.21,0,0,0,1.706.089c.03-.029.06-.057.09-.092Zm2.693.818a1.21,1.21,0,0,0-1.58.191L15.916,5.039l-.1.1a2.708,2.708,0,0,1-3.824-.2L11.05,3.9a1.209,1.209,0,0,0-2.1.87l.066,1.4a2.307,2.307,0,0,1,0,.288A2.709,2.709,0,0,1,6.168,9.02l-1.4-.071a1.209,1.209,0,0,0-.87,2.1L4.94,12l.2.194a2.714,2.714,0,0,1-.2,3.83l-1.042.94a1.208,1.208,0,0,0,.875,2.1l1.4-.071q.14-.007.279,0A2.711,2.711,0,0,1,9.02,21.837l-.072,1.4a1.21,1.21,0,0,0,2.1.87l.944-1.04a2.393,2.393,0,0,1,.2-.2,2.709,2.709,0,0,1,3.827.2l.94,1.037a1.21,1.21,0,0,0,2.1-.866l-.072-1.4c0-.093,0-.186,0-.278a2.709,2.709,0,0,1,2.846-2.566l1.4.071a1.21,1.21,0,0,0,.873-2.106l-1.043-.941a2.394,2.394,0,0,1-.2-.2,2.711,2.711,0,0,1,.2-3.829L24.1,11.05a1.209,1.209,0,0,0-.869-2.106l-1.4.072c-.09,0-.18,0-.269,0a2.71,2.71,0,0,1-2.569-2.844l.071-1.4a1.21,1.21,0,0,0-.4-.959Zm-.822,6.578a5.253,5.253,0,1,1-7.429,0A5.253,5.253,0,0,1,17.716,10.289ZM11.347,11.35a3.753,3.753,0,1,0,5.49.2l-.183-.2-.2-.183a3.755,3.755,0,0,0-5.112.183Z"
-                    transform="translate(-2 -2)"
-                    fill="#23252e"
-                  />
-                </svg>
+                <i class="fi fi-rr-settings"></i>
               </div>
               <div class="text">
                 <p>API</p>
@@ -295,19 +156,7 @@
           <li>
             <a href="#">
               <div class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="18"
-                  viewBox="0 0 24 18"
-                >
-                  <path
-                    id="kredi-kartlarim"
-                    d="M23.75,4A2.251,2.251,0,0,1,26,6.25v13.5A2.251,2.251,0,0,1,23.75,22H4.25A2.251,2.251,0,0,1,2,19.75V6.25A2.251,2.251,0,0,1,4.25,4Zm.75,6H3.5v9.75a.751.751,0,0,0,.615.738l.135.012h19.5a.75.75,0,0,0,.75-.75Zm-12,6a.75.75,0,0,1,.135,1.488L12.5,17.5H7.25a.75.75,0,0,1-.135-1.488L7.25,16Zm3-3a.75.75,0,0,1,.135,1.488L15.5,14.5H7.25a.75.75,0,0,1-.135-1.488L7.25,13Zm8.25-7.5H4.25a.75.75,0,0,0-.75.75V8.5h21V6.25a.751.751,0,0,0-.615-.738Z"
-                    transform="translate(-2 -4)"
-                    fill="#23252e"
-                  />
-                </svg>
+                <i class="fi fi-rr-interrogation"></i>
               </div>
               <div class="text">
                 <p>Sıkça Sorulan Sorular</p>
@@ -320,19 +169,7 @@
           <li>
             <a href="#">
               <div class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    id="urun-yonetimi"
-                    d="M17.655,18.624a.75.75,0,0,1,.969-.969l6.894,2.652a.749.749,0,0,1,.117,1.342l-1.828,1.1,1.974,1.972a.75.75,0,0,1-.957,1.147l-.1-.085-1.972-1.974-1.095,1.83a.753.753,0,0,1-1.2.114l-.078-.1-.062-.127Zm2.005,1.036,1.494,3.883.8-1.332a.752.752,0,0,1,.157-.186l.1-.072,1.332-.8-3.883-1.494ZM19.25,2a2.253,2.253,0,0,1,2.122,1.5H23.75a2.25,2.25,0,0,1,2.239,2.034L26,5.75v12a.75.75,0,0,1-1.488.135L24.5,17.75v-12a.751.751,0,0,0-.615-.738L23.75,5H21.5V15.455a.75.75,0,0,1-1.488.135L20,15.455V4.25a.751.751,0,0,0-.615-.738L19.25,3.5H8.75a.751.751,0,0,0-.738.615L8,4.25v15a.751.751,0,0,0,.615.738L8.75,20h7.327a.75.75,0,0,1,.135,1.488l-.135.012H8.75A2.249,2.249,0,0,1,6.629,20H4.25A2.25,2.25,0,0,1,2.01,17.966L2,17.75v-12A2.25,2.25,0,0,1,4.034,3.51L4.25,3.5H6.627a2.249,2.249,0,0,1,1.9-1.489L8.75,2ZM6.5,5H4.25a.751.751,0,0,0-.738.615L3.5,5.75v12a.751.751,0,0,0,.615.738l.135.012H6.5Zm6.75,8.25a.75.75,0,0,1,.135,1.488l-.135.012h-3a.75.75,0,0,1-.135-1.488l.135-.012Zm4.5-3.75a.75.75,0,0,1,.135,1.488L17.75,11h-7.5a.75.75,0,0,1-.135-1.488L10.25,9.5Zm0-3.75a.75.75,0,0,1,.135,1.488l-.135.012h-7.5a.75.75,0,0,1-.135-1.488l.135-.012Z"
-                    transform="translate(-2 -2)"
-                    fill="#23252e"
-                  />
-                </svg>
+                <i class="fi fi-rr-document"></i>
               </div>
               <div class="text">
                 <p>Kullanıcı Sözeşmesi</p>
@@ -345,26 +182,7 @@
           <li>
             <a href="#">
               <div class="icon">
-                <svg
-                  id="Group_545"
-                  data-name="Group 545"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="23.996"
-                  height="24"
-                  viewBox="0 0 23.996 24"
-                >
-                  <g id="Group_544" data-name="Group 544">
-                    <g id="Group_543" data-name="Group 543">
-                      <path
-                        id="Path_2923"
-                        data-name="Path 2923"
-                        d="M6.616,17.935a.811.811,0,0,1,.214,1.6l-.109.015a1.624,1.624,0,0,0-1.042.474,3.238,3.238,0,0,0-.444.735l-.079.168c-.2.43-.412.967-.634,1.582-.151.421-.3.864-.447,1.312l-.045.144.81-.265.646-.225.588-.22c.279-.108.537-.213.769-.315l.225-.1a3.908,3.908,0,0,0,.906-.525,1.611,1.611,0,0,0,.465-.987l.009-.159a.811.811,0,0,1,1.623,0,3.236,3.236,0,0,1-.951,2.3,4.814,4.814,0,0,1-1.371.85c-.48.222-1.057.451-1.713.688-.439.157-.9.315-1.363.465l-.876.273-.57.169-.195.055a.811.811,0,0,1-1-1l.279-.94c.216-.7.447-1.4.684-2.062s.466-1.236.69-1.714a4.793,4.793,0,0,1,.849-1.371,3.235,3.235,0,0,1,2.083-.945ZM25.095,2a.812.812,0,0,1,.9.9l-.259,2.334a8.923,8.923,0,0,1-2.56,5.326L16.93,16.8l.3.882A7.3,7.3,0,0,1,15.708,24.9l-.247.261-.25.249a1.586,1.586,0,0,1-.636.393,1.554,1.554,0,0,1-.342.075l-.171.009a1.62,1.62,0,0,1-1.537-1.11l-1.248-3.737L6.961,16.717,3.225,15.471A1.622,1.622,0,0,1,2.15,13.592l.048-.171a1.62,1.62,0,0,1,.393-.636l.25-.25a7.3,7.3,0,0,1,7.472-1.765l.883.292,6.239-6.238a8.92,8.92,0,0,1,4.924-2.5l.4-.054ZM15.649,18.087,13.962,19.77l-.064.063-.984.984,1.147,3.442.253-.25a5.68,5.68,0,0,0,1.371-5.813ZM24.266,3.731l-1.326.147a7.307,7.307,0,0,0-4.357,2.094l-6.59,6.587,0,.006L8.546,16.008l3.44,3.44L22.025,9.415a7.309,7.309,0,0,0,2.05-4.03l.045-.33Zm-16.1,8.288H7.834a5.689,5.689,0,0,0-3.845,1.663l-.252.25L7.18,15.078l2.733-2.733L9.8,12.308a5.727,5.727,0,0,0-1.638-.289Z"
-                        transform="translate(-2 -2)"
-                        fill="#23252e"
-                      />
-                    </g>
-                  </g>
-                </svg>
+                <i class="fi fi-rr-user-add"></i>
               </div>
               <div class="text">
                 <p>Referans Sistemi</p>
@@ -377,19 +195,7 @@
           <li>
             <a href="#">
               <div class="icon">
-                <svg
-                  id="koleksiyon-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    id="Shape"
-                    d="M22.1,12.9a6.5,6.5,0,1,1-9.192,0A6.5,6.5,0,0,1,22.1,12.9Zm-8.17,1.021a5.055,5.055,0,1,0,7.313.172l-.164-.172-.172-.164a5.056,5.056,0,0,0-6.978.164Zm3.574.325a.75.75,0,0,1,.743.648l.007.1v1.5a.25.25,0,0,0,.25.25H20a.75.75,0,0,1,0,1.5H18.5a.25.25,0,0,0-.25.25V20a.75.75,0,0,1-1.5,0V18.5a.25.25,0,0,0-.25-.25H15a.75.75,0,1,1,0-1.5h1.5a.25.25,0,0,0,.25-.25V15A.75.75,0,0,1,17.5,14.25ZM2.25,12a.75.75,0,0,1,0,1.5H.75a.75.75,0,1,1,0-1.5Zm6.5,0a.75.75,0,1,1,0,1.5H5.25a.75.75,0,0,1,0-1.5ZM2.25,6a.75.75,0,1,1,0,1.5H.75A.75.75,0,1,1,.75,6Zm17,0a.75.75,0,1,1,0,1.5h-14a.75.75,0,0,1,0-1.5Zm-17-6a.75.75,0,0,1,0,1.5H.75A.75.75,0,0,1,.75,0Zm17,0a.75.75,0,1,1,0,1.5h-14a.75.75,0,0,1,0-1.5Z"
-                    fill="#23252e"
-                  />
-                </svg>
+                <i class="fi fi-rr-users"></i>
               </div>
               <div class="text">
                 <p>Ortaklık</p>
@@ -405,22 +211,134 @@
   </div>
     <section class="dashboardContent">
       <header class="dashboardHeader">
-        <div class="balance">
-          <p class="balanceText"><span>10.00</span> ₺</p>
-          <button class="showHiddenBalance">
-            <i class="fa-solid fa-eye-slash"></i>
+        <div class="closeOpenSidebarDiv">
+          <button class="closeOpenSidebarButton">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </button>
         </div>
-        <div class="theme">
-          <button class="themeChangeBtn"><i class="fa-solid fa-moon"></i></button>
-        </div>
-        <div class="notifications">
-          <button class="notificationsBTN">
-            <i class="fa-solid fa-bell dropdownNotificationsIcon"></i>
-          </button>
-          <div class="dropdownNotifications hidden">
-            <div class="top">
-              <div>
+        <div class="right">
+          <div class="balance">
+            <p class="balanceText"><span>10.00</span> ₺</p>
+            <button class="showHiddenBalance">
+              <i class="fa-solid fa-eye-slash"></i>
+            </button>
+          </div>
+          <div class="theme">
+            <button class="themeChangeBtn"><i class="fa-solid fa-moon"></i></button>
+          </div>
+          <div class="notifications">
+            <button class="notificationsBTN">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <div class="dropdownNotifications hidden">
+              <div class="top">
+                <div>
+                  <div class="logo">
+                    <img src="assets/img/Path 2943.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3>Zarif BALCI</h3>
+                    <p>Hoşgeldiniz.</p>
+                  </div>
+                </div>
+                <div>
+                  <button>Temizle</button>
+                </div>
+              </div>
+              <ul class="dropdownList">
+                <li>
+                  <div class="icon">
+                    <div class="iconWrapper">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <span>Instagram İzlenme</span>
+                    <p>
+                      Instagram İzlenme ve etkileşim gönderimi yapan servisimiz
+                      aktif
+                    </p>
+                    <span> 20 Dk önce </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <div class="iconWrapper">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <span>Mutlu Yıllar !</span>
+                    <p>
+                      Yeni bir yıla başlarken , bizleri tercih eden tüm
+                      müşterilerimize teşekkür ederiz.
+                    </p>
+                    <span> 20 Dk önce </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <div class="iconWrapper">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <span>Arayüz</span>
+                    <p>
+                      Yeni arayüz aktif edildi, daha kolay ve daha hızlı sipariş
+                      verebilirsiniz.
+                    </p>
+                    <span> 20 Dk önce </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bars">
+            <button class="barsBTN"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdownBars hidden">
+              <ul class="dropdownList">
+                <li>
+                  <h5>Servis güncellenmiştir</h5>
+                  <p>#443 - Instagram Reels İzlenme</p>
+                  <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
+                  <p>| Minimum: 50 » 50</p>
+                  <p>| Maximum: 20000000 » 20000000</p>
+                  <a href="#">Servise Git</a>
+                </li>
+                <li>
+                  <h5>Servis güncellenmiştir</h5>
+                  <p>#443 - Instagram Reels İzlenme</p>
+                  <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
+                  <p>| Minimum: 50 » 50</p>
+                  <p>| Maximum: 20000000 » 20000000</p>
+                  <a href="#">Servise Git</a>
+                </li>
+                <li>
+                  <h5>Servis güncellenmiştir</h5>
+                  <p>#443 - Instagram Reels İzlenme</p>
+                  <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
+                  <p>| Minimum: 50 » 50</p>
+                  <p>| Maximum: 20000000 » 20000000</p>
+                  <a href="#">Servise Git</a>
+                </li>
+                <li>
+                  <h5>Servis güncellenmiştir</h5>
+                  <p>#443 - Instagram Reels İzlenme</p>
+                  <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
+                  <p>| Minimum: 50 » 50</p>
+                  <p>| Maximum: 20000000 » 20000000</p>
+                  <a href="#">Servise Git</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile">
+            <button class="profileBTN"><i class="fa-solid fa-user"></i></button>
+            <div class="dropdownProfile hidden">
+              <div class="top">
                 <div class="logo">
                   <img src="assets/img/Path 2943.png" alt="" />
                 </div>
@@ -429,188 +347,85 @@
                   <p>Hoşgeldiniz.</p>
                 </div>
               </div>
-              <div>
-                <button>Temizle</button>
-              </div>
+              <ul class="dropdownList">
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="text">
+                      <p>Account</p>
+                      <span>Hesabınızı görüntüleyin.</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div class="text">
+                      <p>Balance: 0</p>
+                      <span>Bakiye Ekleyin</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="text">
+                      <p>Koyu Mod</p>
+                      <span>Koyu modu aktif edin</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <div class="text">
+                      <p>API</p>
+                      <span>API dökümanınızı görüntüleyin</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="text">
+                      <p>Yardım Merkezi</p>
+                      <span>Yardım merkezini ziyaret edin</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-square-rss"></i>
+                    </div>
+                    <div class="text">
+                      <p>Blog</p>
+                      <span>Son makelelerimizi okuyun</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa-solid fa-power-off"></i>
+                    </div>
+                    <div class="text">
+                      <p>Çıkış Yap</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="dropdownList">
-              <li>
-                <div class="icon">
-                  <div class="iconWrapper">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <span>Instagram İzlenme</span>
-                  <p>
-                    Instagram İzlenme ve etkileşim gönderimi yapan servisimiz
-                    aktif
-                  </p>
-                  <span> 20 Dk önce </span>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <div class="iconWrapper">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <span>Mutlu Yıllar !</span>
-                  <p>
-                    Yeni bir yıla başlarken , bizleri tercih eden tüm
-                    müşterilerimize teşekkür ederiz.
-                  </p>
-                  <span> 20 Dk önce </span>
-                </div>
-              </li>
-              <li>
-                <div class="icon">
-                  <div class="iconWrapper">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <span>Arayüz</span>
-                  <p>
-                    Yeni arayüz aktif edildi, daha kolay ve daha hızlı sipariş
-                    verebilirsiniz.
-                  </p>
-                  <span> 20 Dk önce </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="bars">
-          <button class="barsBTN"><i class="fa-solid fa-bars dropdownBarsIcon"></i></button>
-          <div class="dropdownBars hidden">
-            <ul class="dropdownList">
-              <li>
-                <h5>Servis güncellenmiştir</h5>
-                <p>#443 - Instagram Reels İzlenme</p>
-                <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
-                <p>| Minimum: 50 » 50</p>
-                <p>| Maximum: 20000000 » 20000000</p>
-                <a href="#">Servise Git</a>
-              </li>
-              <li>
-                <h5>Servis güncellenmiştir</h5>
-                <p>#443 - Instagram Reels İzlenme</p>
-                <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
-                <p>| Minimum: 50 » 50</p>
-                <p>| Maximum: 20000000 » 20000000</p>
-                <a href="#">Servise Git</a>
-              </li>
-              <li>
-                <h5>Servis güncellenmiştir</h5>
-                <p>#443 - Instagram Reels İzlenme</p>
-                <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
-                <p>| Minimum: 50 » 50</p>
-                <p>| Maximum: 20000000 » 20000000</p>
-                <a href="#">Servise Git</a>
-              </li>
-              <li>
-                <h5>Servis güncellenmiştir</h5>
-                <p>#443 - Instagram Reels İzlenme</p>
-                <p>| Fiyat: 0.189 ₺ » 0.19 ₺</p>
-                <p>| Minimum: 50 » 50</p>
-                <p>| Maximum: 20000000 » 20000000</p>
-                <a href="#">Servise Git</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="profile">
-          <button class="profileBTN"><i class="fa-solid fa-user dropdownProfileIcon"></i></button>
-          <div class="dropdownProfile hidden">
-            <div class="top">
-              <div class="logo">
-                <img src="assets/img/Path 2943.png" alt="" />
-              </div>
-              <div class="info">
-                <h3>Zarif BALCI</h3>
-                <p>Hoşgeldiniz.</p>
-              </div>
-            </div>
-            <ul class="dropdownList">
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-user"></i>
-                  </div>
-                  <div class="text">
-                    <p>Account</p>
-                    <span>Hesabınızı görüntüleyin.</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-wallet"></i>
-                  </div>
-                  <div class="text">
-                    <p>Balance: 0</p>
-                    <span>Bakiye Ekleyin</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-film"></i>
-                  </div>
-                  <div class="text">
-                    <p>Koyu Mod</p>
-                    <span>Koyu modu aktif edin</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-file-code"></i>
-                  </div>
-                  <div class="text">
-                    <p>API</p>
-                    <span>API dökümanınızı görüntüleyin</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                  </div>
-                  <div class="text">
-                    <p>Yardım Merkezi</p>
-                    <span>Yardım merkezini ziyaret edin</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-square-rss"></i>
-                  </div>
-                  <div class="text">
-                    <p>Blog</p>
-                    <span>Son makelelerimizi okuyun</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon">
-                    <i class="fa-solid fa-power-off"></i>
-                  </div>
-                  <div class="text">
-                    <p>Çıkış Yap</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </header>

@@ -711,6 +711,10 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
     font-size: 16px;
     font-family: MSB;
     color: #01133D;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .sidebar.smallSidebar .sidebarList ul li a .text{
     display: none;
@@ -727,6 +731,7 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 .sidebar .sidebarList ul li a .text span{
     font-size:12px;
