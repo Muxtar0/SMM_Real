@@ -9,22 +9,20 @@ const showMoreContentTexts = document.querySelectorAll('.showMoreContent ul li a
 
 
 
-const sidebarBgClose = document.querySelector('.sidebar-bg-close')
 
-sidebarBgClose.addEventListener('click' , (e) => {
-    if(localStorage.getItem('sidebar') == "smallSidebar"){
-        localStorage.setItem('sidebar',"bigSidebar")
-    }
-    else if(localStorage.getItem('sidebar') == "bigSidebar"){
-        localStorage.setItem('sidebar',"smallSidebar")
-    }
-    closeOpenSidebarButton.classList.toggle('small')
-    dashboardContent.classList.toggle('bigDashboard')
-    sidebar.classList.toggle('smallSidebar')
-    bigLogo.classList.toggle('notShowing')
-    smallLogo.classList.toggle('notShowing')
-    sidebarBgClose.classList.remove("active")
-} )
+// sidebarBgClose.addEventListener('click' , (e) => {
+//     if(localStorage.getItem('sidebar') == "smallSidebar"){
+//         localStorage.setItem('sidebar',"bigSidebar")
+//     }
+//     else if(localStorage.getItem('sidebar') == "bigSidebar"){
+//         localStorage.setItem('sidebar',"smallSidebar")
+//     }
+//     closeOpenSidebarButton.classList.toggle('small')
+//     dashboardContent.classList.toggle('bigDashboard')
+//     sidebar.classList.toggle('smallSidebar')
+//     bigLogo.classList.toggle('notShowing')
+//     smallLogo.classList.toggle('notShowing')
+// } )
 
 showMoreBTN.addEventListener('click' , (e) => {
     showMoreBTN.classList.toggle('active')
@@ -42,7 +40,6 @@ closeOpenSidebarButton.addEventListener('click' , (e) => {
     sidebar.classList.toggle('smallSidebar')
     bigLogo.classList.toggle('notShowing')
     smallLogo.classList.toggle('notShowing')
-    sidebarBgClose.classList.toggle("active")
 
   
 })
@@ -55,7 +52,6 @@ window.addEventListener("resize" , (e) => {
         sidebar.classList.toggle('smallSidebar')
         bigLogo.classList.toggle('notShowing')
         smallLogo.classList.toggle('notShowing')
-        sidebarBgClose.classList.remove("active")
 
         
       }
@@ -67,7 +63,6 @@ window.addEventListener("load" , (e) => {
         sidebar.classList.toggle('smallSidebar')
         bigLogo.classList.toggle('notShowing')
         smallLogo.classList.toggle('notShowing')
-        sidebarBgClose.classList.toggle("active")
     }
     
     if(window.outerWidth <= 768){
