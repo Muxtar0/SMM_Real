@@ -16,7 +16,7 @@ let theme = "light";
 
 
 
-window.addEventListener("DOMContentLoaded" , (e) => {
+window.addEventListener("load" , (e) => {
     if(window.outerWidth <= 992){
 
         dashboardHeaderMain.classList.add('small')

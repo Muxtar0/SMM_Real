@@ -60,7 +60,7 @@ window.addEventListener("resize" , (e) => {
         
       }
 })
-window.addEventListener("DOMContentLoaded" , (e) => {
+window.addEventListener("load" , (e) => {
     if(localStorage.getItem('sidebar') == "smallSidebar"){
         closeOpenSidebarButton.classList.add('small')
         dashboardContent.classList.toggle('bigDashboard')

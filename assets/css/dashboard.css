@@ -756,7 +756,7 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
     margin-top: 26px;
     background: #f8f8f8;
     border-radius: 5px;
-    padding: 14px 19px;
+    padding: 14px 10px;
 }
 body.dark .sidebar .showMore .showMoreContent ul{
     background: #292C36;
