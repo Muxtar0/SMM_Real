@@ -43,7 +43,17 @@ Fonts
 html{
     overflow-x: hidden;
     background: #F5F6F7;
-
+    height: auto;
+}
+@media (min-width:2560px){
+    html{
+        height: 100%;
+    }
+}
+@media (max-width:2560px){
+    html{
+        height: auto;
+    }
 }
 html.dark{
     background: black;
@@ -54,6 +64,7 @@ body{
     background: #F5F6F7;
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 body.dark{
@@ -898,6 +909,7 @@ body.dark .sidebar .showMore .showMoreContent ul li a .explanation::before{
     background: white;
     height: 60px;
     padding: 0 30px;
+    z-index: 1000;
 }
 .dashboardContent header.small{
     position: fixed;
