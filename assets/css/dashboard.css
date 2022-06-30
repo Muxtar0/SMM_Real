@@ -843,7 +843,7 @@ body.dark .sidebar .showMore .showMoreContent ul li a .explanation::before{
 }
 .sidebar .showMore .showMoreContent ul li a .text p{
     color: #0F1419;
-    font-size: 16px;
+    font-size: 13px;
     font-family: MB;
 }
 .sidebar .showMore .showMoreContent ul li a:hover .text p{
