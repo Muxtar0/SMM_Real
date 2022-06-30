@@ -7,7 +7,7 @@ const bigLogo = document.querySelector('.bigLogo')
 const smallLogo = document.querySelector('.smallLogo')
 const showMoreContentTexts = document.querySelectorAll('.showMoreContent ul li a .text')
 
-
+localStorage.setItem('sidebar',"smallSidebar")
 
 
 // sidebarBgClose.addEventListener('click' , (e) => {
