@@ -3761,7 +3761,7 @@ body.dark .serviceCardsContent .cardsDiv .Card{
     }
     .sidebar{
         position: fixed;
-        top: 59px;
+        top: 58px;
         z-index: 1000;
         height: calc(100vh - 60px);
         overflow-y: auto;
