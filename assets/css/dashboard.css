@@ -585,7 +585,7 @@ body.dark .searchMainDiv .searchDiv{
     background: white;
     transition: all 300ms;
     padding: 42px 0;
-
+    height: 100%;
     z-index: 100;
 }
 
