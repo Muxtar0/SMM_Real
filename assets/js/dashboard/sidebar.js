@@ -49,7 +49,7 @@ closeOpenSidebarButton.addEventListener('click' , (e) => {
 
 
 window.addEventListener("resize" , (e) => {
-      if(window.outerWidth <= 768){
+      if(window.outerWidth <= 1030){
         closeOpenSidebarButton.classList.add('small')
         dashboardContent.classList.toggle('bigDashboard')
         sidebar.classList.toggle('smallSidebar')
@@ -67,7 +67,7 @@ window.addEventListener("load" , (e) => {
         sidebar.classList.toggle('smallSidebar')
         bigLogo.classList.toggle('notShowing')
         smallLogo.classList.toggle('notShowing')
-        sidebarBgClose.classList.add("active")
+        sidebarBgClose.classList.toggle("active")
     }
     
     if(window.outerWidth <= 768){
