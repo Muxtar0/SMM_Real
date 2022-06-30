@@ -282,16 +282,28 @@ a {
     position: relative;
 }
 
-.MapSection img{
+.MapSection a,
+.MapSection .mapouter{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
+    object-fit: cover;
+}
+.MapSection a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
-
+.MapSection .mapouter iframe,
+.MapSection .mapouter div    {
+    width: 100%;
+    height: 100%;
+}
 .MapSection .mapText{
     width: 480px;
     height: 140px;
@@ -302,7 +314,7 @@ a {
     border-radius: 5px;
     border: 2px solid #2F5AFF;
     background: white;
-    margin-bottom: 120px;
+    margin-bottom: 220px;
     z-index: 100;
 }
 .MapSection .mapText .textItem:first-child{
@@ -1885,6 +1897,9 @@ footer .footer-main-container .copyrightContent p{
     .header-col-right  .mobileNavBtn{
         display: none;
     }
+    .MapSection a.smallImg{
+        display: none;
+    }
 }
 
 @media (max-width:992px){
@@ -1960,6 +1975,12 @@ footer .footer-main-container .copyrightContent p{
     #header .container .header-col-right nav ul li.country .arrow{
         display: none;
     }
+
+    .MapSection a.smallImg{
+        display: none;
+    }
+
+
     .businessInfo{
         width: 100%;
     }
@@ -2054,6 +2075,7 @@ footer .footer-main-container .copyrightContent p{
 }
 
 @media (max-width:425px){
+    
     #header .container .header-col-left img{
         width: 100%;
         height: auto;
@@ -2210,6 +2232,43 @@ footer .footer-main-container .copyrightContent p{
     }
     #loginRegisterSection .mainContent .left .content > button{
         width: 100%;
+    }
+    .MapSection{
+        background: transparent;
+    }
+    .MapSection{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .MapSection a.bigImg{
+        display: none;
+    }
+    .MapSection a.smallImg{
+        display: block;
+    }
+    .MapSection a{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        z-index: 1;
+        object-fit: contain;  
+    }
+    .MapSection a img{
+        object-fit: contain;
+    }
+    .MapSection .mapouter{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        z-index: 1;
+        object-fit: contain;  
+    }
+    .MapSection .mapText{
+        margin: 20px;
     }
     footer{
         padding-top: 275px;
