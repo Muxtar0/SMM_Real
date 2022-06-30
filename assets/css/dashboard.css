@@ -783,6 +783,7 @@ body.dark .sidebar .showMore .showMoreContent ul{
 .sidebar .showMore .showMoreContent ul li a .icon i{
     transition: all 300ms;
     color: #01133D;
+    font-size: 25px;
 }
 .sidebar .showMore .showMoreContent ul li a:hover .icon i{
     color: #2F5AFF;
