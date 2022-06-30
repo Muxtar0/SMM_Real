@@ -583,6 +583,7 @@ body.dark .searchMainDiv .searchDiv{
 }
 body.dark .sidebar{
     background: #0F1419;
+    border-color: #333333;
 }
 .sidebar.smallSidebar{
     width: 90px;
@@ -3807,7 +3808,7 @@ body.dark .serviceCardsContent .cardsDiv .Card{
 
 
 /* medias */
-@media (min-width:992px){
+@media (min-width:1024px){
     .orderListContents .orderListTabs .tabWayMobile{
         display: none;
     }
