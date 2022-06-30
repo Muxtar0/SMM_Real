@@ -5,7 +5,7 @@ for(let i = 0 ; i < tabBtns.length;i++){
     tabBtns[i].addEventListener('click' , (e) => {
         for(let i = 0 ; i < tabContents.length;i++){
             tabContents[i].classList.remove('active')
-            tabContents[i].classList.remove('activ2')
+            tabContents[i].classList.remove('active2')
         }
         for(let i = 0 ; i < tabBtns.length;i++){
             tabBtns[i].classList.remove('active')
