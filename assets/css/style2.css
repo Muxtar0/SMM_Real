@@ -1124,6 +1124,7 @@ header{
     visibility: hidden;
     opacity: 0;
     transition: all 500ms;
+    overflow: hidden;
 }
 #MostAskingQuestions .questionsContent .questionItem .otherInfo p{
     transition: all 500ms;
