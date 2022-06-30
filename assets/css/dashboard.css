@@ -711,10 +711,19 @@ body.dark .sidebar .sidebarList ul li a .explanation::before{
     color: #01133D;
     font-size: 25px;
 }
+body.dark .sidebar .sidebarList ul li a .icon i{
+    color: white;
+}
 .sidebar .sidebarList ul li a:hover .icon i{
     color: #2F5AFF;
 }
+body.dark .sidebar .sidebarList ul li a:hover .icon i{
+    color: #2F5AFF;
+}
 .sidebar .sidebarList ul li.active a .icon i{
+    color: #2F5AFF;
+}
+body.dark .sidebar .sidebarList ul li.active a .icon i{
     color: #2F5AFF;
 }
 .sidebar.smallSidebar .sidebarList ul li a .icon{
@@ -804,7 +813,13 @@ body.dark .sidebar .showMore .showMoreContent ul{
     color: #01133D;
     font-size: 25px;
 }
+body.dark .sidebar .showMore .showMoreContent ul li a .icon i{
+    color: white;
+}
 .sidebar .showMore .showMoreContent ul li a:hover .icon i{
+    color: #2F5AFF;
+}
+body.dark .sidebar .showMore .showMoreContent ul li a:hover .icon i{
     color: #2F5AFF;
 }
 .sidebar .showMore .showMoreContent ul li.active a .icon i{
