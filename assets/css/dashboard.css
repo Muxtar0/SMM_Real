@@ -3808,7 +3808,7 @@ body.dark .serviceCardsContent .cardsDiv .Card{
 
 
 /* medias */
-@media (min-width:1024px){
+@media (min-width:1030px){
     .orderListContents .orderListTabs .tabWayMobile{
         display: none;
     }
