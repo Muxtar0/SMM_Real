@@ -3855,10 +3855,6 @@ body.dark .serviceCardsContent .cardsDiv .Card{
     .sidebar.smallSidebar::before{
         left: -100%;
     }
-
-    .sidebar-bg-close.active{
-        left: 0;
-    }
     .sidebar{
         left: 0;
     }

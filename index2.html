@@ -134,24 +134,29 @@
 
     <div class="container loginComponentCon">
         <div class="row">
-            <div class="col-12">
-                <div class="loginComponent">
-                    <div class="loginItem">
-                        <h4>Kullanıcı Adı</h4>
-                        <input type="text" value="Kaizen07">
-                        <div class="rememberMeDiv">
+            <div class="col-12 loginCol">
+                <div class="content">
+                    <div class="item">
+                        <h4>Kullanıcı adı</h4>
+                        <div class="inputDiv">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Yusa">
+                        </div>
+                        <div class="rememberPass">
                             <input type="checkbox">
-                            <p>Beni Hatırla</p>
+                            <p>Şifremi Hatırla</p>
                         </div>
                     </div>
-                    <div class="loginItem">
+                    <div class="item">
                         <h4>Parola</h4>
                         <div class="inputDiv">
-                            <input type="password" value="uw09du09w09u">
-                            <button class="Btn Btn-bg-blue Btn-white">Oturum Aç</button>
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="***********">
                         </div>
                         <a href="#">Şifremi Unuttum</a>
                     </div>
+                    <button class="Btn Btn-bg-orange Btn-white Btn-big ">Giriş Yap</button>
+                        <button class="Btn Btn-bg-black Btn-white Btn-big">Kayıt Ol</button>
                 </div>
             </div>
         </div>
@@ -484,7 +489,7 @@
                                 </div>
                             </button>
                             <div class="otherInfo">
-                                <p>Tür alanında - Açılır listeden hizmet türünü seçin. Alanında Bağlantı — Sayfanın bağlantısını biçiminde doldurun. Miktar alanında - Gereken beğeni/takipçi miktarını girin. Beğeniler, görüntülemeler, paylaşımlar ve her şey dahil tüm hizmetler organik ve gerçek insan hesaplarından. Gerçek insanlardan etkileşim almak, içgörülerinizi artırmanıza yardımcı olur. Kaliteden ödün vermiyoruz ve gerçek hesaplardan hizmet veriyoruz.</p>
+                                Tür alanında - Açılır listeden hizmet türünü seçin. Alanında Bağlantı — Sayfanın bağlantısını biçiminde doldurun. Miktar alanında - Gereken beğeni/takipçi miktarını girin. Beğeniler, görüntülemeler, paylaşımlar ve her şey dahil tüm hizmetler organik ve gerçek insan hesaplarından. Gerçek insanlardan etkileşim almak, içgörülerinizi artırmanıza yardımcı olur. Kaliteden ödün vermiyoruz ve gerçek hesaplardan hizmet veriyoruz.
                             </div>
                         </div>
                         <div class="questionItem">
@@ -697,6 +702,7 @@
     <script src="assets/js/index2/questions.js"></script>
     <script src="assets/js/index2/mobileMenu.js"></script>
     <script src="assets/js/index2/tab.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.3/swiper-bundle.min.js"
       integrity="sha512-d3gZ3Oo0k2qZ8HJ3JNdmqH/YHjFj3qYaS7HQBhF6P6ohVKpCnUy3KovWTv0V9UBkO9Auo1uhPsIzNE5I4C/CpQ=="
@@ -714,6 +720,9 @@
           disableOnInteraction: true,
         },
         });
+        $('.questionBTN').click(function() {
+  $('.otherInfo').toggle('slow');
+});
       </script>
 </body>
 </html>
