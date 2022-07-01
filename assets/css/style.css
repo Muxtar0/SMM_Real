@@ -273,7 +273,8 @@ a {
     align-items: center;
     justify-content: center;
 }
-.loginbt svg {
+.loginbt svg,
+.loginbt i {
     margin-right: 10px;
 }
 .loginbt:hover svg path{
