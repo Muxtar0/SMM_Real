@@ -4,6 +4,12 @@ const selectionsLi = document.querySelectorAll('.selectionsForService li')
 const selectionsLiBTNs = document.querySelectorAll('.selectionsForService li button')
 const selectionsService2 = document.querySelector('.selectionsForService')
 const selections2 = document.querySelector('.selectForCategory .selections')
+const closeSelectionsForService = document.querySelector('.closeSelectionsForService')
+
+
+closeSelectionsForService.addEventListener('click' ,(e) => {
+    selectionsService2.classList.add('hidden')
+})
 
 for(let i = 0 ; i < selectionsLiBTNs.length;i++){
     selectionsLiBTNs[i].addEventListener('click' , (e) => {

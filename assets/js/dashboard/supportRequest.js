@@ -11,19 +11,15 @@ const closeSupportModalBTN = document.querySelector('.supportRequestMainSection 
 
 createSupportFirstBtn.addEventListener('click' , (e) => {
     supportTabContentMain.classList.add('active')
-    setInterval(() => {
-    supportTabContent.classList.add('active')
-        
-    }, 100);
+
 })
 supportTabContentBgClose.addEventListener('click' ,(e) => {
     supportTabContentMain.classList.remove('active')
-    supportTabContent.classList.remove('active')
+
 })
 createSupportBtnSecond.addEventListener('click' , (e) => {
     rightContentCol.classList.add('active')
     supportTabContentMain.classList.remove('active')
-    supportTabContent.classList.remove('active')
 })
 bgCloseRequest.addEventListener('click' , (e) => {
     rightContentCol.classList.remove('active')

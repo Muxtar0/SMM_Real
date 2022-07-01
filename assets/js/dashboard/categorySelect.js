@@ -3,6 +3,7 @@ const select = document.querySelector('.selectForCategory')
 const selectionsli = document.querySelectorAll('.selectForCategory .selections li')
 const selections = document.querySelector('.selectForCategory .selections')
 const selectionsService = document.querySelector('.selectionsForService')
+const closeSelectionsForCategory = document.querySelector('.closeSelectionsForCategory')
 
 
 select.addEventListener('click',(e) => {
@@ -30,3 +31,6 @@ for(let i = 0 ; i < selectionsli.length;i++){
 
     })
 }
+closeSelectionsForCategory.addEventListener('click' ,(e) => {
+    selections.classList.add('hidden')
+})

@@ -338,6 +338,10 @@ body.dark .input.forCopy{
     background: #2F5AFF;
     color: white;
 }
+.filterDiv > .filterItem .filterBtnFirst.active{
+    background: #2F5AFF;
+    color: white;
+}
 body.dark .filterDiv > .filterItem .filterBtnFirst:hover{
     background: #0F1419;
 }
@@ -1573,26 +1577,48 @@ body.dark .OrderContent .orderInfo .item  .select{
     z-index: 100;
     box-shadow: rgb(99 99 99 / 20%) 0px 10px 8px 0px;
     border-radius: 0 0 10px 10px;
+    border: 1px solid #E6ECFF;
+}
+.OrderContent .orderInfo .item  .select .selections .topCon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 13px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E6ECFF;
+}
+.OrderContent .orderInfo .item  .select .selections .topCon button{
+    background:transparent;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+.OrderContent .orderInfo .item  .select .selections .topCon button i{
+    font-size: 20px;
+}
+.OrderContent .orderInfo .item  .select .selections .topCon h3{
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
 }
 body.dark .OrderContent .orderInfo .item  .select .selections{
     background: #292C36;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
-    width: 8px;
-    margin: 2px;
+    width: 6px;
+    background: #6B7280;
+    border-radius: 10px;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-thumb{
-    background: #c0c0c0; 
+    border: 4px solid #E6ECFF;
+    background: red;
     border-radius: 10px;
+    background-clip: padding-box;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-thumb:hover {
-    background: #7C7C7C;
+    background: #838383;
   }
-.OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-track {
-    background: white;
-    padding: 2px;
-    border-radius: 10px;
-  }
+
 .OrderContent .orderInfo .item  .select .selections.hidden{
     display: none;
 }
@@ -1604,6 +1630,10 @@ body.dark .OrderContent .orderInfo .item  .select .selections{
     display: flex;
     align-items: center;
     padding: 14px;
+    transition: all 300ms;
+}
+.OrderContent .orderInfo .item  .select .selections  li:hover{
+    background: #E6ECFF;
 }
 .OrderContent .orderInfo .item  .select .selections  li i{
     margin-right: 10px;
@@ -1650,26 +1680,47 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService{
     overflow-y: auto;
     box-shadow: rgb(99 99 99 / 20%) 0px 10px 8px 0px;
     border-radius: 0 0 10px 10px;
+    border: 1px solid #E6ECFF;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService .topCon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 13px;
+    padding-bottom: 0;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService .topCon button{
+    background:transparent;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService .topCon button i{
+    font-size: 20px;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService .topCon h3{
+    font-size: 14px;
+    font-family: MM;
+    color: #23252E;
 }
 body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsForService{
     background: #23252E;
 }
 .OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar{
-    width: 8px;
-    margin: 2px;
+    width: 6px;
+    background: #6B7280;
+    border-radius: 10px;
 }
 .OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-thumb{
-    background: #c0c0c0; 
+    border: 4px solid #E6ECFF;
+    background: red;
     border-radius: 10px;
+    background-clip: padding-box;
 }
 .OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-thumb:hover {
     background: #7C7C7C;
   }
-.OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-track {
-    background: white;
-    padding: 2px;
-    border-radius: 10px;
-  }
+
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService.hidden{
     display: none;
 }
@@ -2806,8 +2857,66 @@ body.dark .orderListTabs .OrdersList table tr td:nth-child(1) i{
     font-size: 13px;
     font-family: MM;
     padding: 5px 0;
+    position: relative;
 }
-
+.orderListTabs .problemtd{
+    position: relative;
+}
+.orderListTabs .OrdersList table .problemDropDown{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 157px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+}
+.orderListTabs .OrdersList table .problemDropDown.active{
+    visibility: visible;
+    opacity: 1;
+}
+.orderListTabs .OrdersList table tr td  div ul{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 14px 10px;
+    background: white;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+}
+.orderListTabs .OrdersList table tr td  div ul li{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.orderListTabs .OrdersList table tr td  div ul li button{
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: MM;
+    color:  #CED2D9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 300ms;
+    border-radius: 5px;
+}
+.orderListTabs .OrdersList table tr td  div ul li button i{
+    margin-right: 10px;
+}
+.orderListTabs .OrdersList table tr td  div ul li button:hover{
+    background: #F1F6FC;
+    color: #0F1419;
+}
+.orderListTabs .OrdersList table tr .problemDropDown.forTop{
+    top: -260%;
+}
 .orderListTabs .tableWays{
     width: 100%;
     display: flex;
@@ -2917,7 +3026,12 @@ body.dark .orderListTabs .tableWays a.active{
     width: 100vw;
     height: 100vh;
     max-height: 100vh;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
 }
 .supportRequestContents .bg-close{
     width: 100%;
@@ -2930,9 +3044,8 @@ body.dark .orderListTabs .tableWays a.active{
     z-index: 1;
 }
 .supportRequestContents.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    visibility: visible;
+    opacity: 1;
 }
 .supportRequestContents .supportRequestTabContent{
     z-index: 100;
@@ -2946,8 +3059,7 @@ body.dark .orderListTabs .tableWays a.active{
     justify-content: space-between;
     width: 100%;
     padding: 60px 13px;
-    visibility: hidden;
-    opacity: 0;
+
     transition: all 300ms;
 }
 
@@ -2960,10 +3072,7 @@ body.dark .orderListTabs .tableWays a.active{
     visibility: visible;
     opacity: 1;
 }
-.supportRequestContents .supportRequestTabContent .content.active{
-    visibility: visible;
-    opacity: 1;
-}
+
 .supportRequestContents .supportRequestTabContent .content .tabWays{
     display: flex;
     align-items: center;

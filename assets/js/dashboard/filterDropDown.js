@@ -5,6 +5,7 @@ const filterDropDownDivFirst = document.querySelector('.filterDropDownDivFirst')
 filterBtnFirst.addEventListener('click' , (e) => {
     e.stopPropagation();
     filterDropDownDivFirst.classList.toggle('hidden')
+    filterBtnFirst.classList.toggle('active')
 })
 filterDropDownDivFirst.addEventListener('click' , (e) =>  {
     e.stopPropagation();
