@@ -1703,6 +1703,15 @@ a {
 #faq-home .heading-1 {
     padding-bottom: 50px;
 }
+#faq-home .accRow .accordion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#faq-home .accRow .accordion .faq-item{
+    width: 48%;
+}
 .faq-item {
     border: none;
     margin-bottom: 12px;
