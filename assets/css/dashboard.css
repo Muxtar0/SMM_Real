@@ -1053,11 +1053,11 @@ body.dark .dashboardContent header{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(47, 90, 255, 0.8);
     color: white;
     font-family: MB;
     position: absolute;
-    top: 0;
+    top: -3px;
     right: -5px;
     font-size: 10px;
 }
