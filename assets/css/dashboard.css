@@ -60,6 +60,7 @@ html.dark{
 }
 body{
     position: relative;
+    overflow-x: hidden;
     width: 100%;
     background: #F5F6F7;
     display: flex;
