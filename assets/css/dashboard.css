@@ -591,7 +591,8 @@ body.dark .searchMainDiv .searchDiv{
     transition: all 300ms;
     padding: 42px 0;
     height:100%;
-    overflow-y: auto;
+    overflow: visible;
+
     z-index: 100;
 }
 body.dark .sidebar .content {
@@ -3950,6 +3951,9 @@ body.dark .serviceCardsContent .cardsDiv .Card{
 }
 
 @media (max-width:1025px){
+    .sidebar .content{
+        overflow-y: auto;
+    }
     .dashboardContent header .closeOpenSidebarDiv button.small{
         transform: rotate(180deg);
     }
