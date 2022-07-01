@@ -1440,13 +1440,17 @@ a {
 
 .info-block-right p {
     font-family: MM;
-    font-size: 20px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #576078;
     padding: 30px 0;
 }
 
 .check-li li {
     font-family: MM;
-    font-size: 20px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #576078;
     padding-bottom: 20px;
 }
 
@@ -1902,6 +1906,14 @@ footer .footer-main-container .copyrightContent p{
 }
 
 @media (max-width:992px){
+    .blogList .slideContent .blogItem .bottomCOntent{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .blogList .slideContent .blogItem .bottomCOntent .readMoreBtn{
+        margin-top: 10px;
+    }
     .header2Main{
         display: none;
     }

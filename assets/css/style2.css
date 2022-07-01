@@ -687,7 +687,7 @@ header{
     justify-content: space-between;
     background: #FF0045;
 border-radius: 18px;
-margin-top: 187px;
+margin-top: 70px;
 padding: 25px 100px;
 }
 .loginComponentCon .loginCol .content .item h4{
@@ -1536,6 +1536,20 @@ footer .copyrightContainer .col-12 p{
         }
 }
 @media (max-width:425px){
+    #banner .leftContent h2{
+        font-size: 36px;
+    }
+    #banner .leftContent .scrollShowDiv .scrollShowContent{
+        width: 100px;
+        height: 100px;
+    }
+    #banner .leftContent .scrollShowDiv .scrollShowContent div{
+        width: 27px;
+        height: 50px;
+    }
+    .loginComponentCon .loginCol .content{
+        margin-top: 40px;
+    }
     #banner{
         padding-top: 40px;
     }
