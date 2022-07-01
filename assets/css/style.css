@@ -277,6 +277,9 @@ a {
 .loginbt i {
     margin-right: 10px;
 }
+.loginbt i{
+    font-size: 20px;
+}
 .loginbt:hover svg path{
     fill: white;
 }
