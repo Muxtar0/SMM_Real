@@ -1046,6 +1046,21 @@ body.dark .dashboardContent header{
     outline: none;
     font-size: 18px;
 }
+.dashboardContent header  button.notificationsBTN{
+    position: relative;
+}
+.dashboardContent header  button.notificationsBTN span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: MB;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    font-size: 10px;
+}
 .dashboardContent header .balance button{
     color: white;
     font-size: 14px;
@@ -1328,6 +1343,7 @@ body.dark .dashboardContent header .notifications .dropdownNotifications .top{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
 }
 body.dark .dashboardContent header .notifications .dropdownNotifications .top button{
     background: #292F34;
