@@ -2073,9 +2073,7 @@ footer .footer-main-container .copyrightContent p{
         width: 220px;
         height: 100%;
     }
-    .wave .wave__container{
-        left: -20px;
-    }
+
     @keyframes ripple {
         0% {
           top: 150px;
@@ -2088,7 +2086,7 @@ footer .footer-main-container .copyrightContent p{
         100% {
           top: 0;
           left: 0;
-          width: 280px;
+          width: 220px;
           height: 100%;
           opacity: 0;
         }
