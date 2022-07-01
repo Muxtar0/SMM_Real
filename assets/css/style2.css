@@ -1275,6 +1275,10 @@ color: white;
     outline: none;
     background: linear-gradient(-45deg,#EC5450,#7F09A3);
     color: white;
+    transition: all 300ms;
+}
+#MostAskingQuestions .questionsContent .questionItem .questionBTN.active .icon{
+    transform: rotate(180deg);
 }
 #MostAskingQuestions .questionsContent .questionItem .otherInfo{
 
