@@ -7,6 +7,11 @@ const editBtns = document.querySelectorAll('.editBtn');
 
 for(let i=0;i<sayProblemBTNs.length;i++){
     sayProblemBTNs[i].addEventListener('click' , (e) => {
+        
+        for(let i=0;i<problemDropDowns.length;i++){
+            problemDropDowns[i].classList.remove('active')
+        }
+
         problemDropDowns[i].classList.toggle('active')
     })
 }
