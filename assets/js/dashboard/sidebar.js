@@ -7,6 +7,11 @@ const bigLogo = document.querySelector('.bigLogo')
 const smallLogo = document.querySelector('.smallLogo')
 const showMoreContentTexts = document.querySelectorAll('.showMoreContent ul li a .text')
 
+
+
+window.addEventListener('')
+
+
 if(localStorage.getItem('sidebar') == null){
     localStorage.setItem('sidebar',"smallSidebar")
 }
