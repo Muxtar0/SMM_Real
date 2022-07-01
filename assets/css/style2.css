@@ -1277,10 +1277,12 @@ color: white;
     color: white;
 }
 #MostAskingQuestions .questionsContent .questionItem .otherInfo{
-    margin-top: 30px;
 
     transition: all 500ms;
     overflow: hidden;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
 }
 
 #MostAskingQuestions .questionsContent .questionItem .otherInfo{
@@ -1288,7 +1290,13 @@ color: white;
     font-size: 14px;
     font-family: MM;
 }
+#MostAskingQuestions .questionsContent .questionItem.active .otherInfo{
+    margin-top: 30px;
 
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
 
 /* footer */
 footer{
