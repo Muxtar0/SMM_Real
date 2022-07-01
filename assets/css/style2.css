@@ -1278,7 +1278,7 @@ color: white;
 }
 #MostAskingQuestions .questionsContent .questionItem .otherInfo{
 
-    transition: all 500ms;
+    transition: all 100ms;
     overflow: hidden;
     height: 0;
     visibility: hidden;
@@ -1296,6 +1296,7 @@ color: white;
     height: 100%;
     opacity: 1;
     visibility: visible;
+    transition: all 300ms;
 }
 
 /* footer */
