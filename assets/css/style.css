@@ -2121,12 +2121,12 @@ footer .footer-main-container .copyrightContent p{
         align-items: center;
         justify-content: center;
     }
-    #header .container .header-col-right nav ul li .country-list span{
-        display: none;
-    }
+   
     #header .container .header-col-right nav ul li .country-list{
         width: 100%;
         padding: 5px 15px;
+        width: 150px;
+        left: -50px;
     }
     #header .container .header-col-right nav > ul > li:not(:last-child){
         display: none;
@@ -2221,6 +2221,10 @@ footer .footer-main-container .copyrightContent p{
     }
     #loginRegisterSection .mainContent > div{
         width: 100%;
+    }
+    #header .container .header-col-right nav ul li .country-list li img{
+        width: 17px;
+        height: 13px;
     }
     footer .footer-main-container .footerWaysContent ul{
         flex-wrap: wrap;
