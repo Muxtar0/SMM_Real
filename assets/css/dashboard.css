@@ -2795,6 +2795,7 @@ body.dark .orderListContents .orderListTabs .tabWayMobile .filterContent button.
 }
 body.dark .orderListTabs .OrdersList{
     border: none;
+    background: #0F1419;
 }
 .orderListTabs .OrdersList,
 .orderListTabs .OrdersList table{
