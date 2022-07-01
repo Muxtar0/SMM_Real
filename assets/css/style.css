@@ -764,7 +764,74 @@ a {
     font-family: MB;
     margin-bottom: 20px;
 }
+.blogDetail .share{
+    position: relative;
+}
+.blogDetail   .data-b .shareDropDownDiv{
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
 
+    transition: all 300ms;
+}
+
+.blogDetail   .data-b .share:hover .shareDropDownDiv{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.blogDetail   .shareDropDownDiv ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.blogDetail    .shareDropDownDiv ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.blogDetail   .shareDropDownDiv ul li a:hover{
+    opacity: 0.8;
+}
+
+
+.blogDetail   .shareDropDownDiv ul li a i{
+   color: white;
+   font-size: 25px;
+}
+.blogDetail   .shareDropDownDiv ul li.twitter a{
+    background: #1da1f2;
+}
+.blogDetail   .shareDropDownDiv ul li.facebook a{
+    background: #1877f2;
+}
+.blogDetail   .shareDropDownDiv ul li.telegram a{
+    background: #32a7e1;
+}
+.blogDetail   .shareDropDownDiv ul li.whatsapp a{
+    background: #25d366;
+}
+.blogDetail   .shareDropDownDiv ul li.linkedin a{
+    background: #0077b5;
+}
 
 
 
