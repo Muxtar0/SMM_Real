@@ -4156,3 +4156,13 @@ body.dark .serviceCardsContent .cardsDiv .Card{
         padding-bottom: 110px;
     }
 }
+
+
+@media (max-width:350px){
+    .dashboardContent header .notifications .dropdownNotifications{
+        right: -530%;
+    }
+    .dashboardContent header .bars .dropdownBars{
+        right: -530%;
+    }
+}
