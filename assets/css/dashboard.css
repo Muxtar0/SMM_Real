@@ -1060,6 +1060,8 @@ body.dark .dashboardContent header{
     border-radius: 10px;
     transition: all 300ms;
     z-index: 100;
+    height: 483px;
+    overflow: auto;
 }
 body.dark .dashboardContent header .profile .dropdownProfile{
     background: #0F1419;
@@ -1167,7 +1169,8 @@ body.dark .dashboardContent header .profile .dropdownProfile .dropdownList li a 
     border-radius: 10px;
     transition: all 300ms;
     z-index: 100;
-
+    height: 500px;
+    overflow: auto;
 
 }
 body.dark .dashboardContent header .bars .dropdownBars{
@@ -1252,7 +1255,8 @@ body.dark .dashboardContent header .bars .dropdownBars::before{
     border-radius: 10px;
     transition: all 300ms;
     z-index: 100;
-
+    height: 500px;
+    overflow: auto;
 
 }
 body.dark .dashboardContent header .notifications .dropdownNotifications{
