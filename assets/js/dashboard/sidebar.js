@@ -9,12 +9,21 @@ const showMoreContentTexts = document.querySelectorAll('.showMoreContent ul li a
 
 
 
-window.addEventListener('')
+window.addEventListener('DOMContentLoaded' , (e) => {
+    if(window.innerWidth > 1030){
+        if(localStorage.getItem('sidebar') == null){
+            localStorage.setItem('sidebar',"bigSidebar")
+        }
+    }
+    else{
+        if(localStorage.getItem('sidebar') == null){
+            localStorage.setItem('sidebar',"smallSidebar")
+        }
+    }
+})
 
 
-if(localStorage.getItem('sidebar') == null){
-    localStorage.setItem('sidebar',"smallSidebar")
-}
+
 
 
 
@@ -64,7 +73,7 @@ window.addEventListener("resize" , (e) => {
         
       }
 })
-window.addEventListener("load" , (e) => {
+window.addEventListener("DOMContentLoaded" , (e) => {
     if(localStorage.getItem('sidebar') == "smallSidebar"){
         closeOpenSidebarButton.classList.add('small')
         dashboardContent.classList.toggle('bigDashboard')
