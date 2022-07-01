@@ -7,12 +7,17 @@ const editBtns = document.querySelectorAll('.editBtn');
 
 for(let i=0;i<sayProblemBTNs.length;i++){
     sayProblemBTNs[i].addEventListener('click' , (e) => {
-        
+        e.stopPropagation();
         for(let i=0;i<problemDropDowns.length;i++){
             problemDropDowns[i].classList.remove('active')
         }
 
         problemDropDowns[i].classList.toggle('active')
+    })
+}
+for(let i=0;i<problemDropDowns.length;i++){
+    problemDropDowns[i].addEventListener('click' , (e) => {
+        e.stopPropagation();
     })
 }
 for(let i=0;i<editBtns.length;i++){
@@ -28,4 +33,14 @@ modalBgButton.addEventListener('click' , (e) => {
 })
 closeSayProblemModalBtn.addEventListener('click' , (e) => {
     sayProblemDivContent.classList.add('hidden')
+})
+
+
+window.addEventListener('click' , (event) => {
+    if (!event.target.matches('.problemDropDown') && !event.target.matches('.sayProblem')) {
+        
+        for(let i=0;i<problemDropDowns.length;i++){
+            problemDropDowns[i].classList.remove('active')
+        }
+    }
 })
