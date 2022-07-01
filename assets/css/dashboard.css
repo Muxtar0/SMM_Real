@@ -3946,6 +3946,9 @@ body.dark .serviceCardsContent .cardsDiv .Card{
 }
 
 @media (max-width:1025px){
+    .dashboardContent header .closeOpenSidebarDiv button.small{
+        transform: rotate(180deg);
+    }
     .dashboardHeader{
         position: sticky;
         top: 0;
