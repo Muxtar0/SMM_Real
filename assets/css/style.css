@@ -2091,7 +2091,7 @@ footer .footer-main-container .copyrightContent p{
         }
       }
     #header{
-        padding-top: 10px;
+        padding: 10px 0;
     }
     .header-col-left{
         display: flex;
