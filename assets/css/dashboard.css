@@ -43,14 +43,13 @@ Fonts
 html{
     overflow-x: hidden;
     background: #F5F6F7;
-    height: 100%;
 }
-@media (min-width:2560px){
+@media (min-width:2000px){
     html{
         height: 100%;
     }
 }
-@media (max-width:2560px){
+@media (max-width:2000px){
     html{
         height: auto;
     }
