@@ -242,6 +242,10 @@ a {
     font-size: 16px;
     color: #23252E;
 }
+.login-header-2{
+    display: flex;
+    align-items: center;
+}
 .login-header-2 .loginbt {
     font-family: MSB;
     font-weight: 600;
@@ -250,6 +254,9 @@ a {
     border: 1px solid #E6ECFF;
     padding: 15px;
     border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -262,6 +269,9 @@ a {
     border: 1px solid #E6ECFF;
     padding: 15px;
     border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .loginbt svg {
     margin-right: 10px;
