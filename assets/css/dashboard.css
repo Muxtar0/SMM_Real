@@ -592,6 +592,11 @@ body.dark .searchMainDiv .searchDiv{
     height:auto;
     z-index: 100;
 }
+body.dark .sidebar .content {
+    background: #0F1419;
+    border-color: #333333;
+}
+
 
 body.dark .sidebar{
     background: #0F1419;
