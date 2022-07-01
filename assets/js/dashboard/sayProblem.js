@@ -12,7 +12,7 @@ for(let i=0;i<sayProblemBTNs.length;i++){
             problemDropDowns[i].classList.remove('active')
         }
 
-        problemDropDowns[i].classList.toggle('active')
+        problemDropDowns[i].classList.add('active')
     })
 }
 for(let i=0;i<problemDropDowns.length;i++){
@@ -38,9 +38,10 @@ closeSayProblemModalBtn.addEventListener('click' , (e) => {
 
 window.addEventListener('click' , (event) => {
     if (!event.target.matches('.problemDropDown') && !event.target.matches('.sayProblem')) {
-        
+        console.log('hi')
         for(let i=0;i<problemDropDowns.length;i++){
             problemDropDowns[i].classList.remove('active')
         }
+
     }
 })

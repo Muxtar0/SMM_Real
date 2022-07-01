@@ -2895,16 +2895,15 @@ body.dark .orderListTabs .OrdersList table tr td:nth-child(1) i{
     top: 80%;
     left: 0;
     width: 157px;
-    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 100;
-    visibility: hidden;
-    opacity: 0;
+    display: none;
+    transition: all 0ms;
 }
 .orderListTabs .OrdersList table .problemDropDown.active{
-    visibility: visible;
-    opacity: 1;
+   display: flex;
+    transition: all 300ms;
 }
 .orderListTabs .OrdersList table tr td  div ul{
     width: 100%;
