@@ -950,77 +950,70 @@ a {
 .blogList .share{
     position: relative;
 }
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .filterDropDownDiv{
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv{
     position: absolute;
     top: 120%;
     right: 0;
-    background: white;
-    border: 1px solid #E6ECFF;
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    width: 288px;
     z-index: 100;
-}
-
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .filterDropDownDiv.hidden{
-    display: none;
-}
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .filterDropDownDiv::before{
-    content: " ";
-    position: absolute;
-    right: 40px;
-    top: -5px;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    border-top: 1px solid #E6ECFF;
-    border-left: 1px solid #E6ECFF;
-    background: white;
-}
-
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .filterDropDownDiv .searchFilter{
-    padding: 11px;
-    width: 100%;
-    font-size: 12px;
-    font-family: MR;
-    color: #23252E;
-    border-bottom: 1px solid #E6ECFF;
-}
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .filterDropDownDiv .searchFilter input{
-    width: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-}
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .filterDropDownDiv ul{
-    padding: 0;
-}
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b  .filterDropDownDiv ul li button{
-    background: transparent;
-    border: none;
-    outline: none;
-    width: 100%;
-    height: 34px;
-    padding: 11px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    font-size: 12px;
-    font-family: MR;
-    color: #23252E;
-    margin: 0;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 5px;
+    visibility: visible;
+    opacity: 1;
     transition: all 300ms;
 }
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .filterDropDownDiv ul li button:hover{
-    background: #F2F5FB;
+
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv.hidden{
+    visibility: hidden;
+    opacity: 0;
 }
 
 
-.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .filterDropDownDiv ul li button i{
-    margin-right: 10px;
-    color: #2F5AFF;
+
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b  .shareDropDownDiv ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv ul li a:hover{
+    opacity: 0.8;
 }
 
 
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv ul li a i{
+   color: white;
+   font-size: 25px;
+}
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv ul li.twitter a{
+    background: #1da1f2;
+}
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv ul li.facebook a{
+    background: #1877f2;
+}
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv ul li.telegram a{
+    background: #32a7e1;
+}
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv ul li.whatsapp a{
+    background: #25d366;
+}
+.blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv ul li.linkedin a{
+    background: #0077b5;
+}
 
 /* index.html headers */
 
@@ -2371,6 +2364,11 @@ footer .footer-main-container .copyrightContent p{
     }
     .MapSection .mapText{
         margin: 20px;
+    }
+    .blogList .slideContent .blogItem .bottomCOntent .single-b-meta .data-b .shareDropDownDiv{
+
+        right: -20px;
+
     }
     footer{
         padding-top: 275px;

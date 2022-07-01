@@ -1,5 +1,5 @@
-const filterBtns = document.querySelectorAll('.filterBtn');
-const filterDropDownDivs = document.querySelectorAll('.filterDropDownDiv');
+const filterBtns = document.querySelectorAll('.shareBtn');
+const filterDropDownDivs = document.querySelectorAll('.shareDropDownDiv');
 
 for(let i = 0 ; i < filterBtns.length;i++){
     filterBtns[i].addEventListener('click' , (e) => {
