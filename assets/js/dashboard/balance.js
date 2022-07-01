@@ -19,7 +19,7 @@ for(let i = 0 ; i < showHiddenBalance.length;i++ ){
                 balanceText[i].innerHTML = `10.00`
             }
             else if(balanceHidden == true){
-                balanceText[i].innerHTML = `**.**`
+                balanceText[i].innerHTML = `****`
             }
         }
     })
