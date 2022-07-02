@@ -1276,7 +1276,7 @@ text-align: start;
     }
     #services .cardsContent{
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
     #services .cardsContent .serviceCard{
         width: 30%;
