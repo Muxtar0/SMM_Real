@@ -4076,6 +4076,13 @@ body.dark .serviceCardsContent .cardsDiv .Card{
     .uploadMoneyBTNsRight{
         display: none;
     }
+    .uploadMoneyBTNs{
+       flex-wrap: wrap;
+    }
+    .uploadMoneyBTNs button{
+        width: 48%;
+        margin: 10px 0;
+    }
     .orderListContents .orderListTabs .tabWay{
         display: none;
     }
