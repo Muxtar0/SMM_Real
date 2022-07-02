@@ -1632,19 +1632,15 @@ body.dark .OrderContent .orderInfo .item  .select .selections{
     background: #292C36;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
-    width: 6px;
-    background: #6B7280;
-    border-radius: 10px;
+    width: 14px;;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-thumb{
-    border: 4px solid #E6ECFF;
-    background: red;
-    border-radius: 10px;
+    border: 4px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #AAAAAA;
 }
-.OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-thumb:hover {
-    background: #838383;
-  }
+
 
 .OrderContent .orderInfo .item  .select .selections.hidden{
     display: none;
@@ -1734,23 +1730,26 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsFo
     background: #23252E;
 }
 .OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar{
-    width: 6px;
+    /* width: 8px;
     background: #6B7280;
-    border-radius: 10px;
+    border-radius: 10px; */
+    width: 14px;
 }
 .OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-thumb{
-    border: 4px solid #E6ECFF;
+    /* border: 8px solid #E6ECFF;
+    background: #6B7280;
     background: red;
     border-radius: 10px;
+    background-clip: padding-box; */
+    border: 4px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #AAAAAA;
+  
 }
-.OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-thumb:hover {
-    background: #7C7C7C;
-  }
 
-.OrderContent .orderInfo .item  .select.selectForService .selectionsForService.hidden{
-    display: none;
-}
+
+
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService  li{
     cursor: pointer;
     width: 100%;
