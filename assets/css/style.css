@@ -2058,7 +2058,7 @@ footer .footer-main-container .copyrightContent p{
     .blogList .slideContent .blogItem .bottomCOntent{
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
     }
     .blogList .slideContent .blogItem .bottomCOntent .readMoreBtn{
         margin-top: 10px;
