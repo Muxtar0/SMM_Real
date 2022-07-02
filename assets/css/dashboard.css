@@ -4120,10 +4120,10 @@ body.dark .serviceCardsContent .cardsDiv .Card{
         font-size: 11px;
     }
     .uploadMoneyBTNs{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .uploadMoneyBTNs button{
-        width: 45%;
+        width: 85%;
         margin: 10px 0;
     }
     .uploadMoneyBTNs button .icon{
