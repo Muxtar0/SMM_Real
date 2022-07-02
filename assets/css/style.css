@@ -1395,20 +1395,21 @@ a {
     right: 0;
     bottom: 0;
   }
+
   
   .wave__circle {
     position: absolute;
     background-color: transparent;
-    border: 8px solid #213EB3;
     border-radius: 50%;
    
+    animation: 0ms ani ease-in;
   
     animation-name: ripple;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0, 0.2, 0.8, 1);
     animation-iteration-count: infinite;
   }
-  
+
   .wave__container .wave__circle:nth-child(2) {
     animation-delay: 0.5s;
   }
@@ -1427,6 +1428,8 @@ a {
       width: 0;
       height: 0;
       opacity: 1;
+    border: 8px solid #213EB3;
+
     }
   
     100% {
@@ -1435,6 +1438,8 @@ a {
       width: 500px;
       height: 500px;
       opacity: 0;
+    border: 8px solid #213EB3;
+
     }
   }
   
