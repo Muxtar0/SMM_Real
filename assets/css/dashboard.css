@@ -1714,7 +1714,7 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService{
     align-items: center;
     justify-content: space-between;
     padding: 10px 13px;
-    padding-bottom: 0;
+    border-bottom: 1px solid #E6ECFF;
 }
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService .topCon button{
     background:transparent;
@@ -4080,7 +4080,7 @@ body.dark .serviceCardsContent .cardsDiv .Card{
        flex-wrap: wrap;
     }
     .uploadMoneyBTNs button{
-        width: 48%;
+        width: 45%;
         margin: 10px 0;
     }
     .orderListContents .orderListTabs .tabWay{
