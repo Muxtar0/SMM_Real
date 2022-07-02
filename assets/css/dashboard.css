@@ -2097,7 +2097,6 @@ body.dark .userAgreement .tabWays button.active{
     padding: 24px 26px;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(-50px);
     transition: all 300ms;
     display: none;
 }
@@ -2111,7 +2110,6 @@ body.dark .userAgreement .tabContent{
 .userAgreement .tabContent.active2{
     visibility: visible;
     opacity: 1;
-    transform: translateY(0);
 }
 .userAgreement .tabContent .headerText{
     border-bottom: 1px solid #707070;
