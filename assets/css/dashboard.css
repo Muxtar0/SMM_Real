@@ -1632,13 +1632,15 @@ body.dark .OrderContent .orderInfo .item  .select .selections{
     background: #292C36;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar{
-    width: 14px;;
+    width: 14px;
+    background: #6B7280;
+    border-radius: 9999px;
 }
 .OrderContent .orderInfo .item  .select .selections::-webkit-scrollbar-thumb{
     border: 4px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
     border-radius: 9999px;
-    background-color: #AAAAAA;
+    background-color: #E6ECFF;
 }
 
 
@@ -1705,6 +1707,9 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService{
     border-radius: 0 0 10px 10px;
     border: 1px solid #E6ECFF;
 }
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService.hidden{
+    display: none;
+}
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService .topCon{
     display: flex;
     align-items: center;
@@ -1730,21 +1735,15 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsFo
     background: #23252E;
 }
 .OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar{
-    /* width: 8px;
-    background: #6B7280;
-    border-radius: 10px; */
     width: 14px;
+    background: #6B7280;
+    border-radius: 9999px;
 }
 .OrderContent .orderInfo .item  .select .selectionsForService::-webkit-scrollbar-thumb{
-    /* border: 8px solid #E6ECFF;
-    background: #6B7280;
-    background: red;
-    border-radius: 10px;
-    background-clip: padding-box; */
     border: 4px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
     border-radius: 9999px;
-    background-color: #AAAAAA;
+    background-color: #E6ECFF;
   
 }
 
