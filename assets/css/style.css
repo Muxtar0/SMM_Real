@@ -1284,7 +1284,7 @@ a {
     position: relative;
 }
 #banner .swiper{
-    height: 480px;
+    height: 500px;
 }
 #banner .swiper-pagination-vertical.swiper-pagination-bullets, #banner .swiper-vertical>.swiper-pagination-bullets{
     right: 15px;
@@ -1364,7 +1364,7 @@ a {
     height: 100%;
 }
 #banner .slideContent .left img{
-    width: 300px;
+    width: 500px;
     z-index: 100;
     object-fit: contain;
 }
@@ -1703,19 +1703,7 @@ a {
 #faq-home .heading-1 {
     padding-bottom: 50px;
 }
-#faq-home .accRow .accordion{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-#faq-home .accRow .accordion .faq-item{
-    width: 48%;
-}
-.faq-item {
-    border: none;
-    margin-bottom: 12px;
-}
+
 
 .faq-item button {
     font-family: 'Montserrat';
