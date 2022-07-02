@@ -14,6 +14,7 @@ filterDropDownDivFirst.addEventListener('click' , (e) =>  {
 window.addEventListener("click",(e) => {
     if(!e.target.matches("filterBtnFirst") && !e.target.matches('.filterBtnFirst')){
         filterDropDownDivFirst.classList.add('hidden')
+    filterBtnFirst.classList.remove('active')
         
     }
 })

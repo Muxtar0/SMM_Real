@@ -257,6 +257,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 125px;
 
 }
 
@@ -272,6 +273,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 125px;
+
 }
 .loginbt svg,
 .loginbt i {

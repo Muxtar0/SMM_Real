@@ -345,6 +345,17 @@ body.dark .input.forCopy{
 body.dark .filterDiv > .filterItem .filterBtnFirst:hover{
     background: #0F1419;
 }
+body.dark .filterDiv > .filterItem .filterBtnFirst{
+    background: #0F1419;
+}
+body.dark .filterDiv > .filterItem .filterBtnFirst:hover{
+    background: #2F5AFF;
+    color: white;
+}
+body.dark .filterDiv > .filterItem .filterBtnFirst.active{
+    background: #2F5AFF;
+    color: white;
+}
 .filterDiv > .filterItem .filterDropDownDiv{
     position: absolute;
     top: 120%;
