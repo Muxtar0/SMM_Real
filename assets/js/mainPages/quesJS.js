@@ -15,3 +15,23 @@ for(let i =0;i<accordionHeader.length;i++){
     })
 
 }
+
+
+
+
+const accordionHeaderLeft = document.querySelectorAll('.accordion-headerleftAcc') 
+const accordionHeaderBtnsLeft = document.querySelectorAll('.accordion-headerleftAcc button') 
+const accordionCollapsesLeft = document.querySelectorAll('.accordion-collapseleftAcc') 
+for(let i =0;i<accordionHeaderLeft.length;i++){
+    accordionHeaderLeft[i].addEventListener('click',(e) =>  {
+        for(let i =0;i<accordionHeaderBtnsLeft.length;i++){
+            accordionHeaderBtnsLeft[i].classList.add('collapsed')
+            accordionHeaderBtnsLeft[i].setAttribute('aria-expanded',false);
+
+        }
+        for(let i =0;i<accordionCollapsesLeft.length;i++){
+            accordionCollapsesLeft[i].classList.remove('show')
+        }
+    })
+
+}
