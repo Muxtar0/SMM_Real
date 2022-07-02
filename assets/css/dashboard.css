@@ -768,6 +768,17 @@ body.dark .sidebar .sidebarList ul li.active a .icon i{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    animation: 200ms textAni ease-in;
+}
+@keyframes textAni {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
 }
 .sidebar.smallSidebar .sidebarList ul li a .text{
     display: none;

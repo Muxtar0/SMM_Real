@@ -1719,7 +1719,12 @@ a {
     font-size: 16px;
     color: #52667B;
 }
-
+.faq-item button::after{
+    transition: all 300ms;
+}
+.faq-item button.active::after{
+    transform: rotate(180deg);
+}
 .faq-item .accordion-body {
     font-family: 'Montserrat';
     font-size: 14px;
@@ -2181,13 +2186,40 @@ footer .footer-main-container .copyrightContent p{
         display: flex;
         align-items: center;
         justify-content: center;
+        display: none;
     }
     #banner .slideContent .left img{
         width: 300px;
         margin: auto;
     }
     #banner .swiper{
-        height: 510px;
+        height: 410px;
+        padding-top: 20px;
+    }
+    .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+        top: auto;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    #banner .swiper-button-next{
+        top: auto;
+        bottom: 15px;
+        transform: rotate(-90deg);
+    }
+    #banner .swiper-button-prev{
+        top: auto;
+        bottom: 15px;
+        transform: rotate(-90deg);
+        right: auto;
+        left: 10px;
+    }
+    #banner .swiper-pagination-bullet{
+        margin: 0 12px;
     }
     #banner .slideContent .right h2{
         font-size: 33px;
