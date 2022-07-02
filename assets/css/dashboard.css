@@ -1892,6 +1892,10 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService .selectionsFo
     min-width: 150px;
     border-radius: 5px;
 }
+body.dark .OrderContentRight .top .search{
+    background: black;
+    border-color: #23252E;
+}
 .OrderContentRight .top .search input{
     background: transparent;
     border: none;
