@@ -28,7 +28,18 @@ Fonts
     font-family: Socialize;
     src: url(../fonts/Socialize/Socialize.ttf);
 }
-
+/* ::-webkit-scrollbar{
+    width: 14px;
+    background: #6B7280;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb{
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #E6ECFF;
+  
+} */
 
 /* Resets */
 * {
@@ -1098,7 +1109,19 @@ body.dark .dashboardContent header{
     transition: all 300ms;
     z-index: 100;
     height: 483px;
-    overflow: auto;
+    overflow-y: auto;
+}
+.dashboardContent header .profile .dropdownProfile::-webkit-scrollbar{
+    width: 14px;
+    background: #6B7280;
+    border-radius: 9999px;
+}
+.dashboardContent header .profile .dropdownProfile::-webkit-scrollbar-thumb{
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #E6ECFF;
+  
 }
 body.dark .dashboardContent header .profile .dropdownProfile{
     background: #0F1419;
@@ -1207,8 +1230,20 @@ body.dark .dashboardContent header .profile .dropdownProfile .dropdownList li a 
     transition: all 300ms;
     z-index: 100;
     height: 500px;
-    overflow: auto;
+    overflow-y: auto;
 
+}
+.dashboardContent header .bars .dropdownBars::-webkit-scrollbar{
+    width: 14px;
+    background: #6B7280;
+    border-radius: 9999px;
+}
+.dashboardContent header .bars .dropdownBars::-webkit-scrollbar-thumb{
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #E6ECFF;
+  
 }
 body.dark .dashboardContent header .bars .dropdownBars{
     background: #0F1419;
@@ -1293,8 +1328,20 @@ body.dark .dashboardContent header .bars .dropdownBars::before{
     transition: all 300ms;
     z-index: 100;
     height: 500px;
-    overflow: auto;
+    overflow-y: auto;
 
+}
+.dashboardContent header .notifications .dropdownNotifications::-webkit-scrollbar{
+    width: 14px;
+    background: #6B7280;
+    border-radius: 9999px;
+}
+.dashboardContent header .notifications .dropdownNotifications::-webkit-scrollbar-thumb{
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #E6ECFF;
+  
 }
 body.dark .dashboardContent header .notifications .dropdownNotifications{
     background: #0F1419;
@@ -1615,18 +1662,22 @@ body.dark .OrderContent .orderInfo .item  .select{
 .OrderContent .orderInfo .item  .select .selectedText i{
     margin-right: 10px;
 }
-.OrderContent .orderInfo .item  .select .selections{
+
+.OrderContent .orderInfo .item  .select .selections.selectonsMain{
     position: absolute;
     top: 102%;
     left: 0;
     background: white;
     width: 100%;
-    max-height: 250px;
-    overflow-y: auto;
+
     z-index: 100;
     box-shadow: rgb(99 99 99 / 20%) 0px 10px 8px 0px;
     border-radius: 0 0 10px 10px;
     border: 1px solid #E6ECFF;
+}
+.OrderContent .orderInfo .item  .select .selections.secondSelection{
+    max-height: 250px;
+    overflow-y: auto;
 }
 .OrderContent .orderInfo .item  .select .selections .topCon{
     display: flex;
@@ -1716,18 +1767,22 @@ body.dark .OrderContent .orderInfo .item  .select.selectForService{
     justify-content: space-between;
     cursor: pointer;
 }
-.OrderContent .orderInfo .item  .select.selectForService .selectionsForService{
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService.mainSelection{
     position: absolute;
     top: 102%;
     left: 0;
     width: 100%;
     background: white;
     z-index: 100;
-    height: 400px;
-    overflow-y: auto;
+
     box-shadow: rgb(99 99 99 / 20%) 0px 10px 8px 0px;
     border-radius: 0 0 10px 10px;
     border: 1px solid #E6ECFF;
+}
+.OrderContent .orderInfo .item  .select.selectForService .selectionsForService.mainSelection ul{
+    height: 400px;
+    overflow-y: auto;
+
 }
 .OrderContent .orderInfo .item  .select.selectForService .selectionsForService.hidden{
     display: none;
