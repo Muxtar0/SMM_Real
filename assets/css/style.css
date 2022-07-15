@@ -1565,7 +1565,10 @@ a {
     margin-top: 90px;
 }
 .info-elements-1 {
-    text-align-last: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .info-elements-1 img {
