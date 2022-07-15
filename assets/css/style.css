@@ -1172,10 +1172,12 @@ a {
 
 #header .container .header-col-right nav ul li.country .arrow i {
     transition: 400ms all;
+    transform: rotate(180deg);
+
 }
 
 #header .container .header-col-right nav ul li.country .arrow i.active {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 
