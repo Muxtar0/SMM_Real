@@ -828,6 +828,7 @@ body.dark .sidebar .sidebarList ul li.active a .icon i{
 }
 .sidebar .showMore .showMoreBTN i{
     transition: all 300ms;
+    transform: rotate(180deg);
 }
 .sidebar.smallSidebar .showMore .showMoreBTN{
     justify-content: center;
@@ -836,7 +837,7 @@ body.dark .sidebar .sidebarList ul li.active a .icon i{
     display: none;
 }
 .sidebar .showMore .showMoreBTN.active i{
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 .sidebar .showMore .showMoreContent{
     transition: all 300ms;
