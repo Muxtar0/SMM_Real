@@ -22,14 +22,26 @@ window.addEventListener("load" , (e) => {
         dashboardHeaderMain.classList.add('small')
         main.classList.add('small')
       
-      }
-      else{
+    }
+    else{
         dashboardHeaderMain.classList.remove('small')
         main.classList.remove('small')
 
-      }
+    }
 })
+window.addEventListener("resize" , (e) => {
+    if(window.outerWidth <= 992){
 
+        dashboardHeaderMain.classList.add('small')
+        main.classList.add('small')
+      
+    }
+    else{
+        dashboardHeaderMain.classList.remove('small')
+        main.classList.remove('small')
+
+    }
+})
 
 
 
