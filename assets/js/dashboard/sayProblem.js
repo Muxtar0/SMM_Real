@@ -5,14 +5,26 @@ const closeSayProblemModalBtn = document.querySelector('.closeSayProblemModalBtn
 const problemDropDowns = document.querySelectorAll('.problemDropDown');
 const editBtns = document.querySelectorAll('.editBtn');
 
+let btnLatest;
+
 for(let i=0;i<sayProblemBTNs.length;i++){
     sayProblemBTNs[i].addEventListener('click' , (e) => {
         e.stopPropagation();
-        for(let i=0;i<problemDropDowns.length;i++){
-            problemDropDowns[i].classList.remove('active')
-        }
 
-        problemDropDowns[i].classList.add('active')
+        
+        if(e.target == btnLatest){
+            problemDropDowns[i].classList.toggle('active')
+
+        }
+        else{
+            for(let i=0;i<problemDropDowns.length;i++){
+                problemDropDowns[i].classList.remove('active')
+            }
+            problemDropDowns[i].classList.add('active')
+
+        }
+        btnLatest = e.target;
+
     })
 }
 for(let i=0;i<problemDropDowns.length;i++){
@@ -38,7 +50,6 @@ closeSayProblemModalBtn.addEventListener('click' , (e) => {
 
 window.addEventListener('click' , (event) => {
     if (!event.target.matches('.problemDropDown') && !event.target.matches('.sayProblem')) {
-        console.log('hi')
         for(let i=0;i<problemDropDowns.length;i++){
             problemDropDowns[i].classList.remove('active')
         }
