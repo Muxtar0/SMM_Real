@@ -539,7 +539,7 @@ header{
     right: 0;
     bottom: 0;
   }
-  
+/*   
   .wave__circle {
     position: absolute;
     background-color: transparent;
@@ -580,7 +580,7 @@ header{
       height: 500px;
       opacity: 0;
     }
-  }
+  } */
   
 .loginComponentCon .col-12{
     display: flex;
@@ -1247,6 +1247,7 @@ color: white;
     padding: 25px 9px 25px 25px;
     margin: 10px 0;
     overflow: hidden;
+    transition: all 1500ms;
 }
 #MostAskingQuestions .questionsContent .questionItem .questionBTN{
     background: transparent;
@@ -1282,7 +1283,7 @@ color: white;
 }
 #MostAskingQuestions .questionsContent .questionItem .otherInfo{
 
-    transition: all 100ms;
+    transition: all 400ms;
     overflow: hidden;
     height: 0;
     visibility: hidden;
@@ -1300,7 +1301,7 @@ color: white;
     height: 100%;
     opacity: 1;
     visibility: visible;
-    transition: all 300ms;
+    transition: all 500ms;
 }
 
 /* footer */
